@@ -1,7 +1,11 @@
 アップデートできていないでたぱ
+・TUSB_Remake
+
+アップデートできてないけど優先度低い
+※NBT以外のメテオがないため
 ・CloseDetector
 ・NoSleep
 ・PlayerItemTuner
 ・AiMath
-・TUSB_Remake
+
 他はアップデート済み
