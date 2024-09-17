@@ -3,6 +3,10 @@
 This Datapack allows you to teleport to a specified location in storage.  
 ストレージで指定した場所にテレポートできるデータパック  
 
+## 1.21以降はサポートしていません / Not supported in 1.21 or later
+
+1.21以降はAnywhere Function(<https://github.com/Ai-Akaishi/AnywhereFunction>)をご利用ください。
+
 ## 動作確認済みバージョン / Verified minecraft versions
 
 - 1.19
