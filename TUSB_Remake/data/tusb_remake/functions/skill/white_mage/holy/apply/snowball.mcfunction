@@ -4,3 +4,6 @@
 ### This software is released under the MIT License, see LICENSE.
 
 data modify entity @s Tags set value [Holy,FlyingObject,Driftable,TypeChecked]
+
+# CW変更点：発射時に攻撃判定
+function tusb_remake:skill/white_mage/holy/schedule/fly

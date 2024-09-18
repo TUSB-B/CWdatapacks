@@ -1,6 +1,9 @@
 #> tusb_remake:skill/white_mage/dia/hit
 # ディアが当たった時
 
+### マルチヒット防止のエフェクト
+effect give @s minecraft:saturation 10 127 true
+
 ### リメイク：威力を倍に
 execute if score @s PotentialSkill matches 4210 run effect give @s minecraft:instant_health 1 2 false
 execute if score @s PotentialSkill matches 4211 run effect give @s minecraft:instant_health 1 3 false
