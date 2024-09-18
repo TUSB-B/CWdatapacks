@@ -69,3 +69,9 @@ execute as @a[scores={UseFireworkRocket=1..}] run function tusb_remake:player/us
 
 # NoAIの停止 Freeze おのれもやん => NoAIでも動くやつがいるみたいなのだったかも
 execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
+
+# ボスチーム
+execute at @e[team=Boss] as @e[type=potion,distance=..3] run function tusb_remake:clock/potion_barrier
+effect give @e[team=Boss] resistance 3 2 true
+effect clear @e[team=Boss] weakness
+effect clear @e[team=Boss] slowness
