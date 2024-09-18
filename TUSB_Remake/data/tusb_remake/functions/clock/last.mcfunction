@@ -9,8 +9,8 @@ execute as @a[tag=MagicShield] run effect give @s minecraft:resistance 1 100
 execute as @a[scores={WindWall=0..}] at @s run function tusb_remake:skill/black_mage/wind_wall/check
 
 ### プレイヤーの回復効果
-execute as @a[scores={HealCount=1..3},nbt=!{ActiveEffects:[{Id:10}]}] run function tusb_remake:player/heal/small
-execute as @a[scores={HealCount=4..},nbt=!{ActiveEffects:[{Id:6}]}] run function tusb_remake:player/heal/large
+execute as @a[scores={HealCount=1..3},nbt=!{active_effects:[{Id:10}]}] run function tusb_remake:player/heal/small
+execute as @a[scores={HealCount=4..},nbt=!{active_effects:[{Id:6}]}] run function tusb_remake:player/heal/large
 
 ### HP記録
 execute as @a[scores={HPChanging=0..}] run scoreboard players operation @s HP = @s HPChanging
