@@ -11,3 +11,6 @@ function tusb_remake:skill/white_mage/dia/schedule/
 
 ### 飛んでるやつの判定有効化
 function tusb_remake:skill/projectile/
+
+# CW変更点：発射時に攻撃判定
+function tusb_remake:skill/white_mage/dia/schedule/fly

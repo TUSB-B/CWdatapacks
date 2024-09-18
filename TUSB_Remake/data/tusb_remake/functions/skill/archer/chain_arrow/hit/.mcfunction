@@ -4,6 +4,12 @@
 ### ダメージ * 100 + 1000X 入っているので、まずは10000を引く
 scoreboard players operation _ PotentialSkill = @s PotentialSkill
 scoreboard players remove _ PotentialSkill 10000
+# CW変更点：固定ダメージ追加(0-5-10dmg)
+scoreboard players operation Level TUSB = 
+scoreboard players set _ TUSB 10
+scoreboard players operation _ PotentialSkill %= _ TUSB
+
+scoreboard players operation _ PotentialSkill += _ TUSB
 
 ### ダメージを設定 (ダメージ*2.5)
 data modify storage score_damage: Argument set value {Damage:0.00,DamageType:"Projectile"}
