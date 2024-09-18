@@ -78,7 +78,4 @@ execute if data storage tusb_remake: settings{prayable:true} as @a[tag=Pray,scor
 ## 炎出す奴
 execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~1 minecraft:fire keep
 
-## エリア境界不正侵入(バリアめり込み)防止
-execute as @a[gamemode=!spectator] at @s if block ~ 0 ~ minecraft:barrier if blocks ~ 0 ~ ~ 254 ~ ~ ~1 ~ all run kill @s
-
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s

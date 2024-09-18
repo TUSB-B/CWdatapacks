@@ -75,3 +75,6 @@ execute at @e[team=Boss] as @e[type=potion,distance=..3] run function tusb_remak
 effect give @e[team=Boss] resistance 3 2 true
 effect clear @e[team=Boss] weakness
 effect clear @e[team=Boss] slowness
+
+## エリア境界不正侵入(バリアめり込み)防止
+execute as @a[gamemode=!spectator,gamemode=!creative] at @s if block ~ ~ ~ #tusb_remake:unbreakable run function tusb_remake:player/barriarkill

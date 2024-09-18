@@ -5,10 +5,11 @@
 scoreboard players operation _ PotentialSkill = @s PotentialSkill
 scoreboard players remove _ PotentialSkill 10000
 # CW変更点：固定ダメージ追加(0-5-10dmg)
-scoreboard players operation Level TUSB = 
+scoreboard players operation Level TUSB = _ PotentialSkill
 scoreboard players set _ TUSB 10
-scoreboard players operation _ PotentialSkill %= _ TUSB
-
+scoreboard players operation Level TUSB %= _ TUSB
+scoreboard players set _ TUSB 200
+scoreboard players operation _ TUSB *= Level TUSB
 scoreboard players operation _ PotentialSkill += _ TUSB
 
 ### ダメージを設定 (ダメージ*2.5)
