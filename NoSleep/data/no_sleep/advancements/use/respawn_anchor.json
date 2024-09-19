@@ -4,10 +4,12 @@
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
                 "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:respawn_anchor"
-                        ]
+					"location": {
+    	                "block": {
+	                        "blocks": [
+                            	"minecraft:respawn_anchor"
+                        	]
+						}
                     }
                 },
                 "player": [
