@@ -9,12 +9,15 @@
 						"name": "tusb_remake:is_interactable"
 					}
 				],
-				"location": {
-					"block": {
-						"tag": "minecraft:signs",
-						"nbt": "{Text3: '{\"bold\":true,\"color\":\"light_purple\",\"text\":\"-ルビー-\"}', Text2: '{\"bold\":true,\"color\":\"white\",\"text\":\"モードチェンジ\"}'}"
+				"location": [
+					{
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:oak_sign",
+						"properties": {
+							"nbt": "{Text3: '{\"bold\":true,\"color\":\"light_purple\",\"text\":\"-ルビー-\"}', Text2: '{\"bold\":true,\"color\":\"white\",\"text\":\"モードチェンジ\"}'}"
+						}
 					}
-				}
+				]
 			}
 		},
 		"mode_change_sapphire": {
