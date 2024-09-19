@@ -1,8 +1,5 @@
-アップデートできてないけど優先度低い
-※NBT以外のメテオがないため
+Advancementの修正が必要
 ・CloseDetector
 ・NoSleep
-・PlayerItemTuner
-・AiMath
 
 他はアップデート済み
