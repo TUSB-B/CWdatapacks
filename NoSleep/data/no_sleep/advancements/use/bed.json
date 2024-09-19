@@ -4,8 +4,10 @@
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
                 "location": {
-                    "block": {
-                        "tag": "minecraft:beds"
+                    "location": {
+                        "block": {
+                            "tag": "minecraft:beds"
+                        }
                     }
                 },
                 "player": [
