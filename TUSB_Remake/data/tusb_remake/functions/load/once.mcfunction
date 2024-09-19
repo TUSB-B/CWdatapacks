@@ -302,7 +302,7 @@ worldborder set 7000
 ### setdisplay
 scoreboard objectives setdisplay list Level
 scoreboard objectives setdisplay sidebar MP
-scoreboard objectives setdisplay belowName HP
+scoreboard objectives setdisplay below_name HP
 scoreboard players reset * MP
 
 ### ワールド初期設定

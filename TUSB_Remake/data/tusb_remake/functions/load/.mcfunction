@@ -292,7 +292,7 @@ worldborder set 7000
 ### setdisplay
 scoreboard objectives setdisplay list Level
 scoreboard objectives setdisplay sidebar MP
-scoreboard objectives setdisplay belowName HP
+scoreboard objectives setdisplay below_name HP
 
 ### ブロックに対する設定を予約
 execute in minecraft:overworld run schedule function tusb_remake:load/block_settings 3s
