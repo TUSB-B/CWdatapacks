@@ -7,30 +7,37 @@
                     {
                         "condition": "reference",
                         "name": "tusb_remake:is_interactable"
-                    }
-                ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:trapped_chest"
-                        ]
                     },
-                    "position": {
-                        "dimension": "minecraft:overworld",
-                        "x": {
-                            "min": 17,
-                            "max": 18
-                        },
-                        "y": {
-                            "min": 18,
-                            "max": 19
-                        },
-                        "z": {
-                            "min": -1831,
-                            "max": -1830
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                          "position": {
+                            "x": {
+                              "min": 17,
+                              "max": 18
+                            },
+                            "y": {
+                              "min": 18,
+                              "max": 19
+                            },
+                            "z": {
+                              "min": -1831,
+                              "max": -1830
+                            }
+                          },
+                          "dimension": "minecraft:overworld"
                         }
+                      }
+                ],
+                "location":  [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:trapped_chest"
                     }
-                }
+                  
+                    
+                ]
+                
             }
         },
         "table_trialset_2": {
@@ -40,30 +47,34 @@
                     {
                         "condition": "reference",
                         "name": "tusb_remake:is_interactable"
-                    }
-                ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:trapped_chest"
-                        ]
                     },
-                    "position": {
-                        "dimension": "minecraft:overworld",
-                        "x": {
-                            "min": 15,
-                            "max": 16
-                        },
-                        "y": {
-                            "min": 18,
-                            "max": 19
-                        },
-                        "z": {
-                            "min": -1833,
-                            "max": -1832
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                          "position": {
+                            "x": {
+                                "min": 15,
+                                "max": 16
+                            },
+                            "y": {
+                                "min": 18,
+                                "max": 19
+                            },
+                            "z": {
+                                "min": -1833,
+                                "max": -1832
+                            }
+                          },
+                          "dimension": "minecraft:overworld"
                         }
-                    }
-                }
+                      }
+                ],
+                "location":  [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:trapped_chest"
+                    }  
+                ]  
             }
         },
         "table_trialset_3": {
@@ -73,30 +84,34 @@
                     {
                         "condition": "reference",
                         "name": "tusb_remake:is_interactable"
-                    }
-                ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:trapped_chest"
-                        ]
                     },
-                    "position": {
-                        "dimension": "minecraft:overworld",
-                        "x": {
-                            "min": 17,
-                            "max": 18
-                        },
-                        "y": {
-                            "min": 18,
-                            "max": 19
-                        },
-                        "z": {
-                            "min": -1835,
-                            "max": -1834
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                          "position": {
+                            "x": {
+                                "min": 17,
+                                "max": 18
+                            },
+                            "y": {
+                                "min": 18,
+                                "max": 19
+                            },
+                            "z": {
+                                "min": -1835,
+                                "max": -1834
+                            }
+                          },
+                          "dimension": "minecraft:overworld"
                         }
-                    }
-                }
+                      }
+                ],
+                "location":  [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:trapped_chest"
+                    }  
+                ]  
             }
         },
         "skill_setting_area_eggs": {
@@ -106,30 +121,35 @@
                     {
                         "condition": "reference",
                         "name": "tusb_remake:is_interactable"
-                    }
-                ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:trapped_chest"
-                        ]
                     },
-                    "position": {
-                        "dimension": "minecraft:overworld",
-                        "x": {
-                            "min": -2734,
-                            "max": -2733
-                        },
-                        "y": {
-                            "min": 88,
-                            "max": 89
-                        },
-                        "z": {
-                            "min": -383,
-                            "max": -381
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                          "position": {
+                            "x": {
+                                "min": -2734,
+                                "max": -2733
+                            },
+                            "y": {
+                                "min": 88,
+                                "max": 89
+                            },
+                            "z": {
+                                "min": -383,
+                                "max": -381
+                            }
+                          },
+                          "dimension": "minecraft:overworld"
                         }
-                    }
-                }
+                      }
+                ],
+                "location":  [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:trapped_chest"
+                    }  
+                ]  
+                
             }
         }
     },

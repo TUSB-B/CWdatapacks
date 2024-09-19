@@ -3,21 +3,53 @@
 		"something": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": {
-					"block": {
-						"blocks": [
-							"minecraft:stone_button",
-							"minecraft:oak_button",
-							"minecraft:birch_button",
-							"minecraft:spruce_button",
-							"minecraft:jungle_button",
-							"minecraft:acacia_button",
-							"minecraft:dark_oak_button",
-							"minecraft:crimson_button",
-							"minecraft:warped_button"
-						]
-					}
-				}
+				"location": [
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:stone_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:oak_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:birch_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:spruce_button"
+					  }
+					  ,
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:bamboo_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:cherry_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:jungle_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:acacia_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:dark_oak_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:crimson_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:warped_button"
+					  }	
+				]
 			}
 		}
 	},

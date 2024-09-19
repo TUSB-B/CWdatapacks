@@ -7,58 +7,157 @@
                     {
                         "condition": "reference",
                         "name": "tusb_remake:is_interactable"
-                    }
-                ],
-                "location": {
-                    "block": {
-                        "tag": "minecraft:buttons"
-                    },
-                    "position": {
-                        "x": {
-                            "min": -2739,
-                            "max": -2738
-                        },
-                        "y": {
-                            "min": 90,
-                            "max": 91
-                        },
-                        "z": {
-                            "min": -363,
-                            "max": -362
+                    }, 
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                          "position": {
+                            "x": {
+                                "min": -2739,
+                                "max": -2738
+                            },
+                            "y": {
+                                "min": 90,
+                                "max": 91
+                            },
+                            "z": {
+                                "min": -363,
+                                "max": -362
+                            }
+                          },
+                          "dimension": "minecraft:overworld"
                         }
-                    }
-                }
+                      }
+                ],
+                "location": [
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:stone_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:oak_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:birch_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:spruce_button"
+					  }
+					  ,
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:bamboo_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:cherry_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:jungle_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:acacia_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:dark_oak_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:crimson_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:warped_button"
+					  }	
+				]
+                
             }
         },
         "super_craft2": {
             "trigger": "minecraft:item_used_on_block",
-            "conditions": {
+            "conditions":  {
                 "player": [
                     {
                         "condition": "reference",
                         "name": "tusb_remake:is_interactable"
-                    }
-                ],
-                "location": {
-                    "block": {
-                        "tag": "minecraft:buttons"
-                    },
-                    "position": {
-                        "x": {
-                            "min": -2738,
-                            "max": -2737
-                        },
-                        "y": {
-                            "min": 90,
-                            "max": 91
-                        },
-                        "z": {
-                            "min": -362,
-                            "max": -361
+                    }, 
+                    
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                          "position": {
+                            "x": {
+                                "min": -2738,
+                                "max": -2737
+                            },
+                            "y": {
+                                "min": 90,
+                                "max": 91
+                            },
+                            "z": {
+                                "min": -362,
+                                "max": -361
+                            }
+                          },
+                          "dimension": "minecraft:overworld"
                         }
-                    }
-                }
-            }
+                      }
+                ],
+                "location": [
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:stone_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:oak_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:birch_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:spruce_button"
+					  }
+					  ,
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:bamboo_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:cherry_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:jungle_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:acacia_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:dark_oak_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:crimson_button"
+					  },
+					  {
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:warped_button"
+					  }	
+				]
+                
+            }         
         },
         "all_button": {
             "trigger": "minecraft:item_used_on_block",
@@ -69,11 +168,53 @@
                         "name": "tusb_remake:is_interactable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "tag": "minecraft:buttons"
+                "location":[
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:stone_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:oak_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:birch_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:spruce_button"
                     }
-                }
+                    ,
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:bamboo_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:cherry_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:jungle_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:acacia_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:dark_oak_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:crimson_button"
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:warped_button"
+                    }	
+              ]
             }
         }
     },

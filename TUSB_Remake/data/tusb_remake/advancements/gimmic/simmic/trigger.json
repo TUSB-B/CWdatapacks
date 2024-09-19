@@ -9,13 +9,12 @@
                         "name": "tusb_remake:is_interactable"
                     }
                 ],
-				"location": {
-					"block": {
-						"blocks": [
-							"minecraft:trapped_chest"
-						]
-					}
-				}
+				"location":  [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:trapped_chest"
+                    }  
+                ]  
 			}
 		}
 	},
