@@ -1,25 +1,32 @@
 {
     "criteria": {
-        "check": {
-            "trigger": "minecraft:item_used_on_block",
-            "conditions": {
-                "location": {
-                    "location": {
-                        "block": {
-                            "tag": "minecraft:beds"
-                        }
-                    }
-                },
-                "player": [
-                    {
-                        "condition": "reference",
-                        "name": "no_sleep:can_use_bed"
-                    }
-                ]
+      "check": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:reference",
+              "name": "no_sleep:can_use_bed"
             }
+          ],
+          "location": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "block": {
+                    "tag": "minecraft:beds"
+                  }
+                }
+              }
+            }
+          ]
         }
+      }
     },
     "rewards": {
-        "function": "no_sleep:use/bed"
+      "function": "no_sleep:use/bed"
     }
-}
+  }
+  
