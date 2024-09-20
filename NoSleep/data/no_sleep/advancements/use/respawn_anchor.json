@@ -28,7 +28,7 @@
       }
     },
     "rewards": {
-      "function": "no_sleep:use/bed"
+      "function": "no_sleep:use/respawn_anchor"
     }
   }
   
