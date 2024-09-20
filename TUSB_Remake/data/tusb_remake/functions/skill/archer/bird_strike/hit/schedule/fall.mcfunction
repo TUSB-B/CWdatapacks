@@ -6,7 +6,7 @@
 particle minecraft:cloud ~ ~ ~ 0.1 0.2 0.1 0.1 1 force
 
 execute if predicate tusb_remake:under-64 run tag @s remove FallDown
-execute unless data entity @s active_effects[{Id:31}] run tag @s remove FallDown
+execute unless data entity @s active_effects[{id:"bad_omen"}] run tag @s remove FallDown
 
 data merge entity @s[tag=FallDown] {Motion:[0d,-1d,0d]}
 

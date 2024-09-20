@@ -57,7 +57,7 @@ execute as @a[scores={MineNetherrack=1..}] at @s run function tusb_remake:player
 execute positioned 39 7 67 if entity @a[distance=..10,limit=1] run function tusb_remake:gimmic/sealed_alter/
 
 # 透明化＆エーテル Invisible
-execute as @a[nbt={active_effects:[{Id:14}]}] at @s run function tusb_remake:player/invisible/
+execute as @a[nbt={active_effects:[{id:invisibility}]}] at @s run function tusb_remake:player/invisible/
 
 # 奈落防止
 execute as @e[tag=AbyssWarp] at @s positioned ~-0.5 -70 ~-0.5 run tp @s[dy=-29] @p

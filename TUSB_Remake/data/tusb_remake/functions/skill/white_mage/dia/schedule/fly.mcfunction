@@ -9,4 +9,4 @@ particle minecraft:instant_effect ~ ~ ~ 0.1 0 0.1 0 1 force
 data modify storage tusb_remake: _ set value true
 
 # CW変更点：範囲化
-execute as @e[distance=..5,type=#tusb_remake:mob,tag=Enemy,nbt=!{active_effects:[{Id:23}]}] at @s run function tusb_remake:skill/white_mage/dia/hit
+execute as @e[distance=..5,type=#tusb_remake:mob,tag=Enemy,nbt=!{active_effects:[{id:saturation}]}] at @s run function tusb_remake:skill/white_mage/dia/hit
