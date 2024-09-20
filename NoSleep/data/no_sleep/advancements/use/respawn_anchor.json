@@ -1,27 +1,34 @@
 {
     "criteria": {
-        "check": {
-            "trigger": "minecraft:item_used_on_block",
-            "conditions": {
-                "location": {
-					"location": {
-    	                "block": {
-	                        "blocks": [
-                            	"minecraft:respawn_anchor"
-                        	]
-						}
-                    }
-                },
-                "player": [
-                    {
-                        "condition": "reference",
-                        "name": "no_sleep:can_use_bed"
-                    }
-                ]
+      "check": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:reference",
+              "name": "no_sleep:can_use_bed"
             }
+          ],
+          "location": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "block": {
+                    "blocks": [
+                      "minecraft:respawn_anchor"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
         }
+      }
     },
     "rewards": {
-        "function": "no_sleep:use/respawn_anchor"
+      "function": "no_sleep:use/bed"
     }
-}
+  }
+  
