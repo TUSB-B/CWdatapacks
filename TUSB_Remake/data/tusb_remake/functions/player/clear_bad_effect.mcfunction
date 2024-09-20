@@ -6,7 +6,7 @@
 effect clear @s minecraft:slowness
 effect clear @s minecraft:mining_fatigue
 
-execute store result score _ TUSB run data get entity @s active_effects[{Id:8}].amplifier
+execute store result score _ TUSB run data get entity @s active_effects[{id: "jump_boost"}].amplifier
 execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:jump_boost
 
 effect clear @s minecraft:nausea
