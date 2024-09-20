@@ -9,13 +9,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:chest"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:chest"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "trapped_chest": {
@@ -27,13 +35,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:trapped_chest"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:trapped_chest"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "ender_chest": {
@@ -45,13 +61,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:ender_chest"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:ender_chest"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "barrel": {
@@ -63,13 +87,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:barrel"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:barrel"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "crafting_table": {
@@ -81,13 +113,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:crafting_table"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:crafting_table"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "cartography_table": {
@@ -99,13 +139,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:cartography_table"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:cartography_table"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "hopper": {
@@ -117,13 +165,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:hopper"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:hopper"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "dropper": {
@@ -135,13 +191,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:dropper"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:dropper"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "dispenser": {
@@ -153,13 +217,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:dispenser"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:dispenser"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "furnace": {
@@ -171,13 +243,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:furnace"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:furnace"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "blast_furnace": {
@@ -189,13 +269,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:blast_furnace"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:blast_furnace"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "smoker": {
@@ -207,13 +295,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:smoker"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:smoker"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "grindstone": {
@@ -225,13 +321,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:grindstone"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:grindstone"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "enchanting_table": {
@@ -243,13 +347,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:enchanting_table"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:enchanting_table"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "anvil": {
@@ -261,13 +373,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:anvil"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:anvil"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "chipped_anvil": {
@@ -279,13 +399,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:chipped_anvil"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:chipped_anvil"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "damaged_anvil": {
@@ -297,13 +425,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:damaged_anvil"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:damaged_anvil"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "shulker_box": {
@@ -315,13 +451,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "white_shulker_box": {
@@ -333,13 +477,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:white_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:white_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "orange_shulker_box": {
@@ -351,13 +503,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:orange_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:orange_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "magenta_shulker_box": {
@@ -369,13 +529,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:magenta_shulker_box"
-                        ]
+               "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:magenta_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "light_blue_shulker_box": {
@@ -387,13 +555,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:light_blue_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:light_blue_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "yellow_shulker_box": {
@@ -405,13 +581,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:yellow_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:yellow_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "lime_shulker_box": {
@@ -423,13 +607,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:lime_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:lime_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "pink_shulker_box": {
@@ -441,13 +633,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:pink_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:pink_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "gray_shulker_box": {
@@ -459,13 +659,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:gray_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:gray_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "light_gray_shulker_box": {
@@ -477,13 +685,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:light_gray_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:light_gray_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "cyan_shulker_box": {
@@ -495,13 +711,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:cyan_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:cyan_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "purple_shulker_box": {
@@ -513,13 +737,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:purple_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:purple_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "blue_shulker_box": {
@@ -531,13 +763,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:blue_shulker_box"
-                        ]
+               "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:blue_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "brown_shulker_box": {
@@ -549,13 +789,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:brown_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:brown_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "green_shulker_box": {
@@ -567,13 +815,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:green_shulker_box"
-                        ]
+               "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:green_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "red_shulker_box": {
@@ -585,13 +841,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:red_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:red_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "black_shulker_box": {
@@ -603,13 +867,21 @@
                         "name": "close_detector:openable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:black_shulker_box"
-                        ]
+                "location": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "location": {
+                          "block": {
+                            "blocks": [
+                              "minecraft:black_shulker_box"
+                            ] 
+                          }
+                        }
+                      }
                     }
-                }
+                  ]
             }
         },
         "chest_boat": {
