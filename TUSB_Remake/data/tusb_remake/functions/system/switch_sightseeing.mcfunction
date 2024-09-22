@@ -10,4 +10,4 @@ execute if data storage tusb_remake: settings{is_sightseeing:true} as @a at @s r
 execute if data storage tusb_remake: settings{is_sightseeing:true} run gamerule keepInventory true
 
 execute unless data storage tusb_remake: settings{is_sightseeing:true} run tellraw @a [{"selector":"@s"},{"color":"green","text":" によって通常モードに切り替わりました。"}]
-execute unless data storage tusb_remake: settings{is_sightseeing:true} run gamerule keepInventory false
+execute unless data storage tusb_remake: settings{is_sightseeing:true} run gamerule keepInventory true
