@@ -1,4 +1,4 @@
-#> spawner:summon
+#> spawner:replace/summon
 #モブを呼び出す
 
 #AiUtilを使ってモブを召喚（AssetIdが前と変わってなかったら呼び出さない）
