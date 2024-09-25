@@ -11,4 +11,4 @@ data modify storage debug:set_spawner _.SpawnPotentials[-1].data.entity set from
 
 data remove storage debug:set_spawner _.SpawnMob[0]
 # まだ残っていれば再帰
-execute if data storage debug:set_spawner _.SpawnMob[0] run function debug:set_spawner/spawn_data
+execute if data storage debug:set_spawner _.SpawnMob[0] run function debug:set_spawner/spawn_potentials

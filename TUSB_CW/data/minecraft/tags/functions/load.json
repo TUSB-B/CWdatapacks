@@ -1,5 +1,6 @@
 {
     "values": [
-        "tusb_cw:load"
+        "tusb_cw:load",
+        "debug:load"
     ]
 }
