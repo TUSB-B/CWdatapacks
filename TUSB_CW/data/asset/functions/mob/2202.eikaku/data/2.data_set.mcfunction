@@ -124,10 +124,10 @@ data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
     #{Name:hero_of_the_village,id:32} 村の英雄
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
-data modify storage asset: mob.active_effects append value {id:invisibility,amplifier:126,duration:-1,show_particles:0b}
-# data modify storage asset: mob.active_effects append value {id:strength,amplifier:4,duration:600,show_particles:0b}
+data modify storage asset: mob.active_effects append value {id: "minecraft:invisibility",amplifier:126,duration:-1,show_particles:0b}
+# data modify storage asset: mob.active_effects append value {id:"strength",amplifier:4,duration:600,show_particles:0b}
 # 或いは...
-# data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:strength,amplifier:4,duration:600,show_particles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:"strength",amplifier:4,duration:600,show_particles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
 # Id,amplifier,duration,show_icon,ShowParticle,ambient
 
@@ -149,7 +149,7 @@ data modify storage asset: mob.active_effects append value {id:invisibility,ampl
 # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
 # data modify storage asset: mob.id set value "area_effect_cloud"
 # data modify storage asset: mob set value {Duration:32767,WatiTime:0,Particle:"end_rod"}
-# data modify storage asset: mob.effects set value [{id:speed,amplifier:1,duration:1}]
+# data modify storage asset: mob.effects set value [{id:"speed",amplifier:1,duration:1}]
 # data modify storage _: _.Passengers append from storage asset: mob
 # 最後に、mobデータを戻して避難用storageを削除します
 # data modify storage asset: mob set from storage _: _

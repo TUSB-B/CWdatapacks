@@ -8,7 +8,7 @@ execute if predicate tusb_remake:is_sneaking run function tusb_remake:skill/chec
 
 ### 空腹ペナルティ
 scoreboard players set _ TUSB 5
-execute if entity @s[nbt={active_effects:[{id:hunger}]}] run scoreboard players operation @s MPConsumption *= _ TUSB
+execute if entity @s[nbt={active_effects:[{id: "minecraft:hunger"}]}] run scoreboard players operation @s MPConsumption *= _ TUSB
 
 ### エナジーセーブ
 execute if entity @s[tag=EnergySave] run function tusb_remake:skill/check_mp/energy_save
