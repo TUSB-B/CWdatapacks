@@ -22,6 +22,11 @@ execute if entity @s[tag=BlackRider] run function tusb_remake:enemy/skill/black_
 ### ペイルライダー
 execute if entity @s[tag=PaleRider] run function tusb_remake:enemy/skill/pale_rider/
 
+# CW
+
+### クライシスワープ
+execute if entity @s[tag=CrisisWarp] run function tusb_remake:enemy/skill/crisis_warp
+
 ### 次のスキルとタイミングを設定
 ### 0-99を取得
 data modify storage math: in set value [1,100]

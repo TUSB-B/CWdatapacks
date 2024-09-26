@@ -49,7 +49,7 @@ execute as @a[predicate=tusb_remake:area/tocult_colde,gamemode=!spectator] at @s
 execute as @a[gamemode=!spectator] at @s run function tusb_remake:clock/gimmic/nether/angry
 
 ## オーラ(AEC)纏ってる敵のオーラを維持する？
-execute as @e[tag=MobCloud] at @s as @e[dx=0,tag=Enemy,sort=nearest,limit=1] at @s as @e[dy=10,tag=MobCloud] run data modify entity @s Age set value 5
+execute as @e[type=area_effect_cloud,tag=MobCloud,predicate=tusb_remake:is_riding] run data modify entity @s Age set value 5
 
 ## 煉獄ボスと戦闘中の処理
 execute as 0-0-1-0-4 at @s positioned ~ ~-19 ~74 if block -1860 20 -51 minecraft:slime_block if entity @p[distance=..65,gamemode=!spectator] run function tusb_remake:nether_boss/attack_check
