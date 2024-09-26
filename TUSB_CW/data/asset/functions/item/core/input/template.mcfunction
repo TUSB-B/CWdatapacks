@@ -24,11 +24,9 @@ data modify storage asset:item item.id set value ""
 #https://ja.minecraft.wiki/w/Raw_JSONテキストフォーマット
 
 ### アイテム名の設定（「§」（装飾コード）は上記リンクを参照）
-#未完成（形式不明）
 data modify storage asset:item item.tag.display.Name set value '[{"text":"example"}]'
 
 ### アイテム説明の設定（「§」（装飾コード）は上記リンクを参照）
-#未完成（形式不明）
 data modify storage asset:item item.tag.display.Lore set value ['[{"text":"line1"}]','[{"text":"line2"}]']
 
 ### 耐久値の減少量
