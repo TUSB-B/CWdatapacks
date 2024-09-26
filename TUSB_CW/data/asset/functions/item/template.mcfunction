@@ -1,4 +1,4 @@
-#> asset:item/input/template
+#> asset:item/template
 # アイテムを入力するためのデータサンプル
 
 ### 参考文献（詳しい記法や詳細はこちらをご覧ください）
