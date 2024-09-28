@@ -5,6 +5,7 @@
 # https://minecraft.wiki/w/Item_format
 
 ###変更しないところ### 
+data remove storage asset:item item
 data modify storage asset:item item.Count set value 1b
 ##################### 
 
@@ -49,6 +50,8 @@ data modify storage asset:item item.tag.display.Lore set value ['[{"text":"line1
 
 ### 付与されているエンチャント
 #data modify storage asset:item item.tag.Enchantments set value 
+
+### 共通
 
 ### 付与できるエンチャント（エンチャント本）
 #data modify storage asset:item item.tag.StoredEnchantments set value 
