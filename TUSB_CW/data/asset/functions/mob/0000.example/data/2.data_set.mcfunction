@@ -13,15 +13,17 @@
         data modify storage asset: mob.Health set value 20
     # 緩衝体力
         data modify storage asset: mob.AbsorptionAmount set value 20
-    # AIを持っているか(trueで持たない
+    # AIを持っていないか
         data modify storage asset: mob.NoAI set value true
+    # 重力の影響を受けないか
+        data modify storage asset: mob.NoGravity set value true
     # 無敵か
         data modify storage asset: mob.Invulnerable set value true
-    # 音を出すか(trueでしない)
+    # 音を出さないか
         data modify storage asset: mob.Silent set value true
     # 光るか
         data modify storage asset: mob.Glowing set value true
-    # デスポーンするか(trueでしない)
+    # デスポーンしないか
         data modify storage asset: mob.PersistenceRequired set value true
     # 名前
         data modify storage asset: mob.CustomName set value '{"text":"Example"}'
@@ -30,7 +32,7 @@
     # 死亡時のルートテーブル
         data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
-        data modify storage asset: mob.Tags set value ["example"]
+        data modify storage asset: mob.Tags set value [example]
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
         data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
@@ -55,7 +57,7 @@
     # それぞれの詳しい仕様はwikiなどで調べてください
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
     # Attribute Modifierというものも使用可能。ただし、UUIDを指定する必要がある(めんどい)
-        data modify storage asset: mob.Attributes[{Name:generic.max_health}] append value {Modifiers:[{Amount:1,Operation:0,UUID:[I;1525,58721857,885,8867183],Name:"example_modifier"}]}
+        # data modify storage asset: mob.Attributes[{Name:generic.max_health}] append value {Modifiers:[{Amount:1,Operation:0,UUID:[I;1525,58721857,885,8867183],Name:"example_modifier"}]}
         # Operation:0はn+x+y+z、Operation:1はn×(1+x+y+z)、Operation:2はn×(1+x)×(1+y)×(1+z) Nameは必須ではなさそう
 
 
@@ -118,10 +120,10 @@
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    data modify storage asset: mob.active_effects append value {Id:0,amplifier:1,duration:600,show_particles:0b}
+    data modify storage asset: mob.active_effects append value {id:"minecraft:speed",amplifier:1,duration:600,show_particles:0b}
     data modify storage asset: mob.active_effects append value {id:"strength",amplifier:4,duration:600,show_particles:0b}
     # 或いは...
-    # data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:"strength",amplifier:4,duration:600,show_particles:0b}]
+    # data modify storage asset: mob.active_effects set value [{id:"minecraft:speed",amplifier:1,duration:600,show_particles:0b},{id:"strength",amplifier:4,duration:600,show_particles:0b}]
     # このように一行に纏めることも可能。ただし、可読性は下がるかな
     # Id,amplifier,duration,show_icon,ShowParticle,ambient
 
@@ -129,13 +131,13 @@
 ### Passengers
     # 一番面倒です
     # まず、mobデータを避難させます
-        data modify storage _: _ set from storage asset: mob
+        data modify storage asset: _ set from storage asset: mob
     # 次に、乗せたいmobがasset mobの場合dataを呼び出します
     # 0010.deadra
         data modify storage asset:context id set value 10
         function #asset:mob/get_data
     # 呼び出したdataを避難させたdataのPassengersに追加します
-        data modify storage _: _.Passengers append from storage asset: mob
+        data modify storage asset: _.Passengers append from storage asset: mob
     # 最後にmobデータを戻す...といきたいところですが、他にも乗せたいmobがいる場合はこのまま続けます
     # 次のmobのためにmobデータを一度破棄します
         data remove storage asset: mob
@@ -144,12 +146,9 @@
         data modify storage asset: mob.id set value "area_effect_cloud"
         data modify storage asset: mob set value {Duration:32767,WatiTime:0,Particle:"end_rod"}
         data modify storage asset: mob.effects set value [{id:"speed",amplifier:1,duration:1}]
-        data modify storage _: _.Passengers append from storage asset: mob
+        data modify storage asset: _.Passengers append from storage asset: mob
     # 最後に、mobデータを戻して避難用storageを削除します
-        data modify storage asset: mob set from storage _: _
-        data remove storage _: _
-
-# スポナーから湧かせるための設定をします
-    data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}
+        data modify storage asset: mob set from storage asset: _
+        data remove storage asset: _
 
 # 全て完了！お疲れ様でした！

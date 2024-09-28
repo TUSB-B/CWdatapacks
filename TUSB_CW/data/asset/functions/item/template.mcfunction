@@ -4,6 +4,8 @@
 ### 参考文献（詳しい記法や詳細はこちらをご覧ください）
 # https://minecraft.wiki/w/Item_format
 
+data remove storage asset:item item
+
 ###変更しないところ### 
 data remove storage asset:item item
 data modify storage asset:item item.Count set value 1b
