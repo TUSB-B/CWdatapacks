@@ -8,3 +8,6 @@ execute if data storage debug:set_spawner _.DebugId as @a if score @s DebugId = 
 
 # パーティクル
 execute at @a[tag=Debug.BlockParticle] align xyz run function debug:block_particle
+
+# Debug.Spawn
+execute as @a[tag=Debug.Spawn,tag=Spawn] at @s run function tusb_cw:mob/replace/

@@ -2,7 +2,7 @@
 # SpawnMobをSpawnPotentialsに移す
 
 # まず村人を乗せたentityを作る
-data modify storage debug:set_spawner SpawnData set value {Silent:true,NoAI:true,DeathTime:19,Health:0f,loot_table:"empty",Passengers:[{id:"minecraft:villager",Silent:true,NoAI:true,Tags:[Spawn],DeathTime:19,Health:0f,HandItems:[{id:"minecraft:stick",Count:1b,tag:{AssetId:-1}},{}]}]}
+data modify storage debug:set_spawner SpawnData set value {Silent:true,NoAI:true,DeathTime:19,Health:0f,loot_table:"empty",Passengers:[{id:"minecraft:villager",Silent:true,NoAI:true,Tags:[Spawn],DeathTime:19,Health:1f,HandItems:[{id:"minecraft:stick",Count:1b,tag:{AssetId:-1}},{}]}]}
 # そのidをSpawnMob[].Typeで設定したやつにする(湧き条件用)
 data modify storage debug:set_spawner SpawnData.id set from storage debug:set_spawner _.SpawnMob[0].Type
 # Idを設定する
