@@ -16,6 +16,9 @@ execute as @a[predicate=tusb_remake:bird_in_cage] run function tusb_remake:athle
 ### 魔法のブロックの共通処理
 execute as @e[type=item_frame,tag=MagicBlock] at @s run function tusb_remake:skill/summoner/magic_block/check
 
+# スポナーから湧いたmobを置き換える
+execute if entity @e[tag=Spawn] run function tusb_cw:mob/replace/
+
 # タイプ設定 新しくでてきた敵に色々設定するやつ
 execute as @e[type=!#tusb_remake:ignore_type_check,type=!area_effect_cloud,tag=!TypeChecked] at @s run function tusb_remake:entity/type_check
 ## TODO
