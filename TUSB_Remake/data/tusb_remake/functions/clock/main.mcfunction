@@ -73,8 +73,8 @@ execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 # ボスチーム
 execute at @e[team=Boss] as @e[type=potion,distance=..3] run function tusb_remake:clock/potion_barrier
 effect give @e[team=Boss] resistance 3 2 true
-effect clear @e[team=Boss] weakness
-effect clear @e[team=Boss] slowness
+effect clear @e[team=Boss,tag=!AntiWeaknessResist] weakness
+effect clear @e[team=Boss,tag=!AntiSlownessResist] slowness
 
 # オーラスポナー
 execute as @e[tag=AuraSpawner] at @s at @a[distance=..10] anchored eyes if entity @s[distance=..6] anchored feet run effect give @s minecraft:mining_fatigue 1 0 false
