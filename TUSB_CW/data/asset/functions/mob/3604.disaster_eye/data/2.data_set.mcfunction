@@ -91,7 +91,7 @@
             Particle:"end_rod",\
             effects: [{\
                 id: "minecraft:resistance",\
-                amplifier: 4b,\
+                amplifier: 127b,\
                 duration: 150\
             }, {\
                 id: "minecraft:weakness",\
