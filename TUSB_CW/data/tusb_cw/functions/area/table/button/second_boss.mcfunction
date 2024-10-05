@@ -1,0 +1,1 @@
+#> tusb_cw:area/table/button/second_boss

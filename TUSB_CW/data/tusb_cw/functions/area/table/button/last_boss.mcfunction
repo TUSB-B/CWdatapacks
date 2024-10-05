@@ -1,0 +1,1 @@
+#> tusb_cw:area/table/button/last_boss
