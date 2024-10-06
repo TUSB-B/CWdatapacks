@@ -4,5 +4,5 @@
 # 攻撃フラグを立てる
     data modify storage tusb_cw: boss.table_second.attack set value true
 
-# 実績を剥奪
-    advancement revoke @s only tusb_cw:boss/table_second_attack
+# 自身にtagをつける
+    tag @s add Boss.TableSecond.Attacked

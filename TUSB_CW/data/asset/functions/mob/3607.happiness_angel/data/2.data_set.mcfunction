@@ -32,18 +32,18 @@
     # 死亡時のルートテーブル
         data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
-        data modify storage asset: mob.Tags set value [Boss.TableSecond,Boss.TableSecond.BowMode]
+        data modify storage asset: mob.Tags set value [Boss.TableSecond,Boss.TableSecond.BowMode,SkillMob]
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
         # data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:400}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:200}
     # (近接)攻撃力
-        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:15}
+        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:3}
     # 移動速度
-        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.0}
+        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.35}
     # 防具値
         # data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
     # 防具強度
@@ -66,7 +66,9 @@
         {\
             Count: 1b,\
             id: "minecraft:bow",\
-            Enchantments: [{id: "minecraft:power", lvl: 10}]\
+            tag: {\
+                Enchantments: [{id: "minecraft:power", lvl: 10}]\
+            }\
         },\
         {}\
     ]
