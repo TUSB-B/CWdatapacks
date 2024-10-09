@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{EntityTag: {DeathLootTable: \"usb:signs/ether1\", id: \"minecraft:witch\", DeathTime: 19s, ActiveEffects: [{duration: 100, id: \"instant_damage\", amplifier: 5b, show_particles: 0b}, {duration: 100, id: \"invisibility\", amplifier: 0b, show_particles: 0b}], Tags: [\"RewardEgg\", \"TypeChecked\"]}, RepairCost: 1000000000, HideFlags: 16, CanPlaceOn: [\"#minecraft:all\"], display: {Lore: ['{\"text\":\"§rエーテルが入っている。\"}'], Name: '{\"text\":\"§2§lエーテルカプセル\"}'}, Enchantments: []}"
+                "tag": "{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{\"text\":\"§rエーテルが入っている。\"}'], Name: '{\"text\":\"§2§lエーテルカプセル\"}'}, Enchantments: [], EntityTag: {active_effects: [{duration: 100, amplifier: 5b, id: \"minecraft:instant_damage\", show_particles: 0b}, {duration: 100, amplifier: 0b, id: \"minecraft:invisibility\", show_particles: 0b}], DeathLootTable: \"usb:signs/ether1\", id: \"minecraft:witch\", DeathTime: 19s, Tags: [\"RewardEgg\", \"TypeChecked\"]}, CanPlaceOn: [\"#minecraft:all\"]}"
               }
             ]
           }
