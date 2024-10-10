@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{duration: 300, id: \"weakness\", amplifier: 10b, show_particles: 1b}, {duration: 300, id: \"weakness\", amplifier: -10b, show_particles: 1b}, {duration: 300, id: \"hunger\", amplifier: 10b, show_particles: 1b}, {duration: 300, id: \"hunger\", amplifier: -10b, show_particles: 1b}, {duration: 300, id: \"slowness\", amplifier: 10b, show_particles: 1b}, {duration: 300, id: \"slowness\", amplifier: -10b, show_particles: 1b}, {duration: 0, id: \"night_vision\", amplifier: -100b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§4§o投げつける薬。これを浴びた者は、\"}', '{\"text\":\"§4§oあらゆる能力が低下する。\"}'], Name: '{\"text\":\"§5暗黒水\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 300, id: \"weakness\", amplifier: 10b, show_particles: 1b}, {duration: 300, id: \"weakness\", amplifier: -10b, show_particles: 1b}, {duration: 300, id: \"hunger\", amplifier: 10b, show_particles: 1b}, {duration: 300, id: \"hunger\", amplifier: -10b, show_particles: 1b}, {duration: 300, id: \"slowness\", amplifier: 10b, show_particles: 1b}, {duration: 300, id: \"slowness\", amplifier: -10b, show_particles: 1b}, {duration: 0, id: \"night_vision\", amplifier: -100b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§4§o投げつける薬。これを浴びた者は、\"}', '{\"text\":\"§4§oあらゆる能力が低下する。\"}'], Name: '{\"text\":\"§5暗黒水\"}'}}"
               }
             ]
           }

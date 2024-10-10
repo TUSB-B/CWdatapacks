@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{duration: 3600, id: \"night_vision\", amplifier: 1b}, {duration: 3600, id: \"regeneration\", amplifier: 3b}, {duration: 3600, id: \"speed\", amplifier: 10b}, {duration: 3600, id: \"strength\", amplifier: 2b}], HideFlags: 32, Potion: \"minecraft:swiftness\", display: {Name: '{\"text\":\"使者の夢\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 3600, id: \"night_vision\", amplifier: 1b}, {duration: 3600, id: \"regeneration\", amplifier: 3b}, {duration: 3600, id: \"speed\", amplifier: 10b}, {duration: 3600, id: \"strength\", amplifier: 2b}], HideFlags: 32, Potion: \"minecraft:swiftness\", display: {Name: '{\"text\":\"使者の夢\"}'}}"
               }
             ]
           }

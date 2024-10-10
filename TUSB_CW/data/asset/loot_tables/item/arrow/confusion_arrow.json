@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{amplifier: 127b, duration: 2, id: \"speed\"}, {amplifier: -50b, duration: 0, id: \"strength\"}, {amplifier: -50b, duration: 0, id: \"night_vision\"}, {amplifier: -128b, duration: 20, id: \"levitation\"}], HideFlags: 32, Potion: \"minecraft:mundane\", display: {Lore: ['{\"text\":\"§7移動速度を急激に上げて混乱させる\"}'], Name: '{\"text\":\"§d§l混乱の矢\"}'}}"
+                "tag": "{custom_potion_effects: [{amplifier: 127b, duration: 2, id: \"speed\"}, {amplifier: -50b, duration: 0, id: \"strength\"}, {amplifier: -50b, duration: 0, id: \"night_vision\"}, {amplifier: -128b, duration: 20, id: \"levitation\"}], HideFlags: 32, Potion: \"minecraft:mundane\", display: {Lore: ['{\"text\":\"§7移動速度を急激に上げて混乱させる\"}'], Name: '{\"text\":\"§d§l混乱の矢\"}'}}"
               }
             ]
           }
