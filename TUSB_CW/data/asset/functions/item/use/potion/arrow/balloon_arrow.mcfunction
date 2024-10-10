@@ -10,4 +10,4 @@ data modify storage asset:item item.Count set value 1b
 data modify storage asset:item item.id set value tipped_arrow
 
 ### 元ＮＢＴ
-data modify storage asset:item item.tag set value {CustomPotionEffects: [{amplifier: 1b, duration: 60, id: "glowing"}, {amplifier: 1b, duration: 60, id: "levitation"}], HideFlags: 32, Potion: "minecraft:water", display: {Lore: ['{"text":"§7相手を風船のように浮かせる矢。"}'], Name: '{"text":"§9§lバルーン・アローン"}'}}
+data modify storage asset:item item.tag set value {custom_potion_effects: [{amplifier: 1b, duration: 60, id: "glowing"}, {amplifier: 1b, duration: 60, id: "levitation"}], HideFlags: 32, Potion: "minecraft:water", display: {Lore: ['{"text":"§7相手を風船のように浮かせる矢。"}'], Name: '{"text":"§9§lバルーン・アローン"}'}}
