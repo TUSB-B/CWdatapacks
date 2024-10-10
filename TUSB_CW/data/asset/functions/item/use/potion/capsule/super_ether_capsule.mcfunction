@@ -1,5 +1,5 @@
 #> asset:item/potion/capsule/super_ether_capsule
-# 名前：シャイニングプリズム
+# 名前：スーパーエーテルカプセル
 
 data remove storage asset:item item
 
