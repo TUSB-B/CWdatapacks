@@ -14,8 +14,8 @@ execute store result storage tusb_remake: fatal_shot_count int 0.9999999999 run 
 ### 飛べなくなる
 tag @s add FallDown
 effect give @s minecraft:bad_omen 20 127 true
-### 防御力を下げる (ダメージ5倍)
-scoreboard players set @s KasapLevel 4
+### 防御力を下げる (ダメージ2.5倍)
+scoreboard players set @s KasapLevel 6
 scoreboard players set @s KasapTimer 20
 tag @s add InKasap
 
