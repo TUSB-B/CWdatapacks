@@ -9,3 +9,6 @@
     execute if data storage tusb_cw: boss.table_second{exist:true} run schedule function tusb_cw:area/table/boss/second/schedule/ 1t
 # ボスが生存していない場合勝利処理を予約
     execute if data storage tusb_cw: boss.table_second{exist:false} run schedule function tusb_cw:area/table/boss/second/defeat/ 40t
+
+# プレイヤーが消えていたら敗北処理
+    execute unless entity @a[tag=BossSpawn.TableSecond,limit=1] run function tusb_cw:area/table/boss/second/player_death/

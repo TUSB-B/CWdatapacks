@@ -3,4 +3,4 @@
 # ボタンか感圧板をつけたコマブロとかで実行
 
 execute as @a[distance=..16] at @s run function tusb_cw:area/table/boss/first/enter
-function tusb_cw:area/table/boss/first/summon
+execute positioned -1909.54 5.00 -83.09 run function tusb_cw:area/table/boss/first/summon

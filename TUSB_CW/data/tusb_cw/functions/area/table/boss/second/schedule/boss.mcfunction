@@ -1,6 +1,9 @@
 #> tusb_cw:area/table/boss/second/schedule/boss
 # ボス本体が毎tick実行するfunction
 
+# ボスバーを更新
+    execute store result bossbar tusb_cw:boss_hp.table_second value run data get entity @s Health
+
 # 背中に羽の形のパーティクル
     execute anchored eyes rotated ~ 0 positioned ^ ^-0.2 ^-0.5 rotated ~ ~90 run function tusb_cw:area/table/boss/second/action/particle
 

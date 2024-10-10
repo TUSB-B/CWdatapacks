@@ -1,6 +1,6 @@
 #> tusb_cw:area/table/boss/second/sword_mode
 
-say sword mode
+# say sword mode
 
 tag @s remove Boss.TableSecond.BowMode
 tag @s add Boss.TableSecond.SwordMode

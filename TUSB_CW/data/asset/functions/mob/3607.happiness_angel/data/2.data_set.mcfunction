@@ -10,7 +10,7 @@
 
 ### 体力等nbtを設定
     # 体力
-        data modify storage asset: mob.Health set value 400
+        data modify storage asset: mob.Health set value 1000
     # 緩衝体力
         # data modify storage asset: mob.AbsorptionAmount set value 20
     # AIを持っていないか
@@ -22,7 +22,7 @@
     # 音を出さないか
         # data modify storage asset: mob.Silent set value true
     # 光るか
-        # data modify storage asset: mob.Glowing set value true
+        data modify storage asset: mob.Glowing set value true
     # デスポーンしないか
         data modify storage asset: mob.PersistenceRequired set value true
     # 名前
@@ -33,19 +33,37 @@
         data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
         data modify storage asset: mob.Tags set value [Boss.TableSecond,Boss.TableSecond.BowMode,SkillMob]
+        # 白魔か剣士いたらFastCast!(やっぱナシで)
+            # execute if entity @a[scores={Job=1},tag=BossSpawn.TableSecond] run data modify storage asset: mob.Tags set value [Boss.TableSecond,Boss.TableSecond.BowMode,SkillMob,FastCast]
+            # execute if entity @a[scores={Job=4},tag=BossSpawn.TableSecond] run data modify storage asset: mob.Tags set value [Boss.TableSecond,Boss.TableSecond.BowMode,SkillMob,FastCast]
+    # Team
+        data modify storage asset: mob.Team set value "Boss"
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
         # data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:200}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:800}
+        # 周囲のプレイヤーの職によって体力を変える
+            execute if entity @a[scores={Job=2..3},tag=BossSpawn.TableSecond] run data modify storage asset: mob.Attributes[0].Base set value 600
+                # 忍者(7,500):火力はあるけど結構きついよ
+                # 狩人(7,500):ステークスが強い！けど先に殺られる
+                    # ガチで勝てねぇ...(50Lv)
+            execute if entity @a[scores={Job=4..5},tag=BossSpawn.TableSecond] run data modify storage asset: mob.Attributes[0].Base set value 800
+                # 黒魔(10,000):低レベルだとスキルが痛すぎてこれでも勝てない
+                    # ギリギリまで削れるけどノーハピで死ねる
+                # 白魔(10,000):耐久が高く火力も十分...多分
+            execute if entity @a[scores={Job=6},tag=BossSpawn.TableSecond] run data modify storage asset: mob.Attributes[0].Base set value 1000
+                # 召喚士(12,500):ウルフが最強過ぎ、硬くてもいいでしょ。ふわふわ浮いてるから攻撃当たらんけどスキルで殺してくれる(低レベルは死ぬがいい)
+            execute if entity @a[scores={Job=1},tag=BossSpawn.TableSecond] run data modify storage asset: mob.Attributes[0].Base set value 1000
+                # 剣士(12,500):硬い！火力高い！最強！！
     # (近接)攻撃力
-        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:3}
+        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:0}
     # 移動速度
         data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.35}
     # 防具値
-        # data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
+        data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:-5}
     # 防具強度
         # data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
     # ノックバック耐性(0~1)
@@ -67,7 +85,7 @@
             Count: 1b,\
             id: "minecraft:bow",\
             tag: {\
-                Enchantments: [{id: "minecraft:power", lvl: 10}]\
+                Enchantments: [{id: "minecraft:power", lvl: 3}]\
             }\
         },\
         {}\
@@ -116,6 +134,7 @@
             id: "minecraft:player_head",\
             Count :1b,\
             tag :{\
+                Enchantments:[{id:"minecraft:protection",lvl:20}],\
                 SkullOwner: {\
                     Properties: {\
                         textures: [\

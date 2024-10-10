@@ -1,10 +1,10 @@
 #> tusb_cw:area/table/boss/second/action/bow_attack
 
-say bow attack
+# say bow attack
 
 # プレイヤーの背後にtp
     # 正確じゃなくても...バレへんやろ！
-    execute anchored eyes positioned ^ ^ ^12 at @p[distance=..24,gamemode=!spectator,advancements={tusb_cw:boss/table_second_attack=true}] rotated ~ 0 run tp @s ^ ^ ^-2.5
+    execute anchored eyes positioned ^ ^ ^12 at @p[distance=..24,gamemode=!spectator,advancements={tusb_cw:boss/table_second_attack=true}] rotated ~ 0 run tp @s ^ ^ ^-2.5 facing ^ ^ ^
 
 # 演出
     particle end_rod ~ ~ ~ 2.0 2.0 2.0 0 100 force @a[distance=..32]

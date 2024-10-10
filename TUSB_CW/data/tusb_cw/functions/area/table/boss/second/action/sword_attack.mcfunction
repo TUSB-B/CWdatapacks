@@ -1,6 +1,6 @@
 #> tusb_cw:area/table/boss/second/action/sword_attack
 
-say sword attack
+# say sword attack
 
 # rushのCD設定
     data modify storage tusb_cw: boss.table_second.rush_cooldown set value 100

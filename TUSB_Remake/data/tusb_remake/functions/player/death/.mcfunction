@@ -16,6 +16,9 @@ execute if data storage tusb_remake: settings{is_sightseeing:true} run scoreboar
 ### ネザーアスレチック
 execute as @s[predicate=tusb_remake:area/nether_trial] at @s run function tusb_remake:player/death/in_nether_trial
 
+# リレイズが掛かっていなかったらボス戦タグを消す
+    tag @s[tag=!ReRaise] remove BossSpawn.TableFirst
+    tag @s[tag=!ReRaise] remove BossSpawn.TableSecond
 ### 死の宣告がかかっていたら消す
 tag @s[tag=Doom] remove Doom
 ### リレイズの効果がかかっていたらレイズをかける

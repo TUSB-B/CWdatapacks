@@ -10,4 +10,7 @@
     title @s title "§3§k|§2§k|§3§k|§r §3§nロスト§2§nウォーカー§r §3§k|§2§k|§3§k|§r"
     playsound entity.wither.spawn master @s ~ ~ ~ 1 1 1
 
+# ボス戦tag
+    tag @s add BossSpawn.TableFirst
+
 # advancement grant @s only tusb_cw:table/first_boss
