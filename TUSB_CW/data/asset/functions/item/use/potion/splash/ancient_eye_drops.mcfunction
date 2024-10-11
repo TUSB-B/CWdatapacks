@@ -1,5 +1,5 @@
 #> asset:item/use/potion/splash/ancient_eye_drops
-# 名前：旧文明の
+# 名前：旧文明の遠目薬
 
 data remove storage asset:item item
 
