@@ -1,4 +1,4 @@
-#> asset:item/potion/drink/awamori
+#> asset:item/use/potion/drink/awamori
 # 名前：泡盛
 
 data remove storage asset:item item

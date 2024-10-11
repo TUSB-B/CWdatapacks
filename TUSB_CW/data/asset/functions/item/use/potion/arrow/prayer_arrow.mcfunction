@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/prayer_arrow
+#> asset:item/use/potion/arrow/prayer_arrow
 # 名前：祈りの矢
 
 data remove storage asset:item item

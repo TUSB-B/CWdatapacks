@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/violet_prism
+#> asset:item/use/potion/arrow/violet_prism
 # 名前：バイオレットプリズム
 
 data remove storage asset:item item

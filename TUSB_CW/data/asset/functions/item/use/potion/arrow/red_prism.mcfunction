@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/red_prism
+#> asset:item/use/potion/arrow/red_prism
 # 名前：レッドプリズム
 
 data remove storage asset:item item

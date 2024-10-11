@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/shining_prism
+#> asset:item/use/potion/arrow/shining_prism
 # 名前：シャイニングプリズム
 
 data remove storage asset:item item

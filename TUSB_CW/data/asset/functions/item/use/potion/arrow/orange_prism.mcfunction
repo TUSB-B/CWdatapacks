@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/orange_prism
+#> asset:item/use/potion/arrow/orange_prism
 # 名前：オレンジプリズム
 
 data remove storage asset:item item

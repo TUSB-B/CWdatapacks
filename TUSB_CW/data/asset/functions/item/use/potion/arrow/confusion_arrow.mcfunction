@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/confusion_arrow
+#> asset:item/use/potion/arrow/confusion_arrow
 # 名前：混乱の矢
 
 data remove storage asset:item item

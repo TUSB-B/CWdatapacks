@@ -1,4 +1,4 @@
-#> asset:item/potion/drink/bob_roman
+#> asset:item/use/potion/drink/bob_roman
 # 名前：ボブロマン
 
 data remove storage asset:item item

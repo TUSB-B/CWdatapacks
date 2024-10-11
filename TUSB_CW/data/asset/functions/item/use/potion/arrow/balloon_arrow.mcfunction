@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/balloon_arrow
+#> asset:item/use/potion/arrow/balloon_arrow
 # 名前：バルーン・アローン
 
 data remove storage asset:item item

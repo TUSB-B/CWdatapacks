@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/green_prism
+#> asset:item/use/potion/arrow/green_prism
 # 名前：グリーンプリズム
 
 data remove storage asset:item item

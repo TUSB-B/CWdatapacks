@@ -1,4 +1,4 @@
-#> asset:item/potion/capsule/ether_capsule
+#> asset:item/use/potion/capsule/ether_capsule
 # 名前：エーテルカプセル
 
 data remove storage asset:item item

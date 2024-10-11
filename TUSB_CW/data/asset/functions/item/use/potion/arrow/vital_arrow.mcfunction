@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/vital_arrow
+#> asset:item/use/potion/arrow/vital_arrow
 # 名前：活力の矢
 
 data remove storage asset:item item

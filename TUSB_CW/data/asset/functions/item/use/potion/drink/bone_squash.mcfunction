@@ -1,4 +1,4 @@
-#> asset:item/potion/drink/bone_squash
+#> asset:item/use/potion/drink/bone_squash
 # 名前：ボーンスカッシュ
 
 data remove storage asset:item item

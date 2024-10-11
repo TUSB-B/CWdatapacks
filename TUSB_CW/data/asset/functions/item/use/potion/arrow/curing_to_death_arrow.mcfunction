@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/curing_to_death_arrow
+#> asset:item/use/potion/arrow/curing_to_death_arrow
 # 名前：呪殺の矢
 
 data remove storage asset:item item

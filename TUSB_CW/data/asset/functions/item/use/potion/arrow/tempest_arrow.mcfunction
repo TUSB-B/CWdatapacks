@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/tempest_arrow
+#> asset:item/use/potion/arrow/tempest_arrow
 # 名前：暴風の矢
 
 data remove storage asset:item item

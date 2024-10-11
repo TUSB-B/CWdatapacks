@@ -1,4 +1,4 @@
-#> asset:item/potion/drink/balloon_registance
+#> asset:item/use/potion/drink/balloon_registance
 # 名前：バルーンレギスタンス
 
 data remove storage asset:item item

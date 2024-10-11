@@ -1,4 +1,4 @@
-#> asset:item/potion/drink/black_metal
+#> asset:item/use/potion/drink/black_metal
 # 名前：ブラックメタル
 
 data remove storage asset:item item

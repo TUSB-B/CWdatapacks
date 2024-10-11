@@ -1,4 +1,4 @@
-#> asset:item/potion/drink/coffee_milk
+#> asset:item/use/potion/drink/coffee_milk
 # 名前：コーヒー牛乳
 
 data remove storage asset:item item

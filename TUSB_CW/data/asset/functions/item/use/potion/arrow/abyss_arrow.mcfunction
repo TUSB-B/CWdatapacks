@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/abyss_arrow
+#> asset:item/use/potion/arrow/abyss_arrow
 # 名前：冥界の矢
 
 data remove storage asset:item item

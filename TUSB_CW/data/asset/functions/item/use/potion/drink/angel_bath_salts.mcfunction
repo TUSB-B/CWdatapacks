@@ -1,4 +1,4 @@
-#> asset:item/potion/drink/angel_bath_salts
+#> asset:item/use/potion/drink/angel_bath_salts
 # 名前：天使の入浴剤
 
 data remove storage asset:item item

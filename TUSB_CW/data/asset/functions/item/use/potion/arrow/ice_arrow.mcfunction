@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/ice_arrow
+#> asset:item/use/potion/arrow/ice_arrow
 # 名前：氷塊の矢
 
 data remove storage asset:item item

@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/second_of_dead_1s
+#> asset:item/use/potion/arrow/second_of_dead_1s
 # 名前：ｾｶﾝﾄﾞ・ｵﾌﾞ・ﾃﾞｯﾄﾞの矢
 
 data remove storage asset:item item

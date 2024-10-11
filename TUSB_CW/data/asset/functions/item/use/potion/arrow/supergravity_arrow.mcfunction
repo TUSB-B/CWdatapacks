@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/supergravity_arrow
+#> asset:item/use/potion/arrow/supergravity_arrow
 # 名前：超重力の矢
 
 data remove storage asset:item item

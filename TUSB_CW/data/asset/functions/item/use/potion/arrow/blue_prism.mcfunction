@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/blue_prism
+#> asset:item/use/potion/arrow/blue_prism
 # 名前：ブループリズム
 
 data remove storage asset:item item

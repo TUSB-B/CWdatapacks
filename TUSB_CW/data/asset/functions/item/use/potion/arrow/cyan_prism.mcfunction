@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/cyan_prism
+#> asset:item/use/potion/arrow/cyan_prism
 # 名前：シアンプリズム
 
 data remove storage asset:item item

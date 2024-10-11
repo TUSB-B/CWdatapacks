@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/yellow_prism
+#> asset:item/use/potion/arrow/yellow_prism
 # 名前：イエロープリズム
 
 data remove storage asset:item item

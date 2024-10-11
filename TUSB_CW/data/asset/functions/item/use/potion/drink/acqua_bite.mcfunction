@@ -1,4 +1,4 @@
-#> asset:item/potion/drink/acqua_bite
+#> asset:item/use/potion/drink/acqua_bite
 # 名前：アクア・ビテ
 
 data remove storage asset:item item

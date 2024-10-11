@@ -1,4 +1,4 @@
-#> asset:item/potion/arrow/fragile_arrow
+#> asset:item/use/potion/arrow/fragile_arrow
 # 名前：脆弱の矢
 
 data remove storage asset:item item
