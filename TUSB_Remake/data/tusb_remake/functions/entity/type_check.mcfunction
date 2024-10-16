@@ -10,7 +10,7 @@ tag @s[team=!FriendlyTeam,type=#tusb_remake:mob,nbt={Invulnerable:false}] add En
 ### ニフラムの対象
 tag @s[tag=Enemy] add Poofable
 ### オーラを纏ってる場合は、オーラを初期する
-execute if entity @s[tag=Enemy,nbt={Passengers:[{id:"minecraft:area_effect_cloud"}]}] on passengers if entity @s[type=minecraft:area_effect_cloud,tag=!TypeChecked] run data merge entity @s {Tags:[MobCloud,TypeChecked],Duration:28,Age:5,WaitTime:5,DurationOnUse:0,RadiusOnUse:0f,RadiusPerTick:0f,ReapplicationDelay:0}
+execute if entity @s[tag=Enemy,predicate=tusb_remake:has_mob_cloud] on passengers if entity @s[type=minecraft:area_effect_cloud,tag=!TypeChecked] run data merge entity @s {Tags:[MobCloud,TypeChecked],Duration:28,Age:5,WaitTime:5,DurationOnUse:0,RadiusOnUse:0f,RadiusPerTick:0f,ReapplicationDelay:0}
 
 ### FlyingObject
 ### ウィンドウォール？
@@ -19,7 +19,7 @@ tag @s[type=#tusb_remake:arrow] add Arrow
 tag @s[type=#tusb_remake:wind_wall_alpha] add DriftableA
 
 ### Shulkerが弾を出したらダメージを受ける
-execute as @s[type=shulker_bullet] at @s run effect give @e[distance=..5,type=minecraft:shulker,sort=nearest,limit=1] minecraft:wither 1 1 true
+execute as @s[type=shulker_bullet] on origin run effect give @s minecraft:wither 1 1 true
 
 ### スポナーのタイプは２種類(時間で消える or 地面に付くと消える)
 tag @s[type=minecraft:spawner_minecart,nbt=!{PortalCooldown:0}] add CooldownRequired

@@ -1,0 +1,77 @@
+{
+    "criteria": {
+        "doom": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 1
+                    }
+                }
+            }
+        },
+        "ether1": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 1
+                    }
+                }
+            }
+        },
+        "ether2": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 2
+                    }
+                }
+            }
+        },
+        "ether3": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 3
+                    }
+                }
+            }
+        },
+        "elixir1": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 4
+                    }
+                }
+            }
+        },
+        "elixir2": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 5
+                    }
+                }
+            }
+        },
+        "doom_clear": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 6
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tusb_remake:player/invisible/"
+    }
+}

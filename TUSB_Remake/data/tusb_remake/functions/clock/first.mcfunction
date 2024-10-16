@@ -26,12 +26,12 @@ execute as @e[type=area_effect_cloud,tag=!TypeChecked] at @s run function tusb_r
 
 ### 削除対象のエンティティを削除する
 function tusb_remake:delete/
-
+execute if predicate tusb_remake:area/nether
 ### エリア変更判定
-scoreboard players set @a[scores={USBDimension=0..},nbt={Dimension:"minecraft:the_nether"}] AreaChangeFlag -100
+scoreboard players set @a[scores={USBDimension=0..},predicate=tusb_remake:dimension/the_nether] AreaChangeFlag -100
 scoreboard players set @a[predicate=tusb_remake:area/move/end] AreaChangeFlag 110
-scoreboard players set @a[scores={USBDimension=..-1},nbt={Dimension:"minecraft:overworld"}] AreaChangeFlag 0
-scoreboard players set @a[scores={USBDimension=100..},nbt={Dimension:"minecraft:overworld"}] AreaChangeFlag 0
+scoreboard players set @a[scores={USBDimension=..-1},predicate=tusb_remake:dimension/overworld] AreaChangeFlag 0
+scoreboard players set @a[scores={USBDimension=100..},predicate=tusb_remake:dimension/overworld] AreaChangeFlag 0
 scoreboard players set @a[predicate=tusb_remake:area/move/skyland] AreaChangeFlag 0
 scoreboard players set @a[predicate=tusb_remake:area/move/underworld] AreaChangeFlag 1
 scoreboard players set @a[predicate=tusb_remake:area/move/cloudia] AreaChangeFlag 10
