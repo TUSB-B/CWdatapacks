@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "health_downer": {
+            "trigger": "effects_changed",
+            "conditions": {
+                "effects": {
+                    "health_boost": {}
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tusb_remake:player/health_downer"
+    }
+}
