@@ -5,7 +5,7 @@
             "conditions": {
                 "effects": {
                     "minecraft:invisibility": {
-                        "amplifier": 1
+                        "amplifier": 0
                     }
                 }
             }
@@ -71,6 +71,17 @@
             }
         }
     },
+    "requirements": [
+        [
+            "ether1",
+            "ether2",
+            "ether3",
+            "elixir1",
+            "elixir2",
+            "doom",
+            "doom_clear"
+        ]
+    ],
     "rewards": {
         "function": "tusb_remake:player/invisible/"
     }

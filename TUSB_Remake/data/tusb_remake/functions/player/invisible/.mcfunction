@@ -33,3 +33,5 @@ data modify storage tusb_remake: invisibility set from entity @s active_effects[
 # execute if entity @s[nbt={active_effects:[{id: "minecraft:invisibility",amplifier:6b}]},tag=Doom] run function tusb_remake:player/invisible/doom/clear
 
 effect clear @s minecraft:invisibility
+
+advancement revoke @s only tusb_remake:player/invisible
