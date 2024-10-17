@@ -24,6 +24,9 @@ execute if score _ ChangeSkill matches 1000.. run tellraw @s [{"text":"スキル
 execute if score _ ChangeSkill matches 1000.. run playsound item.flintandsteel.use master @s ~ ~ ~ 1 0.65 0
 execute if score _ ChangeSkill matches 1000.. run scoreboard players operation @s ShowSkill = _ ChangeSkill
 execute if score _ ChangeSkill matches 1000.. run function tusb_remake:player/skill/show/
+### スキルを発動できるように
+execute if score _ ChangeSkill matches 1000.. if score @s ModeState matches -1 run scoreboard players operation @s CurrentMode = @s ModeSkillB
+execute if score _ ChangeSkill matches 1000.. if score @s ModeState matches -1 run scoreboard players operation @s CurrentModeCost = @s ModeCostB
 
 scoreboard players reset ModeChangeB
 scoreboard players enable @s ModeChangeB

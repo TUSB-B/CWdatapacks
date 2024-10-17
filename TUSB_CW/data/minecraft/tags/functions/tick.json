@@ -1,6 +1,6 @@
 {
     "values": [
-        "tusb_cw:tick",
+        "tusb_cw:tick/",
         "debug:tick"
     ]
 }
