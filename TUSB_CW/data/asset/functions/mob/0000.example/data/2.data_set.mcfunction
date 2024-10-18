@@ -33,6 +33,8 @@
         data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
         data modify storage asset: mob.Tags set value [example]
+    # Team
+        data modify storage asset: mob.Team set value ""
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
         data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
@@ -52,8 +54,6 @@
         data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:1}
     # 索敵範囲
         data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:64}
-    # 攻撃のノックバック(0~5)
-        data modify storage asset: mob.Attributes append value {Name:generic.attack_knockback, Base:1}
     # それぞれの詳しい仕様はwikiなどで調べてください
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
     # Attribute Modifierというものも使用可能。ただし、UUIDを指定する必要がある(めんどい)
@@ -62,23 +62,24 @@
 
 
 ### アイテム
-    # 防具立てを召喚してアイテムを持たせ、そのデータを代入します(座標は常時読み込みチャンク)
-    summon armor_stand -2000.0 0.0 0.0 {Tags:["ItemHolder"]}
-    # /lootでloot_tableから装備させるか、/itemで直接持たせます
-    loot replace entity @e[tag=ItemHolder,limit=1] armor.head loot asset:item/armor/head/black_mage_soul
-    item replace entity @e[tag=ItemHolder,limit=1] armor.chest with diamond_chestplate{Unbreakable:true} 1
-    item replace entity @e[tag=ItemHolder,limit=1] armor.legs with diamond_leggings{Unbreakable:true} 1
-    item replace entity @e[tag=ItemHolder,limit=1] armor.feet with diamond_boots{Unbreakable:true} 1
-    # 手にも持たせます
-    # 防具と同様に/lootか/itemで
-    loot replace entity @e[tag=ItemHolder,limit=1] weapon.mainhand loot asset:item/weapon/bow/gale_bow
-    item replace entity @e[tag=ItemHolder,limit=1] weapon.offhand with shield{Damage:256} 1
-    # 最後に、防具立ての防具のnbtと持っているアイテムのnbtをstorageに移し、killします
-    data modify storage asset: mob.ArmorItems set from entity @e[tag=ItemHolder,limit=1] ArmorItems
-    data modify storage asset: mob.HandItems set from entity @e[tag=ItemHolder,limit=1] HandItems
-    kill @e[tag=ItemHolder,limit=1]
-    # 直接ArmorItemsなどにitemを突っ込んでも大丈夫です
-    # 防具、手持ちのドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
+    # init
+        data modify storage asset: mob.HandItems set value [{},{}]
+        data modify storage asset: mob.ArmorItems set value [{},{},{},{}]
+    # 武器
+        # メインハンド
+            data modify storage asset: mob.HandItems[0] set value 
+        # オフハンド
+            data modify storage asset: mob.HandItems[1] set value 
+    # 防具
+        # 頭
+            data modify storage asset: mob.ArmorItems[3] set value 
+        # 胴
+            data modify storage asset: mob.ArmorItems[2] set value 
+        # 脚
+            data modify storage asset: mob.ArmorItems[1] set value 
+        # 足
+            data modify storage asset: mob.ArmorItems[0] set value 
+    # 武器、防具のドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
 
@@ -120,35 +121,5 @@
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    data modify storage asset: mob.active_effects append value {id:"minecraft:speed",amplifier:1,duration:600,show_particles:0b}
-    data modify storage asset: mob.active_effects append value {id:"strength",amplifier:4,duration:600,show_particles:0b}
-    # 或いは...
-    # data modify storage asset: mob.active_effects set value [{id:"minecraft:speed",amplifier:1,duration:600,show_particles:0b},{id:"strength",amplifier:4,duration:600,show_particles:0b}]
-    # このように一行に纏めることも可能。ただし、可読性は下がるかな
-    # Id,amplifier,duration,show_icon,ShowParticle,ambient
-
-
-### Passengers
-    # 一番面倒です
-    # まず、mobデータを避難させます
-        data modify storage asset: _ set from storage asset: mob
-    # 次に、乗せたいmobがasset mobの場合dataを呼び出します
-    # 0010.deadra
-        data modify storage asset:context id set value 10
-        function #asset:mob/get_data
-    # 呼び出したdataを避難させたdataのPassengersに追加します
-        data modify storage asset: _.Passengers append from storage asset: mob
-    # 最後にmobデータを戻す...といきたいところですが、他にも乗せたいmobがいる場合はこのまま続けます
-    # 次のmobのためにmobデータを一度破棄します
-        data remove storage asset: mob
-    # 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
-    # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
-        data modify storage asset: mob.id set value "area_effect_cloud"
-        data modify storage asset: mob set value {Duration:32767,WatiTime:0,Particle:"end_rod"}
-        data modify storage asset: mob.effects set value [{id:"speed",amplifier:1,duration:1}]
-        data modify storage asset: _.Passengers append from storage asset: mob
-    # 最後に、mobデータを戻して避難用storageを削除します
-        data modify storage asset: mob set from storage asset: _
-        data remove storage asset: _
-
-# 全て完了！お疲れ様でした！
+        # 効果時間を-1に設定すると無限になる
+    data modify storage asset: mob.active_effects append value {id: "minecraft:speed", amplifier: 1b, duration: -1, show_icon: 1b,show_particles: 1b}
