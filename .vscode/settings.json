@@ -60,8 +60,36 @@
     "mcdutil.createDatapackTemplate.customTemplate": [
         {
             "label": "mobテンプレート",
-            "picked": true,
+            "picked": false,
             "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/mob/data_get.json",
+                    "content": {
+                        "values": [
+                            "asset:mob/%namespace%/data/1.trigger"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": false,
+                        "key": "values",
+                        "elem": "asset:mob/%namespace%/data/1.trigger"
+                    }
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/mob/summon.json",
+                    "content": {
+                        "values": [
+                            "asset:mob/%namespace%/summon/1.trigger"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": false,
+                        "key": "values",
+                        "elem": "asset:mob/%namespace%/summon/1.trigger"
+                    }
+                },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/mob/%namespace%/data/1.trigger.mcfunction",
@@ -244,5 +272,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "mcdutil.createDatapackTemplate.defaultFolder": false,
+    "mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
+    "mcdutil.createDatapackTemplate.defaultVanillaData": false,
 }

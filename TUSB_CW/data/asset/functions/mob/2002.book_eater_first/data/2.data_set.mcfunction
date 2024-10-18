@@ -20,7 +20,7 @@
     # 無敵か
         # data modify storage asset: mob.Invulnerable set value true
     # 音を出さないか
-        # data modify storage asset: mob.Silent set value true
+        data modify storage asset: mob.Silent set value true
     # 光るか
         # data modify storage asset: mob.Glowing set value true
     # デスポーンしないか
