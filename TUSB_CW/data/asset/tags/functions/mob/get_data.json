@@ -85,6 +85,7 @@
         "asset:mob/2440.danger_cat/data/1.trigger",
         "asset:mob/2441.escape_bonus_chest/data/1.trigger",
         "asset:mob/3604.disaster_eye/data/1.trigger",
-        "asset:mob/3607.happiness_angel/data/1.trigger"
+        "asset:mob/3607.happiness_angel/data/1.trigger",
+        "asset:mob/4000.angel_eye/data/1.trigger"
     ]
 }
