@@ -5,6 +5,9 @@
 # dataを初期化
     data remove storage asset: mob
 
+### AssetIdを設定
+    data modify storage asset: mob.AssetId set value 0
+
 ### idを設定
     data modify storage asset: mob.id set value "skeleton"
 
