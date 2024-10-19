@@ -1,7 +1,7 @@
 #> tusb_remake:player/health_downer
+#
 # ヘルスダウナーが付与されたときの処理
-# 
-# 
+#
 # @within advancement tusb_remake:player/health_downer
 
 say health_downer
@@ -17,7 +17,7 @@ advancement revoke @s only tusb_remake:player/health_downer
     # 0以下なら中断
         execute if score _ TUSB matches ..0 run return 0
     # 引数を設定
-        data modify storage score_damage: Argument set value {DamageType:"None",EPF:0,BypassArmor:1b,BypassResistance:1b,DisableParticle:1b}
+        data modify storage score_damage: Argument set value {DamageType:"None",EPF:0,BypassArmor:1b,BypassResistance:1b,BypassAbsorption:1b,DisableParticle:1b}
         execute store result storage score_damage: Argument.Damage float 1 run scoreboard players get _ TUSB
     # ダメージを与える
         function score_damage:api/attack

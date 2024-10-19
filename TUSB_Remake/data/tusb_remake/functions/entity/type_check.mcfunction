@@ -57,6 +57,11 @@ execute as @s[type=wandering_trader] run function tusb_remake:entity/limit_sapli
 ### 自然湧きじゃないスライム系のチェック
 tag @s[type=#tusb_remake:slimey,nbt=!{AbsorptionAmount:0f}] add FromSpawner
 
+# 緩衝体力を修正
+execute if data entity @s AbsorptionAmount run tag @s add HasAbsorption
+execute if entity @s[tag=HasAbsorption] run attribute @s generic.max_absorption base set 0
+execute if entity @s[tag=HasAbsorption] store result entity @s Attributes[{Name:"minecraft:generic.max_absorption"}].Base double 1 run data get entity @s AbsorptionAmount
+
 # summon skeleton ~ ~ ~ {ArmorDropChances:[-1E40F,-1E40F,-1E40F,-1E40F],HandDropChances:[-1E40F,-1E40F]}
 
 ### チェック済みにする

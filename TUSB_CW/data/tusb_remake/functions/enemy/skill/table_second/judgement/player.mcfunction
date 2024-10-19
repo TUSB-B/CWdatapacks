@@ -3,7 +3,7 @@
 
 # 全貫通の( 200 - MP ) / 4 dmg
   # 引数を設定
-    data modify storage score_damage: Argument set value {EPF:0,BypassResistance:true,BypassArmor:true,DeathCause:'[{"translate":"%1$sは%2$sの裁きを受けてしまった。","with":[{"selector":"@s"},{"selector":"@e[tag=Boss.TableSecond,sort=nearest,limit=1]"}]}]'}
+    data modify storage score_damage: Argument set value {EPF:0,BypassAbsorption:true,BypassResistance:true,BypassArmor:true,DeathCause:'[{"translate":"%1$sは%2$sの裁きを受けてしまった。","with":[{"selector":"@s"},{"selector":"@e[tag=Boss.TableSecond,sort=nearest,limit=1]"}]}]'}
     # ダメージを計算
         scoreboard players set _ TUSB 200
         scoreboard players operation _ TUSB -= @s MPMax
