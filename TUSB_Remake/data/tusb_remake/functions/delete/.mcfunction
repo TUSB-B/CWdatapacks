@@ -13,6 +13,8 @@ tag @e[tag=RiderRequired,predicate=!tusb_remake:is_carrying] add Garbage
 tag @e[tag=CooldownRequired,nbt={PortalCooldown:0}] add Garbage
 ### 自然スライム系削除
 execute as @e[type=#tusb_remake:slimey,nbt={AbsorptionAmount:0f}] run function tusb_remake:delete/slimey/
+### OriginRequired
+execute as @e[tag=OriginRequired] if function tusb_remake:delete/origin_required run tag @s add Garbage
 
 ### 不要エンティティ削除
 execute as @e[tag=Garbage] run function tusb_remake:delete/kill
