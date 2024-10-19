@@ -277,7 +277,7 @@
             amplifier: 2b,\
             duration: 40\
         }, {\
-            id: "minecraft:jump_boost",\
+            id: "minecraft:nausea",\
             amplifier: 2b,\
             duration: 100\
         }]\

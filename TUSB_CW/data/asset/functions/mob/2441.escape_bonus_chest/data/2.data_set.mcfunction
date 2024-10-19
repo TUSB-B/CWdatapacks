@@ -133,7 +133,7 @@ data modify storage asset: mob.Passengers[1] set value {\
     ReapplicationDelay:40,\
     Tags: ["RidingRequired", "TypeChecked"],\
     effects: [{\
-        id: "minecraft:jump_boost",\
+        id: "minecraft:nausea",\
         amplifier: 4b,\
         duration: 30,\
         show_particles: false\
