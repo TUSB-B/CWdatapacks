@@ -4,8 +4,6 @@
 #
 # @within advancement tusb_remake:player/health_downer
 
-say health_downer
-
 effect clear @s health_boost
 advancement revoke @s only tusb_remake:player/health_downer
 
