@@ -7,3 +7,5 @@
     # execute positioned <戦場の座標> as @a[<戦場の範囲(dxyz)>] positioned <地下水路村の座標> run function tusb_cw:area/table/boss/first/defeat/player
 # 共通演出
     # particle end_rod <地下水路村の座標> 4.0 4.0 4.0 0 300 force @a
+# ボスバーを消す
+    bossbar remove tusb_cw:boss_hp.table_first

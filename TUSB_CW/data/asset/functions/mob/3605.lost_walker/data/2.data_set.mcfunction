@@ -32,7 +32,7 @@
     # 死亡時のルートテーブル
         #data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
-        #data modify storage asset: mob.Tags set value [example]
+        data modify storage asset: mob.Tags set value [Boss,Boss.TableFirst]
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
         #data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
@@ -49,7 +49,7 @@
     # 防具強度
         #data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
     # ノックバック耐性(0~1)
-        data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:5}
+        data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:2}
     # 索敵範囲
         #data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:64}
     # 攻撃のノックバック(0~5)
@@ -65,14 +65,14 @@
     # 防具立てを召喚してアイテムを持たせ、そのデータを代入します(座標は常時読み込みチャンク)
     summon armor_stand -2000.0 0.0 0.0 {Tags:["ItemHolder"]}
     # /lootでloot_tableから装備させるか、/itemで直接持たせます
-    loot replace entity @e[tag=ItemHolder,limit=1] armor.head loot asset:item/armor/head/black_mage_soul
-    item replace entity @e[tag=ItemHolder,limit=1] armor.chest with diamond_chestplate{Unbreakable:true} 1
-    item replace entity @e[tag=ItemHolder,limit=1] armor.legs with diamond_leggings{Unbreakable:true} 1
-    item replace entity @e[tag=ItemHolder,limit=1] armor.feet with diamond_boots{Unbreakable:true} 1
+    item replace entity @e[tag=ItemHolder,limit=1] armor.head with wither_skeleton_skull 1
+    item replace entity @e[tag=ItemHolder,limit=1] armor.chest with netherite_chestplate{Unbreakable:true,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;0,4,0,0],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0,Operation:0,UUID:[I;0,4,0,0],Slot:"chest"}]} 1
+    item replace entity @e[tag=ItemHolder,limit=1] armor.legs with netherite_leggings{Unbreakable:true,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;0,5,0,0],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0,Operation:0,UUID:[I;0,5,0,0],Slot:"legs"}]} 1
+    item replace entity @e[tag=ItemHolder,limit=1] armor.feet with netherite_boots{Unbreakable:true,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;0,6,0,0],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0,Operation:0,UUID:[I;0,6,0,0],Slot:"feet"}]} 1
     # 手にも持たせます
     # 防具と同様に/lootか/itemで
-    loot replace entity @e[tag=ItemHolder,limit=1] weapon.mainhand loot asset:item/weapon/bow/gale_bow
-    item replace entity @e[tag=ItemHolder,limit=1] weapon.offhand with shield{Damage:256} 1
+    item replace entity @e[tag=ItemHolder,limit=1] weapon.mainhand with netherite_sword{Unbreakable:true} 1
+    item replace entity @e[tag=ItemHolder,limit=1] weapon.offhand with netherite_sword{Unbreakable:true} 1
     # 最後に、防具立ての防具のnbtと持っているアイテムのnbtをstorageに移し、killします
     data modify storage asset: mob.ArmorItems set from entity @e[tag=ItemHolder,limit=1] ArmorItems
     data modify storage asset: mob.HandItems set from entity @e[tag=ItemHolder,limit=1] HandItems
@@ -120,7 +120,7 @@
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    #data modify storage asset: mob.active_effects append value {id:"minecraft:speed",amplifier:1,duration:600,show_particles:0b}
+data modify storage asset: mob.active_effects append value {id:"minecraft:invisibility",amplifier:126,duration:-1,show_particles:0b}
     #data modify storage asset: mob.active_effects append value {id:"strength",amplifier:4,duration:600,show_particles:0b}
     # 或いは...
     # data modify storage asset: mob.active_effects set value [{id:"minecraft:speed",amplifier:1,duration:600,show_particles:0b},{id:"strength",amplifier:4,duration:600,show_particles:0b}]

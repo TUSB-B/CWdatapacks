@@ -10,9 +10,15 @@
 
 # データを入力して召喚
     # 本体
-        data remove storage tusb_cw: summon
+    function asset:mob/3605.lost_walker/data/2.data_set
+    data modify storage util: in set from storage asset: mob
+    function util:spawn/
+    data remove storage util: in
     # 柱×5
-        data remove storage tusb_cw: summon
+    function asset:mob/3606.pillar/data/2.data_set
+    data modify storage util: in set from storage asset: mob
+    function util:spawn/
+    data remove storage util: in
 
 # tick処理を予約
     schedule function tusb_cw:area/table/boss/first/schedule/ 1t
