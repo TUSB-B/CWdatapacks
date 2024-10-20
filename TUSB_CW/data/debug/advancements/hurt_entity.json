@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{RunCommand:true}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "debug:debug_tool/attack"
+    }
+}
