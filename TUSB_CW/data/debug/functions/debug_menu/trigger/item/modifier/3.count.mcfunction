@@ -1,4 +1,4 @@
-#> debug:debug_menu/trigger/item/modifier/3
+#> debug:debug_menu/trigger/item/modifier/3.count
 #
 # アイテムの数を変更
 #

@@ -4,6 +4,9 @@
 #
 # @within function debug:debug_menu/page/status/mp
 
+# トリガー時の共通処理
+    function debug:debug_menu/trigger/
+
 # マクロから数値を代入
     $scoreboard players set @s MPMax $(Value)
 # 最大値が分かるようにMPを最大にする

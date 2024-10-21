@@ -2,22 +2,25 @@
 #
 # ステータスメニューを表示
 #
-# @within function debug:debug_menu/trigger/main/1
+# @within function debug:debug_menu/trigger/main/status
 
 tellraw @s {\
     "translate":"=======ステータス========\n%s\n%s\n%s\n========================",\
     "with":[\
         {\
             "text":"・HP",\
-            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/status/1"} \
+            "hoverEvent":{"action": "show_text","contents": {"text":"最大体力設定"}},\
+            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/status/1.hp"} \
         },\
         {\
             "text":"・MP",\
-            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/status/2"} \
+            "hoverEvent":{"action": "show_text","contents": {"text":"最大MP設定"}},\
+            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/status/2.mp"} \
         },\
         {\
             "text":"・Level",\
-            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/status/3"} \
+            "hoverEvent":{"action": "show_text","contents": {"text":"職業・レベル設定"}},\
+            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/status/3.level"} \
         }\
     ]\
 }

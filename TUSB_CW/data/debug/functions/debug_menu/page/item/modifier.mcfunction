@@ -2,10 +2,10 @@
 #
 # item_modifierメニュー
 #
-# @within function debug:debug_menu/trigger/item/5
+# @within function debug:debug_menu/trigger/item/5.modifier
 
 tellraw @s {\
-    "translate":"=======Modifier========\n%s\n%s\n%s: %s %s %s %s %s\n%s: %s %s %s\n========================",\
+    "translate":"========Modifier=========\n%s\n%s\n%s: %s %s %s %s %s\n%s: %s %s %s\n========================",\
     "with":[\
         {\
             "text":"・HideFlags: 0",\
@@ -24,27 +24,27 @@ tellraw @s {\
             {\
                 "text":"1",\
                 "hoverEvent":{"action": "show_text","contents": {"text":"アイテムの数を1個に設定"}},\
-                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3 {Value:1}"} \
+                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3.count {Value:1}"} \
             },\
             {\
                 "text":"8",\
                 "hoverEvent":{"action": "show_text","contents": {"text":"アイテムの数を8個に設定"}},\
-                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3 {Value:8}"} \
+                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3.count {Value:8}"} \
             },\
             {\
                 "text":"16",\
                 "hoverEvent":{"action": "show_text","contents": {"text":"アイテムの数を16個に設定"}},\
-                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3 {Value:16}"} \
+                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3.count {Value:16}"} \
             },\
             {\
                 "text":"32",\
                 "hoverEvent":{"action": "show_text","contents": {"text":"アイテムの数を32個に設定"}},\
-                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3 {Value:32}"} \
+                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3.count {Value:32}"} \
             },\
             {\
                 "text":"64",\
                 "hoverEvent":{"action": "show_text","contents": {"text":"アイテムの数を64個に設定"}},\
-                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3 {Value:64}"} \
+                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/3.count {Value:64}"} \
             },\
         {\
             "text":"・Potion",\
@@ -53,17 +53,17 @@ tellraw @s {\
             {\
                 "text":"drink",\
                 "hoverEvent":{"action": "show_text","contents": {"text":"minecraft:potionに変更"}},\
-                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/4-1"}\
+                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/4-1.drink"}\
             },\
             {\
                 "text":"splash",\
                 "hoverEvent":{"action": "show_text","contents": {"text":"minecraft:splash_potionに変更"}},\
-                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/4-2"}\
+                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/4-2.splash"}\
             },\
             {\
                 "text":"lingering",\
                 "hoverEvent":{"action": "show_text","contents": {"text":"minecraft:lingering_potion"}},\
-                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/4-3"}\
+                "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/item/modifier/4-3.lingering"}\
             }\
     ]\
 }

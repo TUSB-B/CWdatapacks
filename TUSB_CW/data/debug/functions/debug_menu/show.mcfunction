@@ -8,16 +8,16 @@ tellraw @s {\
     "translate":"======デバッグメニュー======\n%s\n%s\n%s\n========================",\
     "with":[\
         {\
-            "text":"・ステータス変更",\
-            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/1"} \
+            "text":"・ステータスメニュー",\
+            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/1.status"} \
         },\
         {\
-            "text":"・装備変更",\
-            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/2"} \
+            "text":"アイテムメニュー",\
+            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/2.item"} \
         },\
         {\
-            "text":"・ワープ",\
-            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/3"} \
+            "text":"・ワープメニュー",\
+            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/3.warp"} \
         }\
     ]\
 }

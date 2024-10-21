@@ -4,6 +4,9 @@
 #
 # @within function debug:debug_menu/page/status/mp
 
+# トリガー時の共通処理
+    function debug:debug_menu/trigger/
+
 # マクロから数値を取得
     $scoreboard players set _ TUSB $(Value)
 # 計算

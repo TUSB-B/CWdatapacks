@@ -5,5 +5,16 @@
 #
 # @within function debug:debug_menu/page/status/hp
 
-attribute @s minecraft:generic.max_health modifier remove 0-0-a1-0-1
-$attribute @s minecraft:generic.max_health modifier add 0-0-a1-0-1 "HPMaxModifer" $(Health) add
+# 二重に鳴っちゃうから音を止める
+    stopsound @s master minecraft:block.note_block.pling
+
+# トリガー時の共通処理
+    function debug:debug_menu/trigger/
+
+# 今のattributeを消す
+    attribute @s minecraft:generic.max_health modifier remove 0-0-a1-0-1
+# マクロでattributeを追加する
+    $attribute @s minecraft:generic.max_health modifier add 0-0-a1-0-1 "HPMaxModifer" $(Health) add
+
+# 回復する
+    effect give @s instant_health 1 7 true

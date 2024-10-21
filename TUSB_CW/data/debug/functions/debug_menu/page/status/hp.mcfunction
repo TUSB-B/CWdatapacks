@@ -5,7 +5,7 @@
 # @within function debug:debug_menu/trigger/status/1
 
 tellraw @s {\
-    "translate":"=========HP==========\n%s %s %s %s %s %s\n%s %s %s %s %s %s %s %s %s\n========================",\
+    "translate":"==========HP===========\n%s %s %s %s %s %s\n%s %s %s %s %s %s %s %s %s\n========================",\
     "with":[\
         {\
             "text":"・set:",\

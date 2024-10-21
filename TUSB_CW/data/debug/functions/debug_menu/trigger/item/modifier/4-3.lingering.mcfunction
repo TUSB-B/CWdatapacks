@@ -1,4 +1,4 @@
-#> debug:debug_menu/trigger/item/modifier/4-1
+#> debug:debug_menu/trigger/item/modifier/potion-1
 #
 # potion: lingering
 #

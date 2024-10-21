@@ -1,10 +1,13 @@
 #> debug:debug_menu/trigger/status/hp/add_health
 #
 # 体力を増減する
+# 100倍の値で計算
+# AttributeModifierで減ったりするから上限下限なし
 #
 # @within function debug:debug_menu/page/status/hp
 
-# 100倍で計算
+# トリガー時の共通処理
+    function debug:debug_menu/trigger/
 
 # マクロから数値を取得
     $data modify storage debug: Health set value $(Value)
