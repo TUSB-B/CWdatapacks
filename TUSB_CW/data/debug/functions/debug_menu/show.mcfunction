@@ -12,7 +12,7 @@ tellraw @s {\
             "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/1.status"} \
         },\
         {\
-            "text":"アイテムメニュー",\
+            "text":"・アイテムメニュー",\
             "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/2.item"} \
         },\
         {\

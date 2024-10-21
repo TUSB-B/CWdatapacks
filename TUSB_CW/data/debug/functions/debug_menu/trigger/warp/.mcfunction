@@ -5,3 +5,4 @@
 #
 # @within function debug:debug_menu/trigger/warp/**
 
+$execute in $(dimension) run tp @s $(x) $(y) $(z)
