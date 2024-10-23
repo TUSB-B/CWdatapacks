@@ -1,13 +1,13 @@
 #> tusb_cw:area/table/boss/first/summon
 # ロストウォーカーと柱を召喚
-
+bossbar remove tusb_cw:boss_hp.table_first
 # 召喚した人がいなきゃ最寄りのプレイヤーを選ぶ
     execute unless entity @a[tag=BossSpawn.TableFirst] run tag @p add BossSpawn.TableFirst
 
 # 残ってるやつを処理
     tag @e[tag=Boss.TableFirst] add Garbage
     tag @e[tag=Boss.TableFirst.Pillar] add Garbage
-
+    tag @e[tag=TableFirst.Pillar] add Garbage
 # データを入力して召喚
     # 本体
     function asset:mob/3605.lost_walker/data/2.data_set

@@ -4,8 +4,8 @@
     data modify storage tusb_cw: boss.table_first.exist set value false
 # ボスのtick処理を実行
     execute as @e[tag=Boss.TableFirst] at @s run function tusb_cw:area/table/boss/first/schedule/boss
-# 柱のtick処理を実行
-
+# 柱が倒されたときtick処理を実行
+    execute as @e[tag=Boss.TableFirst.Pillar] unless predicate tusb_remake:is_carrying at @s run function tusb_cw:area/table/boss/first/schedule/pillar
 
 # ボスが生存している場合scheduleを予約
     execute if data storage tusb_cw: boss.table_first{exist:true} run schedule function tusb_cw:area/table/boss/first/schedule/ 1t

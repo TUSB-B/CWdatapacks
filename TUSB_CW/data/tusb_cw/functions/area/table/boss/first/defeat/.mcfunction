@@ -9,3 +9,6 @@
     # particle end_rod <地下水路村の座標> 4.0 4.0 4.0 0 300 force @a
 # ボスバーを消す
     bossbar remove tusb_cw:boss_hp.table_first
+# 残ってるやつを処理
+    tag @e[tag=Boss.TableFirst.Pillar] add Garbage
+    tag @e[tag=TableFirst.Pillar] add Garbage

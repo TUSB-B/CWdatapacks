@@ -30,7 +30,7 @@
     # 名前を表示するか
         #data modify storage asset: mob.CustomNameVisible set value true
     # 死亡時のルートテーブル
-        #data modify storage asset: mob.DeathLootTable set value "empty"
+        data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
         data modify storage asset: mob.Tags set value [Boss,Boss.TableFirst]
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
