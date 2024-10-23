@@ -29,3 +29,6 @@ tellraw @s {\
         }\
     ]\
 }
+
+# Debug.Menuがついていたらデバッグメニューを表示
+    execute if entity @s[tag=Debug.Menu] run function debug:debug_menu/show
