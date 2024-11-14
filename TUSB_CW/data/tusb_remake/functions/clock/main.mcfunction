@@ -85,4 +85,4 @@ execute at @e[tag=AuraSpawner] run particle minecraft:dragon_breath ~ ~ ~ 0.5 0.
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if block ~ ~ ~ #tusb_remake:unbreakable run function tusb_remake:player/barriarkill
 
 # 転移防止
-execute positioned -2882 319 -387 if entity @a[dx=34,dy=0,dz=34] as @p run tp -2739 89 -370
+execute positioned -2882 319 -387 as @a[dx=34,dy=0,dz=34] run tp -2739 89 -370
