@@ -5,7 +5,7 @@
 # @within function tusb_cw:player/menu/show
 
 tellraw @s {\
-    "translate":"======デバッグメニュー======\n%s\n%s\n%s\n========================",\
+    "translate":"======デバッグメニュー======\n%s\n%s\n%s\n%s\n========================",\
     "with":[\
         {\
             "text":"・ステータスメニュー",\
@@ -18,6 +18,10 @@ tellraw @s {\
         {\
             "text":"・ワープメニュー",\
             "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/3.warp"} \
+        },\
+        {\
+            "text":"・コマンドメニュー",\
+            "clickEvent":{"action": "run_command","value": "/function debug:debug_menu/trigger/main/4.command"} \
         }\
     ]\
 }
