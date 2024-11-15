@@ -11,3 +11,6 @@
 
 # メニュー
     execute if score @s MenuTrigger matches 1.. run function tusb_cw:player/menu/trigger
+
+# 村人に視線を合わせたときの処理
+    execute if predicate tusb_cw:player/see_updateble_villager run function tusb_cw:villager/see

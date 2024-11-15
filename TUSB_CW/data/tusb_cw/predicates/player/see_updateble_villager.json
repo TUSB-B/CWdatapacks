@@ -1,0 +1,13 @@
+{
+    "entity": "this",
+    "condition": "entity_properties",
+    "predicate": {
+        "type_specific": {
+            "type": "player",
+            "looking_at": {
+                "type": "villager",
+                "nbt": "{Tags:[Updateble]}"
+            }
+        }
+    }
+}
