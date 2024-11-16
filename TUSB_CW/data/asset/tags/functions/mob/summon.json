@@ -83,6 +83,9 @@
         "asset:mob/2422.bumper_pufferfish_32/summon/1.trigger",
         "asset:mob/2440.danger_cat/summon/1.trigger",
         "asset:mob/2441.escape_bonus_chest/summon/1.trigger",
+        "asset:mob/2460.creater_s_malice_creeper/summon/1.trigger",
+        "asset:mob/2461.quickreeper/summon/1.trigger",
+        "asset:mob/2462.spawner_creeper/summon/1.trigger",
         "asset:mob/3604.disaster_eye/summon/1.trigger",
         "asset:mob/3607.happiness_angel/summon/1.trigger",
         "asset:mob/4000.angel_eye/summon/1.trigger"
