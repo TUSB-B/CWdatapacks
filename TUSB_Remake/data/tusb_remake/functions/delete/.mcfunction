@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 接地削除処理(FloatingRequired)
-tag @e[tag=FloatingRequired,nbt={OnGround:true}] add Garbage
+tag @e[tag=FloatingRequired,nbt={OnGround:true},predicate=!tusb_remake:is_riding] add Garbage
 ### 乗っていないと削除(RidingRequired)
 tag @e[tag=RidingRequired,predicate=!tusb_remake:is_riding] add Garbage
 ## 何も乗っていなければ削除
