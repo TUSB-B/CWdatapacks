@@ -7,3 +7,6 @@
 
 # 村人用score
     scoreboard objectives add PrevSeeTime dummy
+
+# Library用score
+    scoreboard objectives add Library dummy "ライブラリ用汎用score"
