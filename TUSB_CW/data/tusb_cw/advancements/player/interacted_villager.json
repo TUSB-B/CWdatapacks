@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "villager"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tusb_cw:villager/interacted/"
+    }
+}
