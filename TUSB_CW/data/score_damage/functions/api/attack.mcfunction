@@ -40,4 +40,4 @@
     execute unless data storage score_damage: Argument.BypassResistance run data modify storage score_damage: Argument.BypassResistance set value 0b
     execute unless data storage score_damage: Argument.BypassAbsorption run data modify storage score_damage: Argument.BypassAbsorption set value 0b
 # Healthを持つEntityであれば実行
-    execute if data storage score_damage: Argument.Damage if entity @s[team=!Null] run function score_damage:core/attack
+    execute if data storage score_damage: Argument.Damage if entity @s[team=!Null,tag=!InvalidScoreDamage] run function score_damage:core/attack
