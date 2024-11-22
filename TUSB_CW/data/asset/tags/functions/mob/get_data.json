@@ -89,6 +89,7 @@
         "asset:mob/2462.spawner_creeper/data/1.trigger",
         "asset:mob/3604.disaster_eye/data/1.trigger",
         "asset:mob/3607.happiness_angel/data/1.trigger",
+        "asset:mob/3611.kerberos/data/1.trigger",
         "asset:mob/4000.angel_eye/data/1.trigger"
     ]
 }
