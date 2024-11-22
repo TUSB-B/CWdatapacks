@@ -76,6 +76,7 @@
         "asset:mob/2204.shulker_bullet/summon/1.trigger",
         "asset:mob/2205.ender_soldier/summon/1.trigger",
         "asset:mob/2206.snow_bow/summon/1.trigger",
+        "asset:mob/2207.reinforced_wither_skeleton/summon/1.trigger",
         "asset:mob/2400.curse_career/summon/1.trigger",
         "asset:mob/2401.lunaticrider/summon/1.trigger",
         "asset:mob/2420.tower_pufferfish/summon/1.trigger",
@@ -88,7 +89,7 @@
         "asset:mob/2462.spawner_creeper/summon/1.trigger",
         "asset:mob/3604.disaster_eye/summon/1.trigger",
         "asset:mob/3607.happiness_angel/summon/1.trigger",
-        "asset:mob/3611.kerberos/data/1.trigger",
+        "asset:mob/3611.kerberos/summon/1.trigger",
         "asset:mob/4000.angel_eye/summon/1.trigger"
     ]
 }

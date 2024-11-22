@@ -48,7 +48,7 @@
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:25}
     # 移動速度
-        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.5}
+        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.4}
     # 防具値
         # data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
     # 防具強度
