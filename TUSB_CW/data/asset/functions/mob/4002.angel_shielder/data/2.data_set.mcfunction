@@ -35,7 +35,7 @@
     # 死亡時のルートテーブル
         data modify storage asset: mob.DeathLootTable set value "usb:entities/heaven/tier2"
     # Tags
-        # data modify storage asset: mob.Tags set value [example]
+        # data modify storage asset: mob.Tags set value [SkillMob,WarpOnly]
     # Team
         # data modify storage asset: mob.Team set value ""
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
@@ -48,7 +48,7 @@
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:3}
     # 移動速度
-        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.1}
+        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.3}
     # 防具値
         data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:-6}
     # 防具強度
@@ -72,7 +72,7 @@
         # メインハンド
             data modify storage asset: mob.HandItems[0] set value {id:"shield",Count:1b}
         # オフハンド
-            data modify storage asset: mob.HandItems[1] set value {id:"totem_of_undying",Count:1b}
+            data modify storage asset: mob.HandItems[1] set value {id:"totem_of_undying",Count:3b}
     # 防具
         # 頭
             data modify storage asset: mob.ArmorItems[3] set value {id:"quartz_block",Count:1b}
