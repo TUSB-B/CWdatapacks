@@ -12,7 +12,7 @@
 # vehicleのUUIDをOwnerに代入
     execute on vehicle run data modify entity @e[type=area_effect_cloud,tag=This,limit=1] Owner set from entity @s UUID
 # 降ろす
-    ride @s dismount
+    tp @s ~ ~-0.1 ~
 
 # Thisを削除
     tag @s remove This
