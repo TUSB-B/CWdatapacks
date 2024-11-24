@@ -253,7 +253,7 @@
         Radius: 0.2f,\
         ReapplicationDelay:20,\
         Duration: 32767,\
-        Tags: ["RidingRequired", "TypeChecked"],\
+        Tags: ["TypeChecked","RidingOnOwnerInit"],\
         Particle:"end_rod",\
         effects: [{\
             id: "minecraft:weakness",\
@@ -266,7 +266,7 @@
         CustomName:'{"text":"エンジェルオーラ"}',\
         Radius: 3f,\
         Duration: 32767,\
-        Tags: ["RidingRequired", "TypeChecked"],\
+        Tags: ["TypeChecked","RidingOnOwnerInit"],\
         Particle:"dust 1 1 1 1",\
         effects: [{\
             id: "minecraft:levitation",\
