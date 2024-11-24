@@ -5,7 +5,7 @@
 # @within function tusb_remake:clock/first
 
 # データを代入して更新があるかチェックしつつ更新があった場合mobのデータを置き換える
-    execute unless function tusb_cw:mob/replace/data_check at @s run function tusb_cw:mob/replace/replace_mob with storage asset:mob summon_tag
+    execute unless function tusb_cw:mob/replace/data_check at @s run function tusb_cw:mob/replace/replace_mob
 
 #マクロを使ってモブを召喚（AssetIdが前と変わってなかったら呼び出さない）
     # 召喚用にidだけ別にする

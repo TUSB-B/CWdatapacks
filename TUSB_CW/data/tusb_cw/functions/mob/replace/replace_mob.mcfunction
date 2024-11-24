@@ -9,3 +9,4 @@
     data modify storage asset:context id set from storage asset:mob summon_tag.AssetId
     function #asset:mob/get_data
     data modify storage asset:replace mob set from storage asset: mob
+    execute unless data storage asset: mob run data remove storage asset:replace mob
