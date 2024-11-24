@@ -37,7 +37,7 @@
     # Tags
         # data modify storage asset: mob.Tags set value [example]
     # Motion
-        # data modify storage asset: mob.Motion set value [0.0,0.2,0.0]
+        data modify storage asset: mob.Motion set value [0.0,0.2,0.0]
     # Team
         # data modify storage asset: mob.Team set value ""
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
