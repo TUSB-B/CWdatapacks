@@ -35,7 +35,7 @@
     # 死亡時のルートテーブル
         data modify storage asset: mob.DeathLootTable set value "usb:entities/heaven/tier1"
     # Tags
-        data modify storage asset: mob.Tags set value [SkillMob,WarpOnly]
+        # data modify storage asset: mob.Tags set value [SkillMob,WarpOnly]
     # Team
         # data modify storage asset: mob.Team set value ""
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
@@ -46,9 +46,9 @@
     # 最大体力
         data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:80}
     # (近接)攻撃力
-        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:0}
+        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:-1}
     # 移動速度
-        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.6}
+        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.2}
     # 防具値
         data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:-6}
     # 防具強度
@@ -132,20 +132,20 @@
         CustomName:'{"text":"横長ステップオーラ"}',\
         Radius: 0.3f,\
         Duration: 32767,\
-        ReapplicationDelay: 60,\
+        ReapplicationDelay: 40,\
         Tags: ["TypeChecked","RidingOnOwnerInit"],\
         Particle:"instant_effect 1 1 1 1",\
         effects: [{\
             id: "minecraft:levitation",\
-            amplifier: 80b,\
+            amplifier: 50b,\
             duration: 2\
         }, {\
             id: "minecraft:speed",\
-            amplifier: 20b,\
+            amplifier: 39b,\
             duration: 10\
         }, {\
             id: "minecraft:strength",\
-            amplifier: 6b,\
+            amplifier: 7b,\
             duration: 30\
         }]\
     }
