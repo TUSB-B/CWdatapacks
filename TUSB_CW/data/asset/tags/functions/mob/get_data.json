@@ -91,6 +91,8 @@
         "asset:mob/3607.happiness_angel/data/1.trigger",
         "asset:mob/4000.angel_eye/data/1.trigger",
         "asset:mob/4001.angel_soldier/data/1.trigger",
-        "asset:mob/4002.angel_shielder/data/1.trigger"
+        "asset:mob/4002.angel_shielder/data/1.trigger",
+        "asset:mob/4003.angel_summoner/data/1.trigger",
+        "asset:mob/4004.heaven_archer/data/1.trigger"
     ]
 }
