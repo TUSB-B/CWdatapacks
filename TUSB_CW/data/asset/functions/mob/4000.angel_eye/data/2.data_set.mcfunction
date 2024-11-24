@@ -175,7 +175,7 @@
         # 死亡時のルートテーブル
             # data modify storage asset: mob.DeathLootTable set value "empty"
         # Tags
-            data modify storage asset: mob.Tags set value [SkillMob,WarpOnly,FastCast]
+            data modify storage asset: mob.Tags set value [SkillMob,WarpOnly]
         # Team
             # data modify storage asset: mob.Team set value ""
         # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
