@@ -10,4 +10,4 @@ scoreboard players operation @s MPConsumption = @s CurrentModeCost
 function tusb_remake:skill/check_mp/
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
-execute if score _ ActivatedSkill matches 4210..4219 anchored eyes positioned ^ ^ ^ anchored feet as @e[distance=..1,type=snowball,sort=nearest,limit=1] run function tusb_remake:skill/white_mage/dia/apply
+execute if score _ ActivatedSkill matches 4210..4219 run function tusb_remake:skill/snowball/dataset
