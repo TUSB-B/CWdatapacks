@@ -4,8 +4,8 @@
 ### This software is released under the MIT License, see LICENSE.
 
 execute as @s[scores={CurrentMode=2200..2209}] run function tusb_remake:skill/ninja/suriken/throw
-execute as @s[scores={CurrentMode=2230..2239}] run function tusb_remake:skill/ninja/isukumi/throw
-execute as @s[scores={CurrentMode=2250..2259}] run function tusb_remake:skill/ninja/makibisi/throw
+execute as @s[scores={CurrentMode=2240..2249}] run function tusb_remake:skill/ninja/isukumi/throw
+execute as @s[scores={CurrentMode=2220..2229}] run function tusb_remake:skill/ninja/makibisi/throw
 
 execute as @s[scores={CurrentMode=4200..4209}] run function tusb_remake:skill/white_mage/cure/spell
 execute as @s[scores={CurrentMode=4210..4219}] run function tusb_remake:skill/white_mage/dia/throw

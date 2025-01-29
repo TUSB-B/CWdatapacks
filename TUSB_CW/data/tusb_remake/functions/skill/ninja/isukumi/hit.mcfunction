@@ -7,6 +7,6 @@ particle minecraft:ash ~ ~1 ~ 0.5 0.5 0.5 0 60 force
 
 ## リメイク：ちょっと時間長く
 ## 2230
-data merge entity @s[scores={PotentialSkill=2230}] {NoAI:true,PortalCooldown:160}
+data merge entity @s[scores={PotentialSkill=2240}] {NoAI:true,PortalCooldown:160}
 ## 2231..
-data merge entity @s[scores={PotentialSkill=2231..2239}] {NoAI:true,PortalCooldown:300}
+data merge entity @s[scores={PotentialSkill=2241..2249}] {NoAI:true,PortalCooldown:300}

@@ -10,4 +10,4 @@ scoreboard players operation @s MPConsumption = @s CurrentModeCost
 function tusb_remake:skill/check_mp/
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
-execute if score _ ActivatedSkill matches 2230..2239 run function tusb_remake:skill/snowball/dataset
+execute if score _ ActivatedSkill matches 2240..2249 run function tusb_remake:skill/snowball/dataset
