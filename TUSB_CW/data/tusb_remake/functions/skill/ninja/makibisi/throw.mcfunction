@@ -1,7 +1,7 @@
-#> tusb_remake:skill/white_mage/dia/throw
-# ディアを発動(421X)
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#> tusb_remake:skill/ninja/makibisi/throw
+# マキビシを発動(225X)
+
+say paa
 
 ###
 scoreboard players operation @s ActivatedSkill = @s CurrentMode
@@ -10,4 +10,4 @@ scoreboard players operation @s MPConsumption = @s CurrentModeCost
 function tusb_remake:skill/check_mp/
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
-execute if score _ ActivatedSkill matches 2250..2259 anchored eyes positioned ^ ^ ^ anchored feet as @e[distance=..1,type=snowball,sort=nearest,limit=1] run function tusb_remake:skill/white_mage/dia/apply
+execute if score _ ActivatedSkill matches 2250..2259 run function tusb_remake:skill/snowball/dataset

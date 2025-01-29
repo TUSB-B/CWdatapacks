@@ -20,8 +20,8 @@ data modify storage tusb_remake: _.20 set value {name:["手裏剣","手裏剣Ⅱ
 data modify storage tusb_remake: _.21 set value {name:["連舞","連舞Ⅱ","連舞Ⅲ"],level:[5,25,45],cost:3,description:[["連続ヒット数に応じて攻撃力が上昇する。"]],condition:"敵を攻撃",duration:[2]}
 data modify storage tusb_remake: _.22 set value {name:["跳躍","跳躍Ⅱ","跳躍Ⅲ"],level:[13,26,39],cost:3,description:[["スニーク時間に応じて跳躍力が上昇する。"]],condition:"スニークする",duration:[3]}
 data modify storage tusb_remake: _.23 set value {name:["居縮","居縮Ⅱ"],level:[28,46],cost:10,description:[["敵単体をすくみ上がらせ、金縛り状態にする。"]],condition:"雪玉を投げる",duration:[5]}
-data modify storage tusb_remake: _.24 set value {name:["撒菱","撒菱Ⅱ","撒菱Ⅲ"],level:[7,27,47],cost:30,description:[["敵にダメージを与え、足を遅くする撒菱を放つ。"]],condition:"ニンジン付きの棒を持って右クリック",range:[4,6],duration:[20]}
-data modify storage tusb_remake: _.25 set value {name:["サヨナラ"],level:[50],cost:0,description:[["爆発四散し、周囲に残りMPに応じたダメージを与える。","また、残りMPが100以上だった時、レイズの効果を得る。","レイズ：一定時間、（可能であれば、）","リスポーン時に死亡地点へ復帰する。"]],condition:"死亡する"}
+data modify storage tusb_remake: _.24 set value {name:["サヨナラ"],level:[50],cost:0,description:[["爆発四散し、周囲に残りMPに応じたダメージを与える。","また、残りMPが100以上だった時、レイズの効果を得る。","レイズ：一定時間、（可能であれば、）","リスポーン時に死亡地点へ復帰する。"]],condition:"死亡する"}
+data modify storage tusb_remake: _.25 set value {name:["撒菱","撒菱Ⅱ","撒菱Ⅲ"],level:[7,27,47],cost:30,description:[["敵にダメージを与え、足を遅くする撒菱を放つ。"]],condition:"ニンジン付きの棒を持って右クリック",range:[3,4,5],duration:[10]}
 
 data modify storage tusb_remake: skill_table.ninja set from storage tusb_remake: _
 data remove storage tusb_remake: _
