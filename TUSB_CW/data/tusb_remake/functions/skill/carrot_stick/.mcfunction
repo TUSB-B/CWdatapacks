@@ -3,6 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
+
 execute as @s[scores={CurrentMode=2200..2209}] run function tusb_remake:skill/ninja/suriken/throw
 execute as @s[scores={CurrentMode=2230..2239}] run function tusb_remake:skill/ninja/isukumi/throw
 execute as @s[scores={CurrentMode=2250..2259}] run function tusb_remake:skill/ninja/makibisi/throw
