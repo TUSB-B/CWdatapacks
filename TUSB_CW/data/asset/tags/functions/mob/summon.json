@@ -94,6 +94,16 @@
         "asset:mob/2492.molten_ore/summon/1.trigger",
         "asset:mob/3604.disaster_eye/summon/1.trigger",
         "asset:mob/3607.happiness_angel/summon/1.trigger",
-        "asset:mob/4000.angel_eye/summon/1.trigger"
+        "asset:mob/4000.angel_eye/summon/1.trigger",
+        "asset:mob/4010.star_fragment/summon/1.trigger",
+        "asset:mob/4011.star_outer/summon/1.trigger",
+        "asset:mob/4012.star_bug/summon/1.trigger",
+        "asset:mob/4013.armored_robot_mk_1/summon/1.trigger",
+        "asset:mob/4014.armored_robot_mk_2/summon/1.trigger",
+        "asset:mob/4015.armored_robot_mk_x/summon/1.trigger",
+        "asset:mob/4016.defenser_alpha/summon/1.trigger",
+        "asset:mob/4017.defenser_beta/summon/1.trigger",
+        "asset:mob/4018.defenser_gamma/summon/1.trigger",
+        "asset:mob/4020.master_chef/summon/1.trigger"
     ]
 }
