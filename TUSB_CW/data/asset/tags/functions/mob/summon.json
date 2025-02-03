@@ -93,6 +93,7 @@
         "asset:mob/4002.angel_shielder/summon/1.trigger",
         "asset:mob/4003.angel_summoner/summon/1.trigger",
         "asset:mob/4004.heaven_archer/summon/1.trigger",
+        "asset:mob/4005.heaven_mage/summon/1.trigger",
         "asset:mob/4006.heaven_slayer/summon/1.trigger"
     ]
 }
