@@ -6,55 +6,55 @@
     data remove storage asset: mob
 
 ### AssetIdを設定
-    data modify storage asset: mob.AssetId set value 0
+    data modify storage asset: mob.AssetId set value 4011
 
 ### idを設定
-    data modify storage asset: mob.id set value "skeleton"
+    data modify storage asset: mob.id set value "vex"
 
 ### 体力等nbtを設定
     # 体力
-        data modify storage asset: mob.Health set value 20
+        data modify storage asset: mob.Health set value 50
     # 緩衝体力
-        data modify storage asset: mob.AbsorptionAmount set value 20
+        # data modify storage asset: mob.AbsorptionAmount set value 20
     # AIを持っていないか
-        data modify storage asset: mob.NoAI set value true
+        # data modify storage asset: mob.NoAI set value true
     # 重力の影響を受けないか
-        data modify storage asset: mob.NoGravity set value true
+        # data modify storage asset: mob.NoGravity set value true
     # 無敵か
-        data modify storage asset: mob.Invulnerable set value true
+        # data modify storage asset: mob.Invulnerable set value true
     # 音を出さないか
         data modify storage asset: mob.Silent set value true
     # 光るか
-        data modify storage asset: mob.Glowing set value true
+        # data modify storage asset: mob.Glowing set value true
     # デスポーンしないか
-        data modify storage asset: mob.PersistenceRequired set value true
+        # data modify storage asset: mob.PersistenceRequired set value true
     # 名前
-        data modify storage asset: mob.CustomName set value '{"text":"Example"}'
+        data modify storage asset: mob.CustomName set value '{"text":"スターアウター"}'
     # 名前を表示するか
-        data modify storage asset: mob.CustomNameVisible set value true
+        # data modify storage asset: mob.CustomNameVisible set value true
     # 死亡時のルートテーブル
-        data modify storage asset: mob.DeathLootTable set value "empty"
+        # data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
-        data modify storage asset: mob.Tags set value [example]
+        data modify storage asset: mob.Tags set value ["RiderRequired"]
     # Team
-        data modify storage asset: mob.Team set value ""
+        # data modify storage asset: mob.Team set value ""
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
-        data modify storage asset: mob.PortalCooldown set value 0
+        # data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:100}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:50}
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:10}
     # 移動速度
-        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.2}
+        # data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.2}
     # 防具値
-        data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
+        # data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
     # 防具強度
-        data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
+        # data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
     # ノックバック耐性(0~1)
-        data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:1}
+        # data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:1}
     # 索敵範囲
         data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:64}
     # それぞれの詳しい仕様はwikiなどで調べてください
@@ -66,25 +66,25 @@
 
 ### アイテム
     # init
-        data modify storage asset: mob.HandItems set value [{},{}]
-        data modify storage asset: mob.ArmorItems set value [{},{},{},{}]
+        # data modify storage asset: mob.HandItems set value [{},{}]
+        # data modify storage asset: mob.ArmorItems set value [{},{},{},{}]
     # 武器
         # メインハンド
-            data modify storage asset: mob.HandItems[0] set value 
+            # data modify storage asset: mob.HandItems[0] set value 
         # オフハンド
-            data modify storage asset: mob.HandItems[1] set value 
+            # data modify storage asset: mob.HandItems[1] set value 
     # 防具
         # 頭
-            data modify storage asset: mob.ArmorItems[3] set value 
+            # data modify storage asset: mob.ArmorItems[3] set value 
         # 胴
-            data modify storage asset: mob.ArmorItems[2] set value 
+            # data modify storage asset: mob.ArmorItems[2] set value 
         # 脚
-            data modify storage asset: mob.ArmorItems[1] set value 
+            # data modify storage asset: mob.ArmorItems[1] set value 
         # 足
-            data modify storage asset: mob.ArmorItems[0] set value 
+            # data modify storage asset: mob.ArmorItems[0] set value 
     # 武器、防具のドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
-        data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
-        data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
+        # data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
+        # data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
 
 
 ### active_effects
@@ -125,4 +125,50 @@
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
         # 効果時間を-1に設定すると無限になる
-    data modify storage asset: mob.active_effects append value {id: "minecraft:speed", amplifier: 1b, duration: -1, show_icon: 1b,show_particles: 1b}
+    data modify storage asset: mob.active_effects append value {id: "minecraft:invisibility", amplifier: 127b, duration: -1, show_particles: 0b}
+
+# guardian
+    # 追加
+        data modify storage asset: mob.Passengers append value {id: "guardian"}
+    # nbt
+        # Health
+            data modify storage asset: mob.Passengers[0].Health set value 200
+        # name
+            data modify storage asset: mob.Passengers[0].CustomName set value '{"text":"スターアウター"}'
+        # tag
+            data modify storage asset: mob.Passengers[0].Tags set value ["RidingRequired"]
+        # Silent
+            data modify storage asset: mob.Passengers[0].Silent set value true
+        # loot_table
+            data modify storage asset: mob.Passengers[0].DeathLootTable set value "empty"
+        # invisibility
+            data modify storage asset: mob.Passengers[0].active_effects append value {id: "minecraft:invisibility", amplifier: 127b, duration: -1, show_particles: 0b}
+    # Attributes
+        # 最大体力
+            data modify storage asset: mob.Passengers[0].Attributes append value {Name:generic.max_health, Base:200}
+        # (近接)攻撃力
+            data modify storage asset: mob.Passengers[0].Attributes append value {Name:generic.attack_damage, Base:20}
+
+# AEC
+    # Star Aura1\
+        ガーディアンより前に乗せる
+        data modify storage asset: mob.Passengers prepend value {\
+            id: "minecraft:area_effect_cloud",\
+            Radius: 0.1f,\
+            Duration: 32767,\
+            Particle:"dust 0.5 0.5 0 1"\
+        }
+    # Star Aura2
+        data modify storage asset: mob.Passengers append value {\
+            id: "minecraft:area_effect_cloud",\
+            Radius: 0.1f,\
+            Duration: 32767,\
+            Particle:"dust 0 0.5 0.5 1"\
+        }
+    # Star Aura3
+        data modify storage asset: mob.Passengers append value {\
+            id: "minecraft:area_effect_cloud",\
+            Radius: 0.1f,\
+            Duration: 32767,\
+            Particle:"dust 0.5 0 0.5 1"\
+        }
