@@ -54,7 +54,7 @@
     # 防具強度
         #data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:0}
     # ノックバック耐性(0~1)
-        data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:1}
+        data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:32767}
     # 索敵範囲
         #data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:0}
     # それぞれの詳しい仕様はwikiなどで調べてください
