@@ -27,7 +27,7 @@
     # 光るか
         #data modify storage asset: mob.Glowing set value true
     # デスポーンしないか
-        data modify storage asset: mob.PersistenceRequired set value true
+        #data modify storage asset: mob.PersistenceRequired set value true
     # 名前
         data modify storage asset: mob.CustomName set value '{"text":"金床様","color":"dark_purple","bold":true,"italic":false}'
     # 名前を表示するか
