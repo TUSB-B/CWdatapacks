@@ -29,7 +29,7 @@
     # デスポーンしないか
         data modify storage asset: mob.PersistenceRequired set value true
     # 名前
-        data modify storage asset: mob.CustomName set value '{"text":"金床様"}'
+        data modify storage asset: mob.CustomName set value '{"text":"金床様","color":"dark_purple","bold":true,"italic":false}'
     # 名前を表示するか
         data modify storage asset: mob.CustomNameVisible set value true
     # 死亡時のルートテーブル
@@ -44,7 +44,7 @@
 
 ### Attributes
     # 最大体力
-        #data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:0}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:350}
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:20}
     # 移動速度
@@ -54,7 +54,7 @@
     # 防具強度
         #data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
     # ノックバック耐性(0~1)
-        data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:10}
+        data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:100}
     # 索敵範囲
         #data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:64}
     # それぞれの詳しい仕様はwikiなどで調べてください
@@ -70,24 +70,24 @@
         data modify storage asset: mob.ArmorItems set value [{},{},{},{}]
     # 武器
         # メインハンド
-            data modify storage asset: mob.HandItems[0] set value {id: "minecraft:stone_sword", Count: 65b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, id: "minecraft:fire_aspect"}, {lvl: 20s, id: "minecraft:knockback"}], Damage: 0}}
+            data modify storage asset: mob.HandItems[0] set value {id: "minecraft:stone_sword", Count: 1b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, id: "minecraft:fire_aspect"}, {lvl: 20s, id: "minecraft:knockback"}], Damage: 0}}
         # オフハンド
             #data modify storage asset: mob.HandItems[1] set value 
     # 防具
         # 頭
-            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:damaged_anvil", Count: 65b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}
+            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:damaged_anvil",Count: 1b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}
         # 胴
-            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_chestplate",Unbreakable:1b,Count: 1b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}
         # 脚
-            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_leggings",Unbreakable:1b,Count: 1b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}
         # 足
-            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots", Count: 65b, tag: {Enchantments:[{id:depth_strider,lvl:10}] , display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots",Unbreakable:1b,Count: 1b, tag: {Enchantments:[{id:depth_strider,lvl:10}] , display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}
     # 武器、防具のドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
 
 # 死亡時ポーションを乗せる(即時ダメージⅣ)
-    data modify storage asset: mob.Passengers append value {id:"minecraft:potion",CustomName:'{"text":"最後の抵抗"}',Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:6168524,custom_potion_effects:[{id:"minecraft:instant_damage",amplifier:2b,duration:1},{id:"minecraft:hunger",amplifier:0b,duration:60}],Enchantments:[{}]}}}
+    data modify storage asset: mob.Passengers append value {CustomNameVisible:1b,id:"minecraft:potion",CustomName:'{"text":"金床様","color":"dark_purple","bold":true,"italic":false}',Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:6168524,custom_potion_effects:[{id:"minecraft:instant_damage",amplifier:2b,duration:1},{id:"minecraft:hunger",amplifier:0b,duration:60}],Enchantments:[{}]}}}
 
 
 ### active_effects
@@ -128,4 +128,4 @@
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
         # 効果時間を-1に設定すると無限になる
-    data modify storage asset: mob.active_effects append value [{show_particles: 0b, duration: -1, id: "minecraft:invisibility", amplifier: 1b}, {show_particles: 0b, duration: -1, id: "minecraft:fire_resistance", amplifier: 1b}, {show_particles: 0b, duration: -1, id: "minecraft:speed", amplifier: 4b}, {show_particles: 0b, duration: -1, id: "minecraft:jump_boost", amplifier: 10b}]
+    data modify storage asset: mob.active_effects set value [{show_particles: 0b, duration: -1, id: "minecraft:invisibility", amplifier: 10b}, {show_particles: 0b, duration: -1, id: "minecraft:fire_resistance", amplifier: 1b}, {show_particles: 0b, duration: -1, id: "minecraft:speed", amplifier: 4b}, {show_particles: 0b, duration: -1, id: "minecraft:jump_boost", amplifier: 10b}]
