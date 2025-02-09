@@ -86,6 +86,8 @@
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
 
+data modify storage asset: mob.active_effects set value {id: "minecraft:fire_resistance", amplifier: 1b, duration: -1, show_icon: 0b,show_particles: 0b}
+
 data remove storage _: _
 data modify storage _: _ set from storage asset: mob
 data modify storage asset: mob.id set value "skeleton"
