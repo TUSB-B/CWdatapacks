@@ -6,9 +6,9 @@
 scoreboard players add @s Choyaku 1
 scoreboard players set @s NinjaTime 3
 
-execute if score _ ActivatedSkill matches 2222..2229 if score @s Choyaku matches 16.. run scoreboard players set @s Choyaku 15
-execute if score _ ActivatedSkill matches 2221 if score @s Choyaku matches 11.. run scoreboard players set @s Choyaku 10
-execute if score _ ActivatedSkill matches 2220 if score @s Choyaku matches 6.. run scoreboard players set @s Choyaku 5
+execute if score _ ActivatedSkill matches 2232..2239 if score @s Choyaku matches 16.. run scoreboard players set @s Choyaku 15
+execute if score _ ActivatedSkill matches 2231 if score @s Choyaku matches 11.. run scoreboard players set @s Choyaku 10
+execute if score _ ActivatedSkill matches 2230 if score @s Choyaku matches 6.. run scoreboard players set @s Choyaku 5
 
 playsound entity.ender_dragon.flap master @a[distance=..16] ~ ~ ~ 1 1.8 0
 particle white_ash ~ ~ ~ 0.05 0.2 0.05 0 100

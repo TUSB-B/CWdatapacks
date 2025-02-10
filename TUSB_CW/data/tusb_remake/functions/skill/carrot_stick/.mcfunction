@@ -3,7 +3,17 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
+execute as @s[scores={CurrentMode=2200..2209}] run function tusb_remake:skill/ninja/suriken/throw
+execute as @s[scores={CurrentMode=2240..2249}] run function tusb_remake:skill/ninja/isukumi/throw
+execute as @s[scores={CurrentMode=2220..2229}] run function tusb_remake:skill/ninja/makibisi/throw
+
 execute as @s[scores={CurrentMode=4200..4209}] run function tusb_remake:skill/white_mage/cure/spell
+execute as @s[scores={CurrentMode=4210..4219}] run function tusb_remake:skill/white_mage/dia/throw
+execute as @s[scores={CurrentMode=4220..4229}] run function tusb_remake:skill/white_mage/flower_gift/throw
+execute as @s[scores={CurrentMode=4230..4239}] run function tusb_remake:skill/white_mage/holy/throw
+
+execute as @s[scores={CurrentMode=5200..5209}] run function tusb_remake:skill/black_mage/ice_storm/throw
+execute as @s[scores={CurrentMode=5210..5219}] run function tusb_remake:skill/black_mage/cross_fire/throw
 execute as @s[scores={CurrentMode=5220..5229}] run function tusb_remake:skill/black_mage/thunder_bolt/spell
 execute as @s[scores={CurrentMode=5230..5239}] run function tusb_remake:skill/black_mage/geo_crush/spell
 execute as @s[scores={CurrentMode=5240..5249}] run function tusb_remake:skill/black_mage/drain/spell
