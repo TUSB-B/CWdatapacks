@@ -10,7 +10,7 @@
 
 ### 体力等nbtを設定
     # 体力
-        data modify storage asset: mob.Health set value 1000
+        data modify storage asset: mob.Health set value 400
     # 緩衝体力
         # data modify storage asset: mob.AbsorptionAmount set value 20
     # AIを持っていないか
@@ -35,11 +35,12 @@
         data modify storage asset: mob.Tags set value [SkillMob,CrisisWarp]
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
         # data modify storage asset: mob.PortalCooldown set value 0
-    # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
+    # DeathTime
+        data modify storage asset: mob.DeathTime set value 19
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:1000}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:400}
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:-1}
     # 移動速度
@@ -71,15 +72,17 @@
             Count: 1b,\
             tag: {\
                 CustomPotionColor: 3417530,\
-                custom_potion_effects: [{\
-                    id: "minecraft:instant_damage",\
-                    amplifier: 5b,\
-                    duration: 10\
-                }]\
+                custom_potion_effects: [\
+                    {\
+                        id: "minecraft:instant_damage",\
+                        amplifier: 5b,\
+                        duration: 10\
+                    }\
+                ]\
             }\
         }\
     }
-### AEC二種
+### AEC三種
     data modify storage asset: mob.Passengers[0].Passengers set value [\
         {\
             id: "minecraft:area_effect_cloud",\
@@ -93,10 +96,19 @@
                 id: "minecraft:resistance",\
                 amplifier: 127b,\
                 duration: 150\
-            }, {\
+            }]\
+        }, {\
+            id: "minecraft:area_effect_cloud",\
+            CustomName:'{"text":"プロテクションオーラ"}',\
+            Radius: 0.01f,\
+            ReapplicationDelay:1,\
+            Duration: 32767,\
+            Tags: ["RidingRequired", "TypeChecked"],\
+            Particle:"end_rod",\
+            effects: [{\
                 id: "minecraft:weakness",\
-                amplifier: 127b,\
-                duration: 150\
+                amplifier: 126b,\
+                duration: 5\
             }]\
         }, {\
             id: "minecraft:area_effect_cloud",\
@@ -160,7 +172,7 @@
         # 最大体力
             data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:20}
         # (近接)攻撃力
-            data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:80}
+            data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:50}
         # 移動速度
             data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.5}
         # 防具値
