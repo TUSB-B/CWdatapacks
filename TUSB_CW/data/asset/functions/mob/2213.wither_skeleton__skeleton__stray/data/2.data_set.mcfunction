@@ -96,7 +96,7 @@ data modify storage _: _.Passengers[0].HandItems[0] set value {id: "minecraft:bo
 data modify storage asset: mob.id set value "stray"
 data modify storage _: _.Passengers[0].Passengers append from storage asset: mob
 data modify storage _: _.Passengers[0].Passengers[0].HandItems[0] set value {id:"minecraft:bow", Count: 1b, tag: {display: {Name: '{"text":"ブリザードショット","color":"aqua"}'}, Enchantments: [{lvl: 5s, id: "minecraft:power"}]}}
-data modify storage _: _.Passengers[0].Passengers[0].HandItems[1] set value {id:"minecraft:tipped_arrow",Count:64b,tag:{custom_potion_effects:[{id:"minecraft:slowness",amplifier:1b,duration:100}],CustomPotionColor:16777215}}
+data modify storage _: _.Passengers[0].Passengers[0].HandItems[1] set value {id:"minecraft:tipped_arrow",Count:64b,tag:{display: {Name: '{"text":"ブリザードアロー","color":"aqua"}'},custom_potion_effects:[{id:"minecraft:slowness",amplifier:1b,duration:100}],CustomPotionColor:16777215}}
 data modify storage asset: mob set from storage _: _
 data remove storage _: _
 
