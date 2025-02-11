@@ -69,6 +69,7 @@
         "asset:mob/2002.book_eater_first/summon/1.trigger",
         "asset:mob/2003.book_eater_middle/summon/1.trigger",
         "asset:mob/2004.book_eater_last/summon/1.trigger",
+        "asset:mob/2005.amai/summon/1.trigger",
         "asset:mob/2006.anvil/summon/1.trigger",
         "asset:mob/2007.hamburger_man/summon/1.trigger",
         "asset:mob/2008.kawaii/summon/1.trigger",
