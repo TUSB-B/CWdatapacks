@@ -98,6 +98,7 @@
         "asset:mob/2462.spawner_creeper/summon/1.trigger",
         "asset:mob/2470.blacksmith/summon/1.trigger",
         "asset:mob/2471.toughness/summon/1.trigger",
+        "asset:mob/2480.ender_mage/summon/1.trigger",
         "asset:mob/2490.slime_rain/summon/1.trigger",
         "asset:mob/2491.grenade/summon/1.trigger",
         "asset:mob/2492.molten_ore/summon/1.trigger",

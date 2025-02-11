@@ -99,6 +99,7 @@
         "asset:mob/2462.spawner_creeper/data/1.trigger",
         "asset:mob/2470.blacksmith/data/1.trigger",
         "asset:mob/2471.toughness/data/1.trigger",
+        "asset:mob/2480.ender_mage/data/1.trigger",
         "asset:mob/2490.slime_rain/data/1.trigger",
         "asset:mob/2491.grenade/data/1.trigger",
         "asset:mob/2492.molten_ore/data/1.trigger",
