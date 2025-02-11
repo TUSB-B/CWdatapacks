@@ -86,7 +86,7 @@
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
 
-# 死亡時ポーションを乗せる(即時ダメージⅣ)
+# 死亡時ポーションを乗せる(即時ダメージ３，空腹１)
     data modify storage asset: mob.Passengers append value {CustomNameVisible:1b,id:"minecraft:potion",CustomName:'{"text":"金床様","color":"dark_purple","bold":true,"italic":false}',Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:6168524,custom_potion_effects:[{id:"minecraft:instant_damage",amplifier:2b,duration:1},{id:"minecraft:hunger",amplifier:0b,duration:60}],Enchantments:[{}]}}}
 
 
