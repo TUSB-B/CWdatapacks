@@ -46,7 +46,7 @@
     # 最大体力
         data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:50}
     # (近接)攻撃力
-        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:15}
+        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:7}
     # 移動速度
         data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:1.2}
     # 防具値
@@ -54,7 +54,7 @@
     # 防具強度
         #data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
     # ノックバック耐性(0~1)
-        data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:0.5}
+        #data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:0.5}
     # 索敵範囲
         #data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:64}
     # それぞれの詳しい仕様はwikiなどで調べてください
@@ -92,11 +92,11 @@ data remove storage _: _
 data modify storage _: _ set from storage asset: mob
 data modify storage asset: mob.id set value "skeleton"
 data modify storage _: _.Passengers append from storage asset: mob
-data modify storage _: _.Passengers[0].HandItems[0] set value {id: "minecraft:bow", Count: 1b, tag: {display: {Name: '{"text":"カルシウムショット","color":"white"}'}, Enchantments: [{lvl: 3s, id: "minecraft:punch"},{lvl: 5s, id: "minecraft:power"}]}}
+data modify storage _: _.Passengers[0].HandItems[0] set value {id: "minecraft:bow", Count: 1b, tag: {display: {Name: '{"text":"カルシウムショット","color":"white"}'}, Enchantments: [{lvl: 5s, id: "minecraft:power"}]}}
 data modify storage asset: mob.id set value "stray"
 data modify storage _: _.Passengers[0].Passengers append from storage asset: mob
-data modify storage _: _.Passengers[0].Passengers[0].HandItems[0] set value {id:"minecraft:bow", Count: 1b, tag: {display: {Name: '{"text":"ブリザードショット","color":"aqua"}'}, Enchantments: [{lvl: 5s, id: "minecraft:power"}]}}
-data modify storage _: _.Passengers[0].Passengers[0].HandItems[1] set value {id:"minecraft:tipped_arrow",Count:64b,tag:{display: {Name: '{"text":"ブリザードアロー","color":"aqua"}'},custom_potion_effects:[{id:"minecraft:slowness",amplifier:1b,duration:100}],CustomPotionColor:16777215}}
+data modify storage _: _.Passengers[0].Passengers[0].HandItems[0] set value {id:"minecraft:bow", Count: 1b, tag: {display: {Name: '{"text":"ブリザードショット","color":"aqua"}'}, Enchantments: [{lvl: 3s, id: "minecraft:power"}]}}
+data modify storage _: _.Passengers[0].Passengers[0].HandItems[1] set value {id:"minecraft:tipped_arrow",Count:64b,tag:{display: {Name: '{"text":"ブリザードアロー","color":"aqua"}'},custom_potion_effects:[{id:"minecraft:slowness",amplifier:2b,duration:100}],CustomPotionColor:16777215}}
 data modify storage asset: mob set from storage _: _
 data remove storage _: _
 

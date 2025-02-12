@@ -13,7 +13,7 @@
 
 ### 体力等nbtを設定
     # 体力
-        data modify storage asset: mob.Health set value 50
+        data modify storage asset: mob.Health set value 30
     # 緩衝体力
         #data modify storage asset: mob.AbsorptionAmount set value 20
     # AIを持っていないか
@@ -44,7 +44,7 @@
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:50}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:30}
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:5}
     # 移動速度
@@ -125,4 +125,4 @@
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
         # 効果時間を-1に設定すると無限になる
-    data modify storage asset: mob.active_effects set value {id: "minecraft:fire_resistance", amplifier: 0b, duration: -1, show_icon: 0b,show_particles: 0b}
+    #data modify storage asset: mob.active_effects set value {id: "minecraft:fire_resistance", amplifier: 0b, duration: -1, show_icon: 0b,show_particles: 0b}
