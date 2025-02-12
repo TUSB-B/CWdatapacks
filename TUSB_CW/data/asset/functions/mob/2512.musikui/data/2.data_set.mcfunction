@@ -48,7 +48,7 @@
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:5}
     # 移動速度
-        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:1}
+        #data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:1}
     # 防具値
         #data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
     # 防具強度
@@ -127,5 +127,16 @@
         # 効果時間を-1に設定すると無限になる
 
     data modify storage asset: mob.active_effects set value [{id: "minecraft:strength",amplifier: 1b,duration:-1,show_particles: 0b}]
+    data modify storage asset: mob.Passengers append value {id:"minecraft:area_effect_cloud",Tags:["RidingRequired", "TypeChecked"],CustomName: '{"text":"ﾊﾟﾝﾌﾟｷﾝｵｰﾗ"}',DeathLootTable:"empty",Radius:3f,Duration:32767,effects: [{id: "minecraft:strength",amplifier: 1b,duration:60,show_particles: 0b},{id: "minecraft:speed",amplifier: 3b,duration:60,show_icon: 0b,show_particles: 0b}]}
 
-    data modify storage asset: mob.Passengers append value {ArmorDropChances: [0.0f, 0.0f, 0.0f, 0.0f], Passengers: [{Item: {id: "minecraft:lingering_potion",CustomNameVisible:1b, CustomName: '{"text":"ﾊﾟﾝﾌﾟｷﾝｷｯﾄﾞ"}', Count: 1b, tag: {custom_potion_effects: [{duration: 120, id: "minecraft:strength", amplifier: 10b}, {duration: 120, id: "minecraft:glowing", amplifier: 0b}, {duration: 4, id: "minecraft:levitation", amplifier: 60b}], Potion: "minecraft:water"}}, Potion: {id: "minecraft:lingering_potion",CustomNameVisible:1b, CustomName: '{"text":"ﾊﾟﾝﾌﾟｷﾝｷｯﾄﾞ"}', Count: 1b, tag: {custom_potion_effects: [{duration: 120, id: "minecraft:strength", amplifier: 10b}, {duration: 120, id: "minecraft:glowing", amplifier: 0b}, {duration: 4, id: "minecraft:levitation", amplifier: 60b}], Potion: "minecraft:water"}}, id: "minecraft:potion"}],DeathLootTable:"empty",CustomNameVisible:1b, CustomName: '{"text":"ﾊﾟﾝﾌﾟｷﾝｷｯﾄﾞ"}', IsBaby: 1b, Health: 100.0f, ArmorItems: [{id: "minecraft:leather_boots", Count: 65b, tag: {display: {color: 0}, Damage: 0}}, {id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 0}, Damage: 0}}, {id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 0}, Damage: 0}}, {id: "minecraft:jack_o_lantern", Count: 65b, tag: {Enchantments: [{lvl: 15s, id: "minecraft:feather_falling"}, {lvl: 15s, id: "minecraft:blast_protection"}]}}], Attributes: [{Base: 100.0d, Name: "generic.max_health"}, {Base: 0.25d, Name: "generic.movement_speed"}, {Base: 7.0d, Name: "generic.attack_damage"}, {Base: 0.5d, Name: "generic.knockback_resistance"}, {Base: 32.0d, Name: "generic.follow_range"}], HandDropChances: [0.0f, 0.0f], id: "minecraft:zombie", active_effects: [{duration: 2147483647, id: "minecraft:jump_boost", amplifier: 10b}, {duration: 2147483647, id: "minecraft:invisibility", amplifier: 127b},{id: "minecraft:speed",amplifier: 0b,duration: -1,show_icon: 0b,show_particles: 0b},{id: "minecraft:strength",amplifier: 0b,duration: -1,show_icon: 0b,show_particles: 0b}], HandItems: [{id: "minecraft:golden_hoe", Count: 65b, tag: {Enchantments: [{lvl: 5s, id: "minecraft:knockback"}, {lvl: 5s, id: "minecraft:fire_aspect"}], Damage: 0}}, {}]}
+    data remove storage _: _
+
+    data modify storage _: _ set from storage asset: mob
+
+    function asset:mob/0012.pumpkin_kid/data/2.data_set
+
+    data modify storage _: _.Passengers append from storage asset: mob.Passengers[0].Passengers[0]
+
+    data modify storage asset: mob set from storage _: _
+
+    data remove storage _: _
