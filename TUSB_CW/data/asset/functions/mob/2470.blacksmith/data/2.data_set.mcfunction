@@ -89,7 +89,7 @@
 # エリアエフェクトクラウドを乗せる
         data modify storage asset: mob.Passengers append value {id:"minecraft:area_effect_cloud",Tags:["RidingRequired", "TypeChecked"],Particle:"smoke",CustomName:'{"text":"鍛冶職人","bold":true,"color":"dark_red"}',DeathLootTable:"empty",CustomNameVisible: 1b,Radius:3f,Duration:32767,effects: [{duration: 0, id: "minecraft:fire_resistance", amplifier: 127b}]}
 # 死亡時ポーションを乗せる
-        data modify storage asset: mob.Passengers append value {id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:12713984,custom_potion_effects:[{duration: 0, id: "minecraft:fire_resistance", amplifier: 127b}]}}}
+        data modify storage asset: mob.Passengers append value {id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:6168524,custom_potion_effects:[{duration: 0, id: "minecraft:fire_resistance", amplifier: 127b}]}}}
 
 
 ### active_effects
