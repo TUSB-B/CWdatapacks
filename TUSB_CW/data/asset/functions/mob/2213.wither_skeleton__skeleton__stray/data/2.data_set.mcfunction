@@ -29,9 +29,9 @@
     # デスポーンしないか
         #data modify storage asset: mob.PersistenceRequired set value true
     # 名前
-        #data modify storage asset: mob.CustomName set value '{"text":""}'
+        data modify storage asset: mob.CustomName set value '{"text":"ウィザースケルトンライダースケルトンライダーストレイ"}'
     # 名前を表示するか
-        #data modify storage asset: mob.CustomNameVisible set value true
+        data modify storage asset: mob.CustomNameVisible set value true
     # 死亡時のルートテーブル
         data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
