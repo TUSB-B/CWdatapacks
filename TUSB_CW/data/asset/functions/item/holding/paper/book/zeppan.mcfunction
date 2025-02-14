@@ -1,5 +1,5 @@
 #> asset:item/holding/paper/book/zeppan
-# 名前：超・作業台チュートリアルガイド！
+# 名前：もっと！？ 超・作業台上級者ガイド
 
 data remove storage asset:item item
 
