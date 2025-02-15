@@ -1,5 +1,5 @@
 #> asset:item/holding/material/enchanted_cake
-# 名前：幸福のレシピ
+# 名前：エンチャントされた怪しいケーキ
 
 data remove storage asset:item item
 
