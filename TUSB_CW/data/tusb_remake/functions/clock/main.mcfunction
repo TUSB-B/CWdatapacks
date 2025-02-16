@@ -86,3 +86,6 @@ execute as @a[gamemode=!spectator,gamemode=!creative] at @s if block ~ ~ ~ #tusb
 
 # 転移防止
 execute positioned -2882 319 -387 as @a[dx=34,dy=0,dz=34] run tp -2739 89 -370
+
+### 個人ロッカー(印板)
+execute as @e[tag=PersonalLockerSign] at @s run function tusb_remake:clock/personal_locker_sign
