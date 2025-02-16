@@ -1,4 +1,4 @@
-#> asset:item/holding/pickaxe/advpikaxeplus
+#> asset:new_item/holding/pickaxe/advpikaxeplus
 # 名前：Adv.ツルハシ＋
 
 data remove storage asset:item item
