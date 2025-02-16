@@ -7,7 +7,7 @@ data remove storage asset:item item
 data modify storage asset:item item.Count set value 1b
 
 ### 元のアイテムID入力
-data modify storage asset:item item.id set value armor_stand
+data modify storage asset:item item.id set value ender_eye
 
 ### 元ＮＢＴ
 data modify storage asset:item item.tag set value {display: {Name: '{"text":"§6ゴールデンエンダーアイ"}'}, Enchantments: [{lvl: 50s, id: "minecraft:unbreaking"}],HideFlags: 32}
