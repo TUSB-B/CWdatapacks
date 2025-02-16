@@ -1,4 +1,4 @@
-#> asset:item/holding/material/enchanted_cake
+#> asset:new_item/holding/material/enchanted_cake
 # 名前：エンチャントされた怪しいケーキ
 
 data remove storage asset:item item

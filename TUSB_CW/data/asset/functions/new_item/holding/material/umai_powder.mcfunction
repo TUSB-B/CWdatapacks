@@ -1,4 +1,4 @@
-#> asset:item/holding/material/umai_powder
+#> asset:new_item/holding/material/umai_powder
 # 名前：おいしいパウダー
 
 data remove storage asset:item item

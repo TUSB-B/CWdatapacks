@@ -1,4 +1,4 @@
-#> asset:item/holding/material/kinkin_komugi
+#> asset:new_item/holding/material/kinkin_komugi
 # 名前：キンキンになった小麦
 
 data remove storage asset:item item
