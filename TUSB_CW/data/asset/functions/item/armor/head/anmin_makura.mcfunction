@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/anmin_makura
+#> asset:item/armor/head/anmin_makura
 # 名前：安眠まくら
 
 data remove storage asset:item item

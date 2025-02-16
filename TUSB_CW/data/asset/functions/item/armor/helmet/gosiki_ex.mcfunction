@@ -1,4 +1,4 @@
-#> asset:item/armor/head/gosiki_ex
+#> asset:item/armor/helmet/gosiki_ex
 # 名前：5式ex
 
 data remove storage asset:item item

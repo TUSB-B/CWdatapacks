@@ -1,4 +1,4 @@
-#> asset:item/armor/head/arctic_clothes
+#> asset:item/armor/helmet/arctic_clothes
 # 名前：防寒具
 
 data remove storage asset:item item

@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/knight_soul
+#> asset:item/armor/head/knight_soul
 # 名前：剣士の魂
 
 data remove storage asset:item item

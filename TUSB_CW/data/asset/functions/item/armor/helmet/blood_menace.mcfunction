@@ -1,4 +1,4 @@
-#> asset:item/armor/head/blood_menace
+#> asset:item/armor/helmet/blood_menace
 # 名前：ブラッド・メナス
 
 data remove storage asset:item item

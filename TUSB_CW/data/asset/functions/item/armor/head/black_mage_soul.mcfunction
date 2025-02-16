@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/black_mage_soul
+#> asset:item/armor/head/black_mage_soul
 # 名前：黒魔導士の魂
 
 data remove storage asset:item item

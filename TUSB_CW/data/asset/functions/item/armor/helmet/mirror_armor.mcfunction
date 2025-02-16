@@ -1,4 +1,4 @@
-#> asset:item/armor/head/mirror_armor
+#> asset:item/armor/helmet/mirror_armor
 # 名前：ミラーアーマー
 
 data remove storage asset:item item

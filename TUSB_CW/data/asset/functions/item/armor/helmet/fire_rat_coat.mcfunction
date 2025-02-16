@@ -1,4 +1,4 @@
-#> asset:item/armor/head/fire_rat_coat
+#> asset:item/armor/helmet/fire_rat_coat
 # 名前：火鼠の皮衣
 
 data remove storage asset:item item

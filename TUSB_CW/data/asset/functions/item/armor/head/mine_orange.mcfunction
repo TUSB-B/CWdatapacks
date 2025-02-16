@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/mine_orange
+#> asset:item/armor/head/mine_orange
 # 名前：まいんみかん
 
 data remove storage asset:item item

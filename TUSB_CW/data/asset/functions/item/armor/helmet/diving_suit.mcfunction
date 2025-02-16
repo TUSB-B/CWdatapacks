@@ -1,4 +1,4 @@
-#> asset:item/armor/head/diving_suit
+#> asset:item/armor/helmet/diving_suit
 # 名前：潜水服
 
 data remove storage asset:item item

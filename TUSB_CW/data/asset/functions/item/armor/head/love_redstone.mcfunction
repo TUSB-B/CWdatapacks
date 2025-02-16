@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/love_redstone
+#> asset:item/armor/head/love_redstone
 # 名前：赤石愛
 
 data remove storage asset:item item

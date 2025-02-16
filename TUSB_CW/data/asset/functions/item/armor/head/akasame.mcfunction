@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/akasame
+#> asset:item/armor/head/akasame
 # 名前：あかさめ
 
 data remove storage asset:item item

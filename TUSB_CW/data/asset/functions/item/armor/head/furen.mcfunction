@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/furen
+#> asset:item/armor/head/furen
 # 名前：フレン
 
 data remove storage asset:item item

@@ -1,4 +1,4 @@
-#> asset:item/armor/head/lightning
+#> asset:item/armor/helmet/lightning
 # 名前：雷光
 
 data remove storage asset:item item

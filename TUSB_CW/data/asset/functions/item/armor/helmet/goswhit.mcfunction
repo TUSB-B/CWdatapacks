@@ -1,4 +1,4 @@
-#> asset:item/armor/head/goswhit
+#> asset:item/armor/helmet/goswhit
 # 名前：ゴスウィット
 
 data remove storage asset:item item

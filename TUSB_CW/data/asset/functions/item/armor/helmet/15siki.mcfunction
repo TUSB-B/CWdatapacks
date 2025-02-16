@@ -1,4 +1,4 @@
-#> asset:item/armor/head/15siki
+#> asset:item/armor/helmet/15siki
 # 名前：15式ダイヤ防具
 
 data remove storage asset:item item

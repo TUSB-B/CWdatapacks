@@ -1,4 +1,4 @@
-#> asset:item/armor/head/apparition
+#> asset:item/armor/helmet/apparition
 # 名前：怨霊の服
 
 data remove storage asset:item item

@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/haru
+#> asset:item/armor/head/haru
 # 名前：ハル
 
 data remove storage asset:item item

@@ -1,4 +1,4 @@
-#> asset:item/armor/head/halloween_head
+#> asset:item/armor/extra_head/halloween_head
 # 名前：ハロウィンヘッド
 
 data remove storage asset:item item

@@ -1,4 +1,4 @@
-#> asset:item/armor/extra_head/kiwi
+#> asset:item/armor/head/kiwi
 # 名前：Kiwi
 
 data remove storage asset:item item
