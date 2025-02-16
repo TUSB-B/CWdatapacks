@@ -1,5 +1,5 @@
 #> asset:item/use/potion/lingering/antidote
-# 名前：移動封じの聖水
+# 名前：解毒薬
 
 data remove storage asset:item item
 
