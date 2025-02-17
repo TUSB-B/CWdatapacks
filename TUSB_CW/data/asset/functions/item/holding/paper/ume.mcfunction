@@ -1,7 +1,4 @@
 #> asset:item/holding/paper/ume
-#
-# 
-#
 # 名前：交換チケット・雑貨[梅]
 
 data remove storage asset:item item
