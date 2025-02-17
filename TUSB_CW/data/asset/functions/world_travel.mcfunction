@@ -1,10 +1,11 @@
 #> asset:world_travel
 # 世界を渡る村人
 summon villager ~ ~ ~ {\
+                            Invulnerable:1b,\
                             VillagerData:\
                             {\
                                 profession:"farmer",\
-                                level:1,\
+                                level:2,\
                                 type:"plains"\
                             },\
                             PersistenceRequired:1b,\
