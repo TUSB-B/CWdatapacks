@@ -10,4 +10,4 @@ data modify storage asset:item item.Count set value 1b
 data modify storage asset:item item.id set value creeper_spawn_egg
 
 ### 元ＮＢＴ
-data modify storage asset:item item.tag set value {EntityTag: {Fuse: 0s, id: "minecraft:creeper", ActiveEffects: [{duration: 100, id: "invisibility", amplifier: 0b, show_particles: 0b}], Tags: ["TypeChecked"]}, RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{"text":"§e取り扱い注意"}'], Name: '{"text":"§e§lチンした卵"}'}, Enchantments: []}
+data modify storage asset:item item.tag set value {EntityTag: {Fuse: 0s, id: "minecraft:creeper", active_effects: [{duration: 100, id: "invisibility", amplifier: 0b, show_particles: 0b}], Tags: ["TypeChecked"]}, RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{"text":"§e取り扱い注意"}'], Name: '{"text":"§e§lチンした卵"}'}, Enchantments: []}
