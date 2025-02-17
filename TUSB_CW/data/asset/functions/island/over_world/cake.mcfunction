@@ -1,0 +1,13 @@
+#> asset:island/over_world/cake
+# 島報酬：ケーキ島
+
+data remove storage asset:item item
+
+### カウント数 
+data modify storage asset:item item.Count set value 1b
+
+### 元のアイテムID入力
+data modify storage asset:item item.id set value chest
+
+### 元ＮＢＴ
+data modify storage asset:item item.tag set value {BlockEntityTag: {Items: [{Slot: 13b, id: "minecraft:chest", Count: 1b, tag: {BlockEntityTag: {Items: [{Slot: 4b, id: "minecraft:sugar", Count: 1b, tag: {RepairCost: 1000000000, display: {Name: '{"text":"怪しい粉"}'}, Enchantments: [{lvl: 10s, id: "minecraft:bane_of_arthropods"}, {lvl: 10s, id: "minecraft:fire_aspect"}, {lvl: 10s, id: "minecraft:knockback"}, {lvl: 10s, id: "minecraft:sharpness"}, {lvl: 10s, id: "minecraft:smite"}]}}, {Slot: 10b, id: "minecraft:sugar", Count: 1b, tag: {RepairCost: 1000000000, display: {Name: '{"text":"怪しい粉"}'}, Enchantments: [{lvl: 10s, id: "minecraft:bane_of_arthropods"}, {lvl: 10s, id: "minecraft:fire_aspect"}, {lvl: 10s, id: "minecraft:knockback"}, {lvl: 10s, id: "minecraft:sharpness"}, {lvl: 10s, id: "minecraft:smite"}]}}, {Slot: 12b, id: "minecraft:sugar", Count: 1b, tag: {RepairCost: 1000000000, display: {Name: '{"text":"怪しい粉"}'}, Enchantments: [{lvl: 10s, id: "minecraft:bane_of_arthropods"}, {lvl: 10s, id: "minecraft:fire_aspect"}, {lvl: 10s, id: "minecraft:knockback"}, {lvl: 10s, id: "minecraft:sharpness"}, {lvl: 10s, id: "minecraft:smite"}]}}, {Slot: 14b, id: "minecraft:sugar", Count: 1b, tag: {RepairCost: 1000000000, display: {Name: '{"text":"怪しい粉"}'}, Enchantments: [{lvl: 10s, id: "minecraft:bane_of_arthropods"}, {lvl: 10s, id: "minecraft:fire_aspect"}, {lvl: 10s, id: "minecraft:knockback"}, {lvl: 10s, id: "minecraft:sharpness"}, {lvl: 10s, id: "minecraft:smite"}]}}, {Slot: 16b, id: "minecraft:sugar", Count: 1b, tag: {RepairCost: 1000000000, display: {Name: '{"text":"怪しい粉"}'}, Enchantments: [{lvl: 10s, id: "minecraft:bane_of_arthropods"}, {lvl: 10s, id: "minecraft:fire_aspect"}, {lvl: 10s, id: "minecraft:knockback"}, {lvl: 10s, id: "minecraft:sharpness"}, {lvl: 10s, id: "minecraft:smite"}]}}, {Slot: 22b, id: "minecraft:sugar", Count: 1b, tag: {RepairCost: 1000000000, display: {Name: '{"text":"怪しい粉"}'}, Enchantments: [{lvl: 10s, id: "minecraft:bane_of_arthropods"}, {lvl: 10s, id: "minecraft:fire_aspect"}, {lvl: 10s, id: "minecraft:knockback"}, {lvl: 10s, id: "minecraft:sharpness"}, {lvl: 10s, id: "minecraft:smite"}]}}], id: "minecraft:chest"}, display: {Lore: ['"(+NBT)"']}}}], id: "minecraft:chest"}, display: {Lore: ['"(+NBT)"'], Name: '"ケーキ島"'}}
