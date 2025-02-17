@@ -1,4 +1,4 @@
-#> asset:mob/2211.kane_mouja/data/2.data_set
+#> asset:mob/2009.cat_loyalguardian/data/2.data_set
 
 # 最終的にPassengersやスポナーの中身に使える形になればそこまでがどのような形でもいい
 
@@ -6,14 +6,14 @@
     data remove storage asset: mob
 
 ### AssetIdを設定
-    data modify storage asset: mob.AssetId set value 2211
+    data modify storage asset: mob.AssetId set value 2009
 
 ### idを設定
-    data modify storage asset: mob.id set value "skeleton"
+    data modify storage asset: mob.id set value "zombie"
 
 ### 体力等nbtを設定
     # 体力
-        data modify storage asset: mob.Health set value 10
+        data modify storage asset: mob.Health set value 20
     # 緩衝体力
         #data modify storage asset: mob.AbsorptionAmount set value 20
     # AIを持っていないか
@@ -29,7 +29,7 @@
     # デスポーンしないか
         #data modify storage asset: mob.PersistenceRequired set value true
     # 名前
-        data modify storage asset: mob.CustomName set value '{"text":"金の亡者","color":"gold"}'
+        data modify storage asset: mob.CustomName set value '{"text":"ねこちゃん親衛隊","color":"yellow"}'
     # 名前を表示するか
         data modify storage asset: mob.CustomNameVisible set value true
     # 死亡時のルートテーブル
@@ -44,13 +44,13 @@
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:10}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:20}
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:6}
     # 移動速度
         #data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.2}
     # 防具値
-        #data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
+        data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:-7}
     # 防具強度
         #data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
     # ノックバック耐性(0~1)
@@ -75,13 +75,13 @@
             #data modify storage asset: mob.HandItems[1] set value 
     # 防具
         # 頭
-            #data modify storage asset: mob.ArmorItems[3] set value 
+            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:leather_helmet",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんヘルメット"}'}, Damage: 0}}
         # 胴
-            #data modify storage asset: mob.ArmorItems[2] set value 
+            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_chestplate",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんセーター"}'}, Damage: 0}}
         # 脚
-            #data modify storage asset: mob.ArmorItems[1] set value 
+            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_leggings",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんズボン"}'}, Damage: 0}}
         # 足
-            #data modify storage asset: mob.ArmorItems[0] set value 
+            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots",Unbreakable:1b,Count: 1b, tag: {Enchantments:[{id:depth_strider,lvl:10}] , display: {color: 16762880, Name: '{"text":"ねこちゃんスニーカー"}'}, Damage: 0}}
     # 武器、防具のドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
