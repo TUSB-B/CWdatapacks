@@ -1,4 +1,4 @@
-#> asset:world_travel
+#> asset:temp_villager/world_travel
 # 世界を渡る村人
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
