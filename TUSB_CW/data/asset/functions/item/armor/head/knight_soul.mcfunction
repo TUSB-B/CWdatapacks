@@ -1,5 +1,5 @@
 #> asset:item/armor/head/knight_soul
-# 名前：剣士の魂
+# 名前：剣士の魂（こちらは調整前ファイルにつき使用厳禁）
 
 data remove storage asset:item item
 
