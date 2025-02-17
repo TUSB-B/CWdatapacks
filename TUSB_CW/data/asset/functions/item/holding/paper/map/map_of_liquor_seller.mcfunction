@@ -1,4 +1,4 @@
-#> asset:item/holding/map/map_of_liquor_seller
+#> asset:item/holding/paper/map/map_of_liquor_seller
 # 名前：酒売の地図
 
 data remove storage asset:item item
