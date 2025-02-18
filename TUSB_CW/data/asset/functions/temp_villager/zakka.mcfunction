@@ -41,13 +41,18 @@ summon villager ~ ~ ~ {\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
-                                            buy:{id:"paper",Count:2,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"shears",Count:1},\
+                                            buy:{id:"paper",Count:6,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"chest",Count:1},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
                                             buy:{id:"paper",Count:2,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"ender_eye",Count:1},\
+                                            rewardExp:0b,maxUses:2147483647,\
+                                        },\
+                                        {\ 
+                                            buy:{id:"paper",Count:2,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"shears",Count:1},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
@@ -113,11 +118,6 @@ summon villager ~ ~ ~ {\
                                         {\ 
                                             buy:{id:"paper",Count:4,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"crafting_table",Count:1},\
-                                            rewardExp:0b,maxUses:2147483647,\
-                                        },\
-                                        {\ 
-                                            buy:{id:"paper",Count:6,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"chest",Count:1},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
