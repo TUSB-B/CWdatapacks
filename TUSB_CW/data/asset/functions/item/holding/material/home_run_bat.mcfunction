@@ -1,5 +1,5 @@
 #> asset:item/holding/material/home_run_bat
-# 名前：魔導書
+# 名前：ホームランバット
 
 data remove storage asset:item item
 
