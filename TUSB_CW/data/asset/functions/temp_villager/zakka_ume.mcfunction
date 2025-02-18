@@ -291,16 +291,6 @@ summon villager ~ ~ ~ {\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
-                                            buy:{id:"paper",Count:2,tag:{display:{Name:'{"text":"§d§l交換チケット・雑貨[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"piston",Count:1},\
-                                            rewardExp:0b,maxUses:2147483647,\
-                                        },\
-                                        {\ 
-                                            buy:{id:"paper",Count:3,tag:{display:{Name:'{"text":"§d§l交換チケット・雑貨[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"sticky_piston",Count:1},\
-                                            rewardExp:0b,maxUses:2147483647,\
-                                        },\
-                                        {\ 
                                             buy:{id:"paper",Count:8,tag:{display:{Name:'{"text":"§d§l交換チケット・雑貨[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"trapped_chest",Count:1},\
                                             rewardExp:0b,maxUses:2147483647,\
