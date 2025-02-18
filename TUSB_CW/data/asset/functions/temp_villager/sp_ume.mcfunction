@@ -101,8 +101,8 @@ summon villager ~ ~ ~ {\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
-                                            buy:{id:"paper",Count:2,tag:{display:{Name:'{"text":"交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"redstone",Count:1,tag:{RepairCost: 1000000000, HideFlags: 32, AttributeModifiers: [{Amount: 0.5d, Slot: "mainhand", AttributeName: "generic.max_health", Operation: 0, UUID: [I; 0, 1, 0, 1], Name: "wax"}, {Amount: 0.01d, Slot: "mainhand", AttributeName: "generic.movement_speed", Operation: 0, UUID: [I; 0, 1, 0, 2], Name: "wax"}, {Amount: 1.0d, Slot: "mainhand", AttributeName: "generic.attack_damage", Operation: 0, UUID: [I; 0, 1, 0, 3], Name: "wax"}], display: {Name: '{"text":"§4§l熱い赤粉"}'}, Enchantments: [{lvl: 1, id: "minecraft:fire_aspect"}]}},\
+                                            buy:{id:"paper",Count:1,tag:{display:{Name:'{"text":"交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"redstone",Count:16,tag:{RepairCost: 1000000000, HideFlags: 32, AttributeModifiers: [{Amount: 0.5d, Slot: "mainhand", AttributeName: "generic.max_health", Operation: 0, UUID: [I; 0, 1, 0, 1], Name: "wax"}, {Amount: 0.01d, Slot: "mainhand", AttributeName: "generic.movement_speed", Operation: 0, UUID: [I; 0, 1, 0, 2], Name: "wax"}, {Amount: 1.0d, Slot: "mainhand", AttributeName: "generic.attack_damage", Operation: 0, UUID: [I; 0, 1, 0, 3], Name: "wax"}], display: {Name: '{"text":"§4§l熱い赤粉"}'}, Enchantments: [{lvl: 1, id: "minecraft:fire_aspect"}]}},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
