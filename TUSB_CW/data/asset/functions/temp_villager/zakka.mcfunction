@@ -1,8 +1,8 @@
-#> asset:temp_villager/zakka_ume
-# 雑貨チケット交換屋 -梅-（統合前）
+#> asset:temp_villager/zakka
+# 雑貨チケット交換屋
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
-                            CustomName:'{"text":"§l雑貨チケット交換屋 -§d梅§r§l-"}',\
+                            CustomName:'{"text":"§l雑貨チケット交換屋"}',\
                             CustomNameVisible:1b,\
                             VillagerData:\
                             {\
@@ -303,6 +303,31 @@ summon villager ~ ~ ~ {\
                                         {\ 
                                             buy:{id:"paper",Count:4,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"minecart",Count:1},\
+                                            rewardExp:0b,maxUses:2147483647,\
+                                        },\
+                                        {\ 
+                                            buy:{id:"paper",Count:12,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"enchanted_golden_apple",Count:1},\
+                                            rewardExp:0b,maxUses:2147483647,\
+                                        },\
+                                        {\ 
+                                            buy:{id:"paper",Count:64,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"ender_chest",Count:1},\
+                                            rewardExp:0b,maxUses:2147483647,\
+                                        },\
+                                        {\ 
+                                            buy:{id:"paper",Count:1,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"apple",Count:8},\
+                                            rewardExp:0b,maxUses:2147483647,\
+                                        },\
+                                        {\ 
+                                            buy:{id:"paper",Count:64,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"enchanted_golden_apple",Count:1},\
+                                            rewardExp:0b,maxUses:2147483647,\
+                                        },\
+                                        {\ 
+                                            buy:{id:"paper",Count:32,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"ender_pearl",Count:4},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                     ]\

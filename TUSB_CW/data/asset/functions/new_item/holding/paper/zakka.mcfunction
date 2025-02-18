@@ -1,5 +1,5 @@
-#> asset:new_item/holding/paper/take
-# 名前：交換チケット・雑貨[竹]
+#> asset:new_item/holding/paper/zakka
+# 名前：交換チケット・雑貨
 
 data remove storage asset:item item
 
