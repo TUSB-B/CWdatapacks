@@ -37,7 +37,7 @@ summon villager ~ ~ ~ {\
                                         },\
                                         {\ 
                                             buy:{id:"paper",Count:32,tag:{display:{Name:'{"text":"§l交換チケット・雑貨","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"ender_pearl",Count:4},\
+                                            sell:{id:"ender_pearl",Count:1},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
