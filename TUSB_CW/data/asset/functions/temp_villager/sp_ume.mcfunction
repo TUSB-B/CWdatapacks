@@ -1,5 +1,5 @@
 #> asset:temp_villager/sp_ume
-# 特殊チケット交換屋・梅
+# 特殊チケット交換屋 -梅-
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
                             CustomName:'{"text":"§l特殊チケット交換屋 -§c梅§r§l-"}',\

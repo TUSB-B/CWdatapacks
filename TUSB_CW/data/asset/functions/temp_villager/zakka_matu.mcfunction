@@ -1,5 +1,5 @@
 #> asset:temp_villager/zakka_matu
-# 雑貨チケット交換屋・松
+# 雑貨チケット交換屋 -松-
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
                             CustomName:'{"text":"§l雑貨チケット交換屋 -§2松§r§l-"}',\

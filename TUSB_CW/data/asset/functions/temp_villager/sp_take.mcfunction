@@ -1,5 +1,5 @@
 #> asset:temp_villager/sp_take
-# 特殊チケット交換屋・竹
+# 特殊チケット交換屋 -竹-
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
                             CustomName:'{"text":"§l特殊チケット交換屋 -§a竹§r§l-"}',\

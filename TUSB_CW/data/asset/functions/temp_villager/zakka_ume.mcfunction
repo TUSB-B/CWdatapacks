@@ -1,5 +1,5 @@
 #> asset:temp_villager/zakka_ume
-# 雑貨チケット交換屋・梅
+# 雑貨チケット交換屋 -梅-
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
                             CustomName:'{"text":"§l雑貨チケット交換屋 -§c梅§r§l-"}',\

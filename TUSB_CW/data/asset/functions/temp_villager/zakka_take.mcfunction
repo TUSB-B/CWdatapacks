@@ -1,5 +1,5 @@
 #> asset:temp_villager/zakka_take
-# 雑貨チケット交換屋・竹
+# 雑貨チケット交換屋 -竹-
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
                             CustomName:'{"text":"§l雑貨チケット交換屋 -§a竹§r§l-"}',\

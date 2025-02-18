@@ -1,5 +1,5 @@
 #> asset:temp_villager/sp_matu
-# 特殊チケット交換屋・松
+# 特殊チケット交換屋 -松-
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
                             CustomName:'{"text":"§l特殊チケット交換屋 -§2松§r§l-"}',\
