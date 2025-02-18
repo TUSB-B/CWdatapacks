@@ -16,8 +16,13 @@ summon villager ~ ~ ~ {\
                                     Recipes:\
                                     [\
                                         {\ 
-                                            buy:{id:"paper",Count:4,tag:{display:{Name:'{"text":"§2§l交換チケット・雑貨[松]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            buy:{id:"paper",Count:1,tag:{display:{Name:'{"text":"§2§l交換チケット・雑貨[松]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"enchanted_golden_apple",Count:1},\
+                                            rewardExp:0b,maxUses:2147483647,\
+                                        },\
+                                        {\ 
+                                            buy:{id:"paper",Count:1,tag:{display:{Name:'{"text":"§2§l交換チケット・雑貨[松]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"ender_pearl",Count:4},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                     ]\
