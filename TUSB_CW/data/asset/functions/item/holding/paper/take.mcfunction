@@ -10,4 +10,4 @@ data modify storage asset:item item.Count set value 1b
 data modify storage asset:item item.id set value "minecraft:paper"
 
 ### 元ＮＢＴ
-data modify storage asset:item item.tag set value {display:{Name:'{"text":"交換チケット・雑貨[竹]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}
+data modify storage asset:item item.tag set value {display:{Name:'{"text":"§a§l交換チケット・雑貨[竹]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}
