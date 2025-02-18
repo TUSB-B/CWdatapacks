@@ -2,7 +2,7 @@
 # 雑貨チケット交換屋・梅
 summon villager ~ ~ ~ {\
                             Invulnerable:1b,\
-                            CustomName:'{"text":"雑貨チケット交換屋・梅"}',\
+                            CustomName:'{"text":"§c§l雑貨チケット交換屋・梅"}',\
                             CustomNameVisible:1b,\
                             VillagerData:\
                             {\
@@ -131,8 +131,8 @@ summon villager ~ ~ ~ {\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
-                                            buy:{id:"paper",Count:1,tag:{display:{Name:'{"text":"交換チケット・雑貨[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"iron_bars",Count:4},\
+                                            buy:{id:"paper",Count:8,tag:{display:{Name:'{"text":"交換チケット・雑貨[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            sell:{id:"dragon_egg",Count:1},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
@@ -178,11 +178,6 @@ summon villager ~ ~ ~ {\
                                         {\ 
                                             buy:{id:"paper",Count:1,tag:{display:{Name:'{"text":"交換チケット・雑貨[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"bookshelf",Count:1},\
-                                            rewardExp:0b,maxUses:2147483647,\
-                                        },\
-                                        {\ 
-                                            buy:{id:"paper",Count:8,tag:{display:{Name:'{"text":"交換チケット・雑貨[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"shield",Count:1},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
@@ -242,7 +237,7 @@ summon villager ~ ~ ~ {\
                                         },\
                                         {\ 
                                             buy:{id:"paper",Count:8,tag:{display:{Name:'{"text":"交換チケット・雑貨[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"rooted_dirt",Count:1},\
+                                            sell:{id:"mycelium",Count:1},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
