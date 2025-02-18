@@ -17,7 +17,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 },
@@ -49,7 +49,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 },
@@ -81,7 +81,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 },
@@ -113,7 +113,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 },
@@ -163,7 +163,7 @@
                         },
                         {
                            "function": "minecraft:set_nbt",
-                           "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                           "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                                    }
                                ]
                         }
@@ -183,7 +183,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・雑貨[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 },
@@ -201,7 +201,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・特殊[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・特殊[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 },
@@ -219,7 +219,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・特殊[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・特殊[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 },
@@ -237,7 +237,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・特殊[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・特殊[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 },
@@ -255,7 +255,7 @@
                 },
                 {
                    "function": "minecraft:set_nbt",
-                   "tag": "{display:{Name:'{\"text\":\"§c§l交換チケット・特殊[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
+                   "tag": "{display:{Name:'{\"text\":\"§d§l交換チケット・特殊[梅]\",\"color\":\"aqua\"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:\"minecraft:mending\",lvl:2s}]}"
                            }
                        ]
                 }
