@@ -16,12 +16,12 @@ summon villager ~ ~ ~ {\
                                     Recipes:\
                                     [\
                                         {\ 
-                                            buy:{id:"paper",Count:4,tag:{display:{Name:'{"text":"交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            buy:{id:"paper",Count:4,tag:{display:{Name:'{"text":"交換チケット・特殊[竹]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"bat_spawn_egg",Count:1,tag:{EntityTag: {DeathLootTable: "usb:signs/ironarmor", id: "minecraft:bat", DeathTime: 19s, Tags: ["RewardEgg", "TypeChecked"], active_effects: [{duration: 100, id: "instant_damage", amplifier: 5b, show_particles: 0b}, {duration: 100, id: "invisibility", amplifier: 0b, show_particles: 0b}]}, RepairCost: 1000000000, HideFlags: 16, CanPlaceOn: ["#minecraft:all"], display: {Lore: ['{"text":"§r§7鉄§f防具一式§eが圧縮された印玉。"}', '{"text":"§e使用すると§l§f防具一式§eが§b解凍§eされる。"}'], Name: '{"text":"§r§f圧縮防具の印玉§7§l-鉄-"}'}, Enchantments: []}},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
-                                            buy:{id:"paper",Count:4,tag:{display:{Name:'{"text":"交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            buy:{id:"paper",Count:4,tag:{display:{Name:'{"text":"交換チケット・特殊[竹]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"bat_spawn_egg",Count:1,tag:{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{"text":"§r§e使用すると、ﾗﾝﾀﾞﾑで"}', '{"text":"§7鉄製§eの道具が出現する。"}'], Name: '{"text":"§r§7鉄道具の印玉"}'}, Enchantments: [], EntityTag: {DeathLootTable: "usb:signs/iron", id: "minecraft:bat", DeathTime: 19s, active_effects: [{duration: 100, id: "instant_damage", amplifier: 5b, show_particles: 0b}, {duration: 100, id: "invisibility", amplifier: 0b, show_particles: 0b}], Tags: ["RewardEgg", "TypeChecked"]}, CanPlaceOn: ["#minecraft:all"]}},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
