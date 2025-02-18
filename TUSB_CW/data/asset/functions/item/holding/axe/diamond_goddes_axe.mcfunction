@@ -1,5 +1,5 @@
 #> asset:item/holding/axe/diamond_goddes_axe
-# 名前：トマホーク
+# 名前：泉の女神の斧
 
 data remove storage asset:item item
 
