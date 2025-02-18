@@ -1,4 +1,4 @@
-#> asset:item/holding/paper/matu_sp
+#> asset:new_item/holding/paper/matu_sp
 # 名前：交換チケット・特殊[松]
 
 data remove storage asset:item item

@@ -1,4 +1,4 @@
-#> asset:item/holding/paper/take
+#> asset:new_item/holding/paper/take
 # 名前：交換チケット・雑貨[竹]
 
 data remove storage asset:item item

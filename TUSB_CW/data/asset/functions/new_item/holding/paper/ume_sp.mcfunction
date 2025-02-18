@@ -1,4 +1,4 @@
-#> asset:item/holding/paper/ume_sp
+#> asset:new_item/holding/paper/ume_sp
 # 名前：交換チケット・特殊[梅]
 
 data remove storage asset:item item
