@@ -151,7 +151,7 @@ summon villager ~ ~ ~ {\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
                                         {\ 
-                                            buy:{id:"paper",Count:3,tag:{display:{Name:'{"text":"§d§l交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
+                                            buy:{id:"paper",Count:1,tag:{display:{Name:'{"text":"§d§l交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"purple_stained_glass_pane",Count:1,tag:{RepairCost: 1000000000, HideFlags: 32, display: {Name: '{"text":"§5§lムラサキカガミ"}'}, Enchantments: [{lvl: 1s, id: "minecraft:fire_aspect"}, {lvl: 2s, id: "minecraft:knockback"}, {lvl: 3s, id: "minecraft:sharpness"}]}},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
@@ -169,22 +169,7 @@ summon villager ~ ~ ~ {\
                                             buy:{id:"paper",Count:3,tag:{display:{Name:'{"text":"§d§l交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
                                             sell:{id:"blaze_powder",Count:1,tag:{HideFlags: 60, display: {Name: '{"text":"§c特炎"}'}, Enchantments: [{lvl: 13s, id: "minecraft:flame"}, {lvl: 13s, id: "minecraft:fire_protection"}, {lvl: 13s, id: "minecraft:fire_aspect"}]}},\
                                             rewardExp:0b,maxUses:2147483647,\
-                                        },\
-                                        {\ 
-                                            buy:{id:"paper",Count:2,tag:{display:{Name:'{"text":"§d§l交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"shield",Count:1,tag:{RepairCost: -2147483648, HideFlags: 32, BlockEntityTag: {Patterns: [{Pattern: "bri", Color: 8}, {Pattern: "bri", Color: 0}, {Pattern: "bri", Color: 8}], Base: 8}, display: {Name: '{"text":"§7§l砂利の壁"}'}, Enchantments: [{lvl: 1s, id: "minecraft:unbreaking"}], Damage: 0, AttributeModifiers: [{Slot: "offhand", AttributeName: "generic.max_health", Operation: 0, UUID: [I; 0, 2, 0, 1], Amount: 2.0d, Name: "HP"}, {Slot: "offhand", AttributeName: "generic.max_health", Operation: 2, UUID: [I; 0, 2, 0, 2], Amount: 0.02d, Name: "HP"}, {Slot: "offhand", AttributeName: "generic.movement_speed", Operation: 2, UUID: [I; 0, 2, 0, 3], Amount: -0.15d, Name: "SPD"}, {Slot: "offhand", AttributeName: "generic.armor", Operation: 0, UUID: [I; 0, 2, 0, 4], Amount: 2.0d, Name: "AMR"}, {Slot: "mainhand", AttributeName: "generic.max_health", Operation: 0, UUID: [I; 0, 1, 0, 5], Amount: 2.0d, Name: "HP"}, {Slot: "mainhand", AttributeName: "generic.max_health", Operation: 2, UUID: [I; 0, 1, 0, 6], Amount: 0.02d, Name: "HP"}, {Slot: "mainhand", AttributeName: "generic.movement_speed", Operation: 2, UUID: [I; 0, 1, 0, 7], Amount: -0.15d, Name: "SPD"}, {Slot: "mainhand", AttributeName: "generic.armor", Operation: 0, UUID: [I; 0, 1, 0, 8], Amount: 2.0d, Name: "AMR"}]}},\
-                                            rewardExp:0b,maxUses:2147483647,\
-                                        },\
-                                        {\ 
-                                            buy:{id:"paper",Count:2,tag:{display:{Name:'{"text":"§d§l交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"shield",Count:1,tag:{RepairCost: -2147483648, HideFlags: 32, BlockEntityTag: {Patterns: [{Pattern: "gra", Color: 15}, {Pattern: "sku", Color: 7}, {Pattern: "bo", Color: 7}, {Pattern: "bri", Color: 0}, {Pattern: "gra", Color: 8}, {Pattern: "gru", Color: 8}], Base: 7}, display: {Name: '{"text":"§8§l丸石の盾"}'}, Enchantments: [{lvl: 1s, id: "minecraft:unbreaking"}], Damage: 0, AttributeModifiers: [{Slot: "offhand", AttributeName: "generic.movement_speed", Operation: 2, UUID: [I; 0, 2, 0, 1], Amount: -0.15d, Name: "SPD"}, {Slot: "offhand", AttributeName: "generic.armor", Operation: 0, UUID: [I; 0, 2, 0, 2], Amount: 4.0d, Name: "AMR"}, {Slot: "mainhand", AttributeName: "generic.movement_speed", Operation: 2, UUID: [I; 0, 1, 0, 3], Amount: -0.15d, Name: "SPD"}, {Slot: "mainhand", AttributeName: "generic.armor", Operation: 0, UUID: [I; 0, 1, 0, 4], Amount: 4.0d, Name: "AMR"}]}},\
-                                            rewardExp:0b,maxUses:2147483647,\
-                                        },\
-                                        {\ 
-                                            buy:{id:"paper",Count:4,tag:{display:{Name:'{"text":"§d§l交換チケット・特殊[梅]","color":"aqua"}'},HideFlags:1,RepairCost: 1000000000,Enchantments:[{id:"minecraft:mending",lvl:2s}]}},\
-                                            sell:{id:"shield",Count:1,tag:{RepairCost: 1000000000, HideFlags: 32, BlockEntityTag: {Patterns: [{Pattern: "tr", Color: 0}, {Pattern: "mr", Color: 4}, {Pattern: "bo", Color: 4}, {Pattern: "moj", Color: 4}, {Pattern: "flo", Color: 14}], Base: 4}, display: {Name: '{"text":"§e§l金装飾の盾"}'}, Enchantments: [{lvl: 3s, id: "minecraft:thorns"}, {lvl: 3s, id: "minecraft:knockback"}, {lvl: 3s, id: "minecraft:fire_aspect"}, {lvl: 3s, id: "minecraft:sharpness"}, {lvl: 3s, id: "minecraft:smite"}, {lvl: 3s, id: "minecraft:bane_of_arthropods"}], Damage: 0, AttributeModifiers: []}},\
-                                            rewardExp:0b,maxUses:2147483647,\
-                                        },\
+                                        }\
                                     ]\
                                 }\
                           }
