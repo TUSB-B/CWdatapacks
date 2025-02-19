@@ -10,7 +10,7 @@ data modify storage util:_ data.Silent set from entity @s Silent
 data modify storage util:_ data.Health set from entity @s Health
 data modify storage util:_ data.AbsorptionAmount set from entity @s AbsorptionAmount
 
-data merge entity @s {ArmorDropChances:[-1e40f,-1e40f,-1e40f,-1e40f],HandDropChances:[-1e40f,-1e40f],DeathLootTable:"minecraft:empty",Silent:true}
+data merge entity @s {ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],DeathLootTable:"minecraft:empty",Silent:true}
 
 kill @s
 
