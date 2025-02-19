@@ -61,6 +61,20 @@ summon villager ~ ~ ~ {\
                                             sell:{id:"potion",Count:1,tag:{custom_potion_effects: [{duration: 20, id: "speed", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "slowness", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "haste", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "mining_fatigue", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "strength", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "instant_health", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "instant_damage", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "jump_boost", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "nausea", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "regeneration", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "resistance", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "fire_resistance", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "water_breathing", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "invisibility", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "blindness", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "night_vision", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "hunger", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "weakness", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "poison", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "wither", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "health_boost", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "absorption", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "saturation", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "glowing", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "levitation", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "luck", amplifier: 0b, show_particles: 1b}, {duration: 20, id: "unluck", amplifier: 0b, show_particles: 1b}], HideFlags: 32, Potion: "minecraft:water", display: {Lore: ['{"text":"§c治せないものは§l死§r§cのみ"}'], Name: '{"text":"§l§cニオイクロタネソウ"}'}}},\
                                             rewardExp:0b,maxUses:2147483647,\
                                         },\
+                                        {\ 
+                                            buy:{id:"diamond_block",Count:3},\
+                                            buyB:{id:"potion",Count:1,tag:{custom_potion_effects: [{duration: 0, id: "luck", amplifier: 0b, show_particles: 1b}, {duration: 3, id: "invisibility", amplifier: 1b, show_particles: 0b}], HideFlags: 32, Potion: "minecraft:water", display: {Lore: ['{"text":"§aマナがちょぴっと詰まった飲み物。"}', '{"text":"§a飲むとMPが回復する。"}', '{"text":""}', '{"text":"§7スプラッシュ化不可"}'], Name: '{"text":"§2§lエーテル"}'}}},\
+                                            sell:{id:"potion",Count:1,tag:{custom_potion_effects: [{duration: 240, id: "jump_boost", amplifier: 5b, show_particles: 0b}, {duration: 0, id: "saturation", amplifier: 80b, show_particles: 1b}, {duration: 2400, id: "unluck", amplifier: 127b, show_particles: 0b}], HideFlags: 32, Potion: "minecraft:water", display: {Lore:[\
+                                            '{"text":"§b独特の香り§fと§bさわやかな塩の風味§fが"}', \
+                                            '{"text":"§c§nガツンと効く§fアルコールが強いお酒。"}', \
+                                            '{"text":"§f大昔ある探検隊の変わり者が"}', \
+                                            '{"text":"§9§n長年の月日をかけて§f完成させた。"}', \
+                                            '{"text":"§8…ものを、水で薄めた廉価版"}', \
+                                            '{"text":"§fそれでも飲めば§e2分間は変わったものが釣れる§fようになる。"}' \
+                                            ],\
+                                            Name: '{"text":"§7§lボーンスカッシュ20%"}'}}},\
+                                            rewardExp:0b,maxUses:2147483647,\
+                                        },\
                                     ]\
                                 }\
                           }
