@@ -6,7 +6,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:paper",
-                    "weight": 80,
+                    "weight": 70,
                     "functions": 
                     [
                         {
@@ -26,7 +26,7 @@
                 {
                     "type": "item",
                     "name": "minecraft:coal_block",
-                    "weight": 1,
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "set_count",
@@ -40,7 +40,7 @@
                 {
                     "type": "item",
                     "name": "minecraft:emerald_block",
-                    "weight": 2,
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "set_count",
@@ -54,7 +54,7 @@
                 {
                     "type": "item",
                     "name": "minecraft:coal_block",
-                    "weight": 1,
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "set_count",
@@ -68,7 +68,7 @@
                 {
                     "type": "item",
                     "name": "minecraft:emerald_block",
-                    "weight": 1,
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "set_count",
@@ -82,7 +82,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:coal_block",
-                    "weight": 1,
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "set_count",
@@ -96,7 +96,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:paper",
-                    "weight": 10,
+                    "weight": 30,
                     "functions": [
                   {
                     "function": "minecraft:set_count",
