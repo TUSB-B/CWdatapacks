@@ -71,9 +71,9 @@ data modify storage asset: mob set value {Passengers: [{Passengers: [{Particle: 
 # summon armor_stand -2000.0 0.0 0.0 {Tags:["ItemHolder"]}
 # /lootでloot_tableから装備させるか、/itemで直接持たせます
 # item replace entity @e[tag=ItemHolder,limit=1] armor.head with dragon_egg{Enchantments:[{id:"minecraft:protection",lvl:1s}]} 1
-# item replace entity @e[tag=ItemHolder,limit=1] armor.chest with leather_chestplate{unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:1s}]} 1
-# item replace entity @e[tag=ItemHolder,limit=1] armor.legs with leather_leggings{unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:1s}]} 1
-# item replace entity @e[tag=ItemHolder,limit=1] armor.feet with leather_boots{unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:1s}]} 1
+# item replace entity @e[tag=ItemHolder,limit=1] armor.chest with leather_chestplate{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:1s}]} 1
+# item replace entity @e[tag=ItemHolder,limit=1] armor.legs with leather_leggings{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:1s}]} 1
+# item replace entity @e[tag=ItemHolder,limit=1] armor.feet with leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:1s}]} 1
 # 手にも持たせます
 # 防具と同様に/lootか/itemで
 # item replace entity @e[tag=ItemHolder,limit=1] weapon.mainhand with bow{display:{Name:'{"text":"sharpbow","color":"dark_blue","bold":true}'},Enchantments:[{id:"minecraft:power",lvl:35s}]} 1

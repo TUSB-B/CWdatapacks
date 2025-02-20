@@ -69,17 +69,16 @@
             data modify storage asset: mob.HandItems[1] set value {}
     # 防具
         # 頭
-            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:leather_helmet",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"かみなりのぼうし"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:leather_helmet",Count: 1b, tag: {Unbreakable:1b,display: {color: 16762880, Name: '{"text":"かみなりのぼうし"}'}, Damage: 0}}
         # 胴
-            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_chestplate",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"らいめいのうわぎ"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_chestplate",Count: 1b,tag:{ Unbreakable:1b,display: {color: 16762880, Name: '{"text":"らいめいのうわぎ"}'}, Damage: 0}}
         # 脚
-            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_leggings",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"いなづまのずぼん"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_leggings",Count: 1b,tag:{ Unbreakable:1b, display: {color: 16762880, Name: '{"text":"いなづまのずぼん"}'}, Damage: 0}}
         # 足
-            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots",unbreakable:1b,Count: 1b, tag:{display: {color: 16762880, Name: '{"text":"じんらいのくつ"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots",Count: 1b, tag:{Unbreakable:1b,display: {color: 16762880, Name: '{"text":"じんらいのくつ"}'}, Damage: 0}}
     # 武器、防具のドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
-
 
 # active_effects
     # 直接nbtを指定して追加します
