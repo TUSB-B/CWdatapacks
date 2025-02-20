@@ -26,6 +26,8 @@ execute if entity @s[tag=PaleRider] run function tusb_remake:enemy/skill/pale_ri
 
 ### クライシスワープ
 execute if entity @s[tag=CrisisWarp] run function tusb_remake:enemy/skill/crisis_warp
+### サンダーボルト
+execute if entity @s[tag=ThunderBolt] run function tusb_remake:enemy/skill/thunder_bolt_enemy
 ### 幸福の天使
 execute if entity @s[tag=Boss.TableSecond] run function tusb_remake:enemy/skill/table_second/
 
