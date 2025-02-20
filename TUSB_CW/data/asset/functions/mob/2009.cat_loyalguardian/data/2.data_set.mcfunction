@@ -75,13 +75,13 @@
             #data modify storage asset: mob.HandItems[1] set value 
     # 防具
         # 頭
-            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:leather_helmet",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんヘルメット"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:leather_helmet",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんヘルメット"}'}, Damage: 0}}
         # 胴
-            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_chestplate",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんセーター"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_chestplate",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんセーター"}'}, Damage: 0}}
         # 脚
-            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_leggings",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんズボン"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_leggings",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"ねこちゃんズボン"}'}, Damage: 0}}
         # 足
-            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots",Unbreakable:1b,Count: 1b, tag: {Enchantments:[{id:depth_strider,lvl:10}] , display: {color: 16762880, Name: '{"text":"ねこちゃんスニーカー"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots",unbreakable:1b,Count: 1b, tag: {Enchantments:[{id:depth_strider,lvl:10}] , display: {color: 16762880, Name: '{"text":"ねこちゃんスニーカー"}'}, Damage: 0}}
     # 武器、防具のドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]

@@ -35,7 +35,7 @@
     # 死亡時のルートテーブル
         data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
-        data modify storage asset: mob.Tags set value ["SkillMob","ThunderBolt"]
+        data modify storage asset: mob.Tags set value ["SkillMob","ThunderBolt",FastCast]
     # Team
         # data modify storage asset: mob.Team set value ""
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
@@ -47,7 +47,7 @@
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base: 4}
     # 移動速度
-        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base: 1.5}
+        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base: 0.45}
     # 防具値
         #data modify storage asset: mob.Attributes append value {Name:generic.armor, Base: 20}
     # 防具強度
@@ -69,13 +69,13 @@
             data modify storage asset: mob.HandItems[1] set value {}
     # 防具
         # 頭
-            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:leather_helmet",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"かみなりのぼうし"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:leather_helmet",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"かみなりのぼうし"}'}, Damage: 0}}
         # 胴
-            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_chestplate",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"らいめいのうわぎ"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[2] set value {id: "minecraft:leather_chestplate",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"らいめいのうわぎ"}'}, Damage: 0}}
         # 脚
-            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_leggings",Unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"いなづまのずぼん"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[1] set value {id: "minecraft:leather_leggings",unbreakable:1b,Count: 1b, tag: {display: {color: 16762880, Name: '{"text":"いなづまのずぼん"}'}, Damage: 0}}
         # 足
-            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots",Unbreakable:1b,Count: 1b, tag:{display: {color: 16762880, Name: '{"text":"じんらいのくつ"}'}, Damage: 0}}
+            data modify storage asset: mob.ArmorItems[0] set value {id: "minecraft:leather_boots",unbreakable:1b,Count: 1b, tag:{display: {color: 16762880, Name: '{"text":"じんらいのくつ"}'}, Damage: 0}}
     # 武器、防具のドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]

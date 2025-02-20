@@ -70,12 +70,12 @@
         data modify storage asset: mob.ArmorItems set value [{},{},{},{}]
     # 武器
         # メインハンド
-            data modify storage asset: mob.HandItems[0] set value {id: "minecraft:trident", Count: 1b, tag: {display: {Name: '{"text":"かわいいものにはトライデントがある"}'},Unbreakable:1b,Damage: 0}}
+            data modify storage asset: mob.HandItems[0] set value {id: "minecraft:trident", Count: 1b, tag: {display: {Name: '{"text":"かわいいものにはトライデントがある"}'},unbreakable:1b,Damage: 0}}
         # オフハンド
             #data modify storage asset: mob.HandItems[1] set value 
     # 防具
         # 頭
-            data modify storage asset: mob.ArmorItems[3] set value {id:"minecraft:blue_stained_glass",Count:1b,tag:{display:{Name:'{"text":"かわいいあたま","color":"aqua","bold":true}'},Unbreakable:1b,Enchantments: [{lvl: 15s, id: "minecraft:thorns"}]}}
+            data modify storage asset: mob.ArmorItems[3] set value {id:"minecraft:blue_stained_glass",Count:1b,tag:{display:{Name:'{"text":"かわいいあたま","color":"aqua","bold":true}'},unbreakable:1b,Enchantments: [{lvl: 15s, id: "minecraft:thorns"}]}}
         # 胴
             #data modify storage asset: mob.ArmorItems[2] set value 
         # 脚
