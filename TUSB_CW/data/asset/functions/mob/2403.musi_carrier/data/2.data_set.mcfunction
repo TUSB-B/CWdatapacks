@@ -122,9 +122,11 @@ data modify storage _: _ set from storage asset: mob
 # 湧かせたいmobのdataを呼び出す
 #function asset:mob/0340.curse_sword_alpha/data/2.data_set
 # SpawnPotentialsに詰め込む
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append value {data:{entity:{\
-Passengers:[{Tags:[FloatingRequired],Invulnerable:1b,Health:100.0f, id: "minecraft:experience_orb",active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:-1,show_particles:0b}],\
-        Passengers:[{FallDistance:-10000.0f,CustomName: '{"text":"無視"}',CustomNameVisible:1b, Health: 2.0f, id: "minecraft:silverfish"}]}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager", active_effects: [{show_particles: 0b, duration: 20, id: "minecraft:invisibility", amplifier: 0b}]}},weight:1}
+data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials set value [{data:{entity:{\
+Passengers:[{Tags:[FloatingRequired],Invulnerable:1b,Health:100.0f, id: "minecraft:armor_stand",Invisible:1b,\
+        Passengers:[{Tags:[RidingRequired],Particle:"ash", Radius: 0.5f, ReapplicationDelay: 0, CustomName: '{"text":"無視オーラ"}', RadiusOnUse: 0.0f, Duration: 32767, id: "minecraft:area_effect_cloud", effects: [{duration: 10, id: "minecraft:resistance", amplifier: 4b}]},{FallDistance:-10000.0f,CustomName: '{"text":"無視"}',CustomNameVisible:1b, Health: 2.0f, id: "minecraft:silverfish"}]}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager", active_effects: [{show_particles: 0b, duration: 20, id: "minecraft:invisibility", amplifier: 0b}]}},weight:1},{data:{entity:{\
+Passengers:[{Tags:[FloatingRequired],Invulnerable:1b,Health:100.0f, id: "minecraft:armor_stand",Invisible:1b,\
+        Passengers:[{Tags:[RidingRequired],Particle:"ash", Radius: 0.5f, ReapplicationDelay: 0, CustomName: '{"text":"無視オーラ"}', RadiusOnUse: 0.0f, Duration: 32767, id: "minecraft:area_effect_cloud", effects: [{duration: 10, id: "minecraft:resistance", amplifier: 4b}]},{FallDistance:-10000.0f,CustomName: '{"text":"無視"}',CustomNameVisible:1b, Health: 2.0f, id: "minecraft:endermite"}]}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager", active_effects: [{show_particles: 0b, duration: 20, id: "minecraft:invisibility", amplifier: 0b}]}},weight:1}]
 #data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials.data.entity append value 
 # これを繰り返す。最後にmobのdataを戻して終了
 data modify storage asset: mob set from storage _: _
